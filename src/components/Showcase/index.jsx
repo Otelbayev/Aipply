@@ -14,10 +14,10 @@ const Showcase = () => {
     <Container>
       <div className="showcase-container">
         <div className="showcase-container__left" data-aos="fade-right">
-          <div className="showcase-container__left__title">
+          <h1 className="showcase-container__left__title">
             Aipply Academy - sun'iy intellektga ixtisoslashtirilgan zamonaviy
             kasblar o'quv markazi!
-          </div>
+          </h1>
           <Form
             data={{
               title: "Bepul darsga yozilish",
