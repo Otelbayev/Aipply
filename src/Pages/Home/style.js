@@ -81,7 +81,7 @@ Mentors.Bottom = styled.div`
   }
 `;
 Mentors.Item = styled.div`
-  padding: 0 10px;
+  padding: 0 5px;
 `;
 
 export const Partners = styled.div`

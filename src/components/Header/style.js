@@ -4,6 +4,7 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   ul {
     display: flex;
     align-items: center;
@@ -75,6 +76,7 @@ export const Close = styled(close)`
 
 export const Container = styled.div`
   border-bottom: 1px solid #dee5ed;
+  backdrop-filter: blur(3px);
   padding: 10px 0;
   position: relative;
   @media (max-width: 700px) {

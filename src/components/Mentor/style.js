@@ -5,28 +5,31 @@ export const Container = styled.div`
   border: 1px solid #425ed0;
   padding: 18px;
   border-radius: 12px;
+  min-height: 250px;
   .mentor-content {
     &__top {
       display: flex;
       align-items: center;
       gap: 15px;
       &__img {
-        width: 103px;
-        height: 103px;
-        border-radius: 50%;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          border: 1px solid lightgray;
+        }
       }
       &__name {
         font-family: Gilroy;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 700;
         line-height: 27px;
         letter-spacing: 0em;
-        text-align: left;
         color: #393939;
       }
       &__job {
         font-family: Gilroy;
-        font-size: 19px;
+        font-size: 18px;
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0em;

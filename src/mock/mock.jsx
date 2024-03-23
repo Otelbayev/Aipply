@@ -12,6 +12,9 @@ import img from "../assets/icons/course.png";
 import img2 from "../assets/icons/coding.png";
 import img3 from "../assets/icons/komp.png";
 import mentor1 from "../assets/images/mentor.jpg";
+import mentor2 from "../assets/images/mentor2.jpg";
+import mentor0 from "../assets/images/mentor0.png";
+import noimg from "../assets/images/noimg.png";
 import foundation from "../assets/images/foundation.png";
 import python from "../assets/images/python.png";
 import dotnet from "../assets/images/dotnet.png";
@@ -187,23 +190,30 @@ export const course = [
 export const mentor = [
   {
     id: 1,
-    img: mentor1,
-    name: "Jasurbek O'telbayev",
-    job: "Frontend",
+    img: mentor0,
+    name: "Momedov Mustafo",
+    job: "Grafik dizayn PRO",
     desc: "2+ yil ish tajribasi va 100 dan oshiq o‘quvchilar. Bromn branding agentligida art direktor Texnopart; TSTrU universitetida senior dizayner bo‘lib ishlagan ",
   },
   {
     id: 2,
-    img: mentor1,
-    name: "Jasurbek O'telbayev",
-    job: "Frontend",
-    desc: "2+ yil ish tajribasi va 100 dan oshiq o‘quvchilar. Bromn branding agentligida art direktor Texnopart; TSTrU universitetida senior dizayner bo‘lib ishlagan ",
+    img: mentor2,
+    name: "Navodir Davronov",
+    job: "Coding Foundation, Kompyuter savodxonligi",
+    desc: "1+ yil ish tajribasi va 70 dan ortiq o’quvchilar. “Apps Able” IT academyda mentor bo’lib ishlagan.",
   },
   {
     id: 3,
+    img: noimg,
+    name: "Ahmadaliyev Avazbek",
+    job: "Interyer dizayn",
+    desc: "4+ yil tajriba va 50 dan ortiq o'quvchilar. TSTrU universitetida dizayner bo'lib ishlaydi",
+  },
+  {
+    id: 4,
     img: mentor1,
-    name: "Jasurbek O'telbayev",
+    name: "O'telbayev Jasurbek",
     job: "Frontend",
-    desc: "2+ yil ish tajribasi va 100 dan oshiq o‘quvchilar. Bromn branding agentligida art direktor Texnopart; TSTrU universitetida senior dizayner bo‘lib ishlagan ",
+    desc: " TSTrU universitetida Frontend dasturchi bo'lib ishlaydi",
   },
 ];

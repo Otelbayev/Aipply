@@ -6,7 +6,9 @@ const Mentor = ({ data }) => {
     <Container data-aos="zoom-in">
       <div className="mentor-content">
         <div className="mentor-content__top">
-          <img src={data?.img} alt="" className="mentor-content__top__img" />
+          <div className="mentor-content__top__img">
+            <img src={data?.img} alt="" />
+          </div>
           <div>
             <div className="mentor-content__top__name">{data?.name}</div>
             <div className="mentor-content__top__job">Mentor: {data?.job}</div>
