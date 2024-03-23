@@ -13,6 +13,7 @@ export const Container = styled.div`
     &__img {
       width: 157px;
       height: 157px;
+      border: 1px solid red;
     }
     &__title {
       background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
@@ -23,7 +24,6 @@ export const Container = styled.div`
       font-weight: 700;
       line-height: 34px;
       letter-spacing: 0.5px;
-      width: 75%;
       padding: 15px 0;
     }
     &__data {

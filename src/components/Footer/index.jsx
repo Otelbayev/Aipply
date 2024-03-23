@@ -1,67 +1,50 @@
 import React from "react";
-import { Container, Content, Top } from "./style";
+import { Container, Content, Top, Icons } from "./style";
 import { useScrollContext } from "../../context/ScrollContext";
-import { Placemark } from "@pbe/react-yandex-maps";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
-  const { contactRef, aboutRef, courseRef, freeLessonRef, mentorRef } =
-    useScrollContext();
+  const { contactRef } = useScrollContext();
   return (
     <Container ref={contactRef}>
       <div className="root-container">
         <div className="root-wrapper">
           <Content data-aos="fade-up">
             <Content.Left>
-              <Content.WrapMap>
-                <Content.Map
-                  defaultState={{
-                    center: [41.331018, 69.220138],
-                    zoom: 15,
-                    controls: ["zoomControl", "fullscreenControl"],
-                  }}
-                  modules={["control.ZoomControl", "control.FullscreenControl"]}
-                >
-                  <Placemark
-                    geometry={[41.331018, 69.220138]}
-                    properties={{ hintContent: "OPTIMUS inzhenerlar maktabi" }}
-                  />
-                </Content.Map>
-              </Content.WrapMap>
+              <iframe
+                allowFullScreen
+                src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=75493422112"
+              ></iframe>
             </Content.Left>
             <Content.Right>
-              <div>
-                <Content.Title>KONTAKT</Content.Title>
-                <Content.Link
-                  target="_blank"
-                  to="https://www.instagram.com/aipply.academy/"
-                >
-                  Instagram
-                </Content.Link>
-                <Content.Link
-                  target="_blank"
-                  to="https://www.instagram.com/aipply.academy/"
-                >
-                  Telegram
-                </Content.Link>
-                <Content.Link
-                  target="_blank"
-                  to="https://www.instagram.com/aipply.academy/"
-                >
-                  Youtube
-                </Content.Link>
-                <Content.Link
-                  target="_blank"
-                  to="https://www.instagram.com/aipply.academy/"
-                >
-                  Facebook
-                </Content.Link>
-              </div>
               <div>
                 <Content.Title>AIPPLY</Content.Title>
                 <Content.Link to="/#about">Biz haqimizda</Content.Link>
                 <Content.Link to="/#course">Kurslar</Content.Link>
                 <Content.Link to="/#mentor">Mentorlar</Content.Link>
                 <Content.Link to="/#free">Bepul darsga yozilish</Content.Link>
+              </div>
+              <div>
+                <div className="footer-media">
+                  <NavLink target="_blank" to="https://t.me/aipplyacademy">
+                    <Icons.Telegram />
+                  </NavLink>
+                  <NavLink
+                    target="_blank"
+                    to="https://www.instagram.com/aipply.academy"
+                  >
+                    <Icons.Instagram />
+                  </NavLink>
+                  <NavLink target="_blank" to="https://youtube.com">
+                    <Icons.Youtube />
+                  </NavLink>
+                  <NavLink target="_blank" to="https://youtube.com">
+                    <Icons.Fecebook />
+                  </NavLink>
+                </div>
+                <div className="footer-tel">
+                  <NavLink to="tel: +998771233300">+998771233300</NavLink>
+                </div>
               </div>
             </Content.Right>
           </Content>

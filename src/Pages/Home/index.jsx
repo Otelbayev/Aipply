@@ -38,6 +38,7 @@ const Home = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    dots: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -76,8 +77,8 @@ const Home = () => {
         <div className="root-wrapper">
           <Showcase />
           <WhyContainer ref={aboutRef}>
-            <div className="title why-kjnev" data-aos="zoom-in">
-              Nega aynan <div> Aipply Academy?</div>
+            <div className="title" data-aos="zoom-in">
+              Nega aynan Aipply Academy?
             </div>
             <WhyContainer.Main>
               {why.map((data) => (

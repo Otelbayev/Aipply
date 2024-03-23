@@ -1,7 +1,10 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
-import { Map, YMaps } from "@pbe/react-yandex-maps";
 import totop from "../../assets/icons/totop.svg?react";
+import telegram from "../../assets/icons/telegram.svg?react";
+import instagram from "../../assets/icons/instagram.svg?react";
+import facebook from "../../assets/icons/facebook.svg?react";
+import youtube from "../../assets/icons/youtube.svg?react";
 
 export const Container = styled.div`
   width: 100%;
@@ -23,8 +26,8 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  align-items: flex-start;
-  gap: 80px;
+  align-items: stretch;
+  gap: 50px;
   padding: 80px;
   border-bottom: 1px solid #e2e8f0;
   @media (max-width: 980px) {
@@ -35,44 +38,49 @@ export const Content = styled.div`
   @media (max-width: 760px) {
     gap: 20px;
   }
-  @media (max-width: 650px) {
+  @media (max-width: 800px) {
     flex-direction: column-reverse;
-    gap: 10px;
+    gap: 20px;
     padding: 30px 0 10px;
     margin-bottom: 10px;
   }
 `;
 
 Content.Left = styled.div`
-  @media (max-width: 650px) {
-    width: 100%;
+  iframe {
+    width: 500px;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+  }
+  @media (max-width: 800px) {
+    iframe {
+      width: 100%;
+      height: 300px;
+    }
   }
 `;
 Content.Right = styled.div`
-  display: flex;
-  align-items: flex-start;
-  gap: 80px;
-  @media (max-width: 980px) {
-    gap: 30px;
+  .footer-media {
+    margin-top: 50px;
+  }
+  .footer-tel {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+    a {
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+  }
+  @media (max-width: 800px) {
+    .footer-media {
+      margin-top: 20px;
+    }
   }
 `;
 
-Content.WrapMap = styled(YMaps)``;
-
-Content.Map = styled(Map)`
-  width: 500px;
-  height: 300px;
-  @media (max-width: 980px) {
-    width: 400px;
-  }
-  @media (max-width: 760px) {
-    width: 300px;
-    height: 250px;
-  }
-  @media (max-width: 650px) {
-    width: 85%;
-  }
-`;
 Content.Title = styled.div`
   color: #fff;
   font-family: "Inter", sans-serif;
@@ -101,4 +109,31 @@ Content.Link = styled(NavLink)`
 export const Top = styled(totop)`
   width: 35px;
   height: 35px;
+  background: #fff;
+  border-radius: 3px;
+`;
+
+export const Icons = styled.div``;
+
+const iconStyle = css`
+  width: 35px;
+  height: 35px;
+  margin: 0 10px;
+  color: red;
+  &:active {
+    transform: scale(0.9);
+  }
+`;
+
+Icons.Telegram = styled(telegram)`
+  ${iconStyle}
+`;
+Icons.Instagram = styled(instagram)`
+  ${iconStyle}
+`;
+Icons.Fecebook = styled(facebook)`
+  ${iconStyle}
+`;
+Icons.Youtube = styled(youtube)`
+  ${iconStyle}
 `;

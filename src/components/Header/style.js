@@ -46,8 +46,8 @@ Content.Logo = styled.img`
   width: 131px;
   height: 60px;
   @media (max-width: 700px) {
-    width: 100px;
-    height: 45px;
+    width: 120px;
+    height: 50px;
   }
 `;
 
@@ -55,8 +55,8 @@ export const Menu = styled.img`
   display: none;
   @media (max-width: 700px) {
     display: inline;
-    width: 39px;
-    height: 39px;
+    width: 30px;
+    height: 30px;
     margin-right: 40px;
     cursor: pointer;
   }
@@ -75,7 +75,7 @@ export const Close = styled(close)`
 
 export const Container = styled.div`
   border-bottom: 1px solid #dee5ed;
-  padding: 5px 0;
+  padding: 10px 0;
   position: relative;
   @media (max-width: 700px) {
     border-bottom: none;

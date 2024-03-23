@@ -4,15 +4,7 @@ import arrow from "../../assets/icons/arrow.svg?react";
 export const Container = styled.div``;
 
 export const WhyContainer = styled.div`
-  margin: 20px 0 50px;
-  @media (max-width: 700px) {
-    .why-kjnev {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 20px;
-    }
-  }
+  margin: 80px 0 50px;
 `;
 
 WhyContainer.Main = styled.div`

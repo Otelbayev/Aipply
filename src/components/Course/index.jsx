@@ -9,15 +9,20 @@ const Course = ({ data }) => {
     <Container data-aos="zoom-in">
       <div className="course-content">
         <div>
-          <img className="course-content__img" src={data?.img} alt="" />
-          <div className="course-content__title">{data?.title}</div>
+          <div className="image-container">
+            <img className="course-content__img" src={data?.img} alt="" />
+            <div className="course-content__title">{data?.title}</div>
+          </div>
           <div className="course-content__data">
             <div className="course-content__data__item">
               <span>Kurs davomiyligi:</span>
               {data?.kurs}
             </div>
-            <div className="course-content__data__item">
-              <span>Nimalar o'rgatiladi:</span>
+            <div
+              style={{ padding: "5px 0" }}
+              className="course-content__data__item"
+            >
+              <span>Dars davomiyligi:</span>
               {data?.dars}
             </div>
             <div className="course-content__data__item">

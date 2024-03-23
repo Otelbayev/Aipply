@@ -29,8 +29,8 @@ export const Container = styled.div`
         width: 750px;
         height: 650px;
         position: absolute;
-        top: -20px;
-        right: -70px;
+        top: -50px;
+        right: -100px;
         z-index: -1;
         img {
           width: 100%;
