@@ -3,7 +3,6 @@ import { Container, Progress } from "./style";
 import Form from "../../Form";
 import ScrollTrigger from "react-scroll-trigger";
 import CountUp from "react-countup";
-import img from "../../../assets/images/ai.png";
 import computer from "../../../assets/images/computer.png";
 
 const Statistica = ({ data }) => {
@@ -30,7 +29,7 @@ const Statistica = ({ data }) => {
                   </div>
                 </div>
               </Progress>
-              Muvofaqiyatli tugatganlar
+              Muvaffaqiyatli tugatganlar
             </div>
             <div className="statistic-content__left__item grid-second">
               <Progress $pr={90}>
@@ -80,10 +79,7 @@ const Statistica = ({ data }) => {
           <div className="statistic-bottom__left" data-aos="fade-right">
             <div className="statistic-bottom__left__title">{data?.aiDesc}</div>
             <div className="statistic-bottom__left__img">
-              <img src={img} alt="" />
-              <img src={img} alt="" />
-              <img src={img} alt="" />
-              <img src={img} alt="" />
+              {data?.ai?.length && data.ai.map((e) => <img src={e} />)}
             </div>
           </div>
           <div className="statistic-bottom__right" data-aos="fade-left">

@@ -94,7 +94,7 @@ export const course = [
     path: "graphic-design",
     kurs: "5 oy",
     dars: "Haftada 3 marta 2 soatdan",
-    tech: "Photoshop, Illustrator, Figma, Indesign, Coreldraw dasturlari hamda ushbu soha bo'yicha sun’iy intellekt (Midjourney, Leanardo AI, DALL-E) lar yordamida sifatli 2D-vizualizatsiya va modellashtirish vositalarini batafsil o'rgatish. Kurs davomida loyixalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
+    tech: "Photoshop, Illustrator, Figma, Indesign, Coreldraw dasturlari hamda ushbu soha bo'yicha sun’iy intellekt (Midjourney, Leanardo AI, DALL-E) lar yordamida sifatli 2D-vizualizatsiya va modellashtirish vositalarini batafsil o'rgatish. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
     slogan:
       " Grafik dizayn: g'oyadan eng Shedevrgacha. Ijodkorligingizni biz bilan boshlang!",
   },
@@ -105,9 +105,9 @@ export const course = [
     path: "no-coding",
     kurs: "6 oy",
     dars: "Haftada 3 marta 2 soatdan",
-    tech: "Dasturlash tajribasiga ega bo'lmaganlarga grafik interfeyslar va mantiqiy konstruktorlar yordamida veb-saytlar, mobil ilovalar yaratish, vazifalarni avtomatlashtirish imkonini beradi. Kurs davomida loyixalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
+    tech: "Dasturlash tajribasiga ega bo'lmaganlarga grafik interfeyslar va mantiqiy konstruktorlar yordamida veb-saytlar, mobil ilovalar yaratish, vazifalarni avtomatlashtirish imkonini beradi. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
     slogan:
-      "Bir qator kodsiz g'oyalarni ilovalarga aylantiring: loyihalaringiz kelajagi shu yerdan boshlanadi!",
+      "Bir qator kodsiz g'oyalarni ilovalarga aylantiring loyihalaringiz kelajagi shu yerdan boshlanadi!",
   },
   {
     id: 3,
@@ -203,11 +203,11 @@ export const mentor = [
     desc: "1+ yil ish tajribasi va 70 dan ortiq o’quvchilar. “Apps Able” IT academyda mentor bo’lib ishlagan.",
   },
   {
-    id: 3,
+    id: 5,
     img: noimg,
-    name: "Ahmadaliyev Avazbek",
-    job: "Interyer dizayn",
-    desc: "4+ yil tajriba va 50 dan ortiq o'quvchilar. TSTrU universitetida dizayner bo'lib ishlaydi",
+    name: "Adham Bahodirovich",
+    job: "No-Coding",
+    desc: "8+ yil ish tajribasi va 200 dan oshiq o‘quvchilar. «ASIAGOOD» taʼsischisi, TSTrU da raqamlashtirish bo‘limi boshlig‘i",
   },
   {
     id: 4,
@@ -215,5 +215,12 @@ export const mentor = [
     name: "O'telbayev Jasurbek",
     job: "Frontend",
     desc: " TSTrU universitetida Frontend dasturchi bo'lib ishlaydi",
+  },
+  {
+    id: 3,
+    img: noimg,
+    name: "Ahmadaliyev Avazbek",
+    job: "Interyer dizayn",
+    desc: "4+ yil tajriba va 50 dan ortiq o'quvchilar. TSTrU universitetida dizayner bo'lib ishlaydi",
   },
 ];

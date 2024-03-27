@@ -65,7 +65,8 @@ const Course = () => {
             </div>
           </div>
         </div>
-        <img src={data?.project} data-aos="fade-up" alt="" />
+        {data?.project?.length &&
+          data.project.map((e) => <img src={e} data-aos="fade-up" alt="" />)}
       </Container>
       <div className="root-container">
         <div className="root-wrapper">

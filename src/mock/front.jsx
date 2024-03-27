@@ -10,6 +10,14 @@ import project3 from "../assets/images/front3.webp";
 import project4 from "../assets/images/front4.jpg";
 import project5 from "../assets/images/front5.webp";
 import project6 from "../assets/images/front6.webp";
+import project7 from "../assets/images/front7.jpg";
+import project8 from "../assets/images/front8.jpg";
+import ai1 from "../assets/images/ai.png";
+import ai2 from "../assets/images/ai1.png";
+import ai3 from "../assets/images/ai2.png";
+import ai4 from "../assets/images/ai3.png";
+import ai5 from "../assets/images/ai4.png";
+import ai6 from "../assets/images/ai5.png";
 
 const FrontendTitle = () => "";
 
@@ -35,8 +43,9 @@ export const reactJs = {
     price: "300",
     desc: "Agarda Sizning kurslarga qatnashish uchun mablag'ingiz yetarli bo'lmasa, bundan tushkunlikka tushmang. Biz Sizga bu muammoni hal etishda yordam beramiz.",
     aiDesc:
-      "Kurs davomida dizayn qoidalari va dasturlardan tashqari suniy intellektlarda ishlashni va uni kasbingizda monitizatsiya qilishni o’rganasiz",
+      "Kurs davomida dizayn qoidalari va dasturlardan tashqari Sun'iy intellektlarda ishlashni va uni kasbingizda monitizatsiya qilishni o’rganasiz",
     computerTitle: "Dasturlashni o’rganish uchun qanday kompyuter kerak?",
+    ai: [ai5, ai6, ai4, ai3, ai2, ai1],
     processor: "i3-i7",
     mamory: "256-512 GB",
     ram: "4-16 GB",
@@ -67,18 +76,15 @@ export const reactJs = {
       body: [
         {
           id: 1,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "a. HTML va uning tuzilishiga kirish.",
         },
         {
           id: 2,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "b. Veb-sahifalar uchun CSS asoslari.",
         },
         {
           id: 3,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "c. SCSS va SASS preprotsessori asoslari.",
         },
       ],
     },
@@ -88,23 +94,23 @@ export const reactJs = {
       body: [
         {
           id: 1,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "a. JavaScript dasturlash tiliga kirish.",
         },
         {
           id: 2,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "b. Basics: o‘zgaruvchilar, shartlar, sikllar, funksiyalar.",
         },
         {
           id: 3,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "c. Array va Obyektlarni boshqarish.",
         },
         {
           id: 4,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "d. Backend bilan ishlash, fetch, malumotlarni boshqarish",
+        },
+        {
+          id: 5,
+          title: "e. DOM bilan ishlash.",
         },
       ],
     },
@@ -114,23 +120,23 @@ export const reactJs = {
       body: [
         {
           id: 1,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "a. React.js asoslari: komponentlar, prop, statelar.",
         },
         {
           id: 2,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "b. Styles in react, Hooks.",
         },
         {
           id: 3,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "c. Statelarni boshqarish, Context API.",
         },
         {
           id: 4,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "d. Bakend bilan ishlash, Fetch, Axios, Swagger.",
+        },
+        {
+          id: 5,
+          title: "e. Eng mashxur react kutubxonalari (AntDesign, MUI).",
         },
       ],
     },
@@ -140,26 +146,22 @@ export const reactJs = {
       body: [
         {
           id: 1,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "a. Sun'iy intellekdan tog’ri foydalanish.",
         },
         {
           id: 2,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "b. Katta loyiha bilan ishlashda fayl va kod tuzilishi.",
         },
         {
           id: 3,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "c. Loyihani optimizatsiya qilish.",
         },
         {
           id: 4,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "d. AI yordamida React-da to'liq veb-ilovani ishlab chiqish.",
         },
       ],
     },
   ],
-  project: null,
+  project: [project8, project7],
 };

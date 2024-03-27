@@ -4,6 +4,7 @@ export const Container = styled.div`
   margin: 50px 0;
   .then-body {
     &__item {
+      margin: 20px 0;
       display: flex;
       align-items: center;
       gap: 25px;
@@ -12,7 +13,7 @@ export const Container = styled.div`
         height: 140px;
       }
       &__title {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 500;
       }
     }

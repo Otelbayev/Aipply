@@ -11,6 +11,12 @@ import then4 from "../assets/icons/then4.png";
 import then5 from "../assets/icons/then5.png";
 import width from "../assets/images/width330.png";
 import projectss from "../assets/icons/projectsbook.png";
+import ai1 from "../assets/images/ai.png";
+import ai2 from "../assets/images/ai1.png";
+import ai3 from "../assets/images/ai2.png";
+import ai4 from "../assets/images/ai3.png";
+import ai5 from "../assets/images/ai4.png";
+import ai6 from "../assets/images/ai5.png";
 
 const DesignTitle = () => (
   <p>
@@ -42,10 +48,11 @@ export const graphicDesign = {
     teching: "30",
     end: "25",
     price: "300",
-    desc: "Agarda Sizning kurslarga qatnashish uchun mablag'ingiz yetarli bo'lmasa, bundan tushkunlikka tushmang. Biz Sizga bu muammoni hal etishda yordam beramiz.",
+    desc: "Agarda sizning kurslarga qatnashish uchun mablag'ingiz yetarli bo'lmasa, bundan tushkunlikka tushmang. Biz Sizga bu muammoni hal etishda yordam beramiz.",
     aiDesc:
-      "Kurs davomida dizayn qoidalari va dasturlardan tashqari suniy intellektlarda ishlashni va uni kasbingizda monitizatsiya qilishni o’rganasiz",
+      "Kurs davomida dizayn qoidalaridan tashqari sun'iy intellektlarda ishlashni va uni kasbingizda monitizatsiya qilishni o’rganasiz",
     computerTitle: "Grafik dizaynni o’rganish uchun qanday kompyuter kerak?",
+    ai: [ai5, ai6, ai4, ai3, ai2, ai1],
     processor: "i5-i7",
     mamory: "256-512 GB",
     ram: "8-16 GB",
@@ -76,18 +83,15 @@ export const graphicDesign = {
       body: [
         {
           id: 1,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
         {
           id: 2,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
         {
           id: 3,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
       ],
     },
@@ -97,49 +101,41 @@ export const graphicDesign = {
       body: [
         {
           id: 1,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
         {
           id: 2,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
         {
           id: 3,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
         {
           id: 4,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
       ],
     },
     {
       id: "03",
-      title: "Suniy intekektlar",
+      title: "Sun'iy intekektlar",
       body: [
         {
           id: 1,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
         {
           id: 2,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
         {
           id: 3,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
         {
           id: 4,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
       ],
     },
@@ -149,26 +145,22 @@ export const graphicDesign = {
       body: [
         {
           id: 1,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
         {
           id: 2,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
         {
           id: 3,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
         {
           id: 4,
-          title:
-            "1.Lorem ipsum dolor sit amet consectetur. Adipiscing ac quis nisl massa. Imperdiet at felis viverra eu imperdiet. Fringilla sodales commodo et non quis. Enim duis in vel donec etiam.",
+          title: "none",
         },
       ],
     },
   ],
-  project: projectss,
+  project: [projectss],
 };

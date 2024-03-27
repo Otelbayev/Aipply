@@ -17,7 +17,7 @@ const About = ({ data }) => {
         </div>
       </div>
       <div className="about-body">
-        {data?.projects.map((img, index) => (
+        {data?.projects?.map((img, index) => (
           <img key={index} src={img} data-aos="fade-up" />
         ))}
       </div>

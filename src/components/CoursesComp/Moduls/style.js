@@ -65,7 +65,7 @@ export const Item = styled.div`
     css`
       border: none;
       background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
-      height: 700px;
+      height: 350px;
       cursor: default;
       .item-top {
         border-bottom: 1px solid #fff;

@@ -27,7 +27,7 @@ const Moduls = ({ data }) => {
                 <Icons.Bottom id={item.id} name={active} />
               </div>
               <div className="item-body">
-                {item.body.map((e) => (
+                {item?.body?.map((e) => (
                   <h1 className="item-body__title" key={e.id}>
                     {e.title}
                   </h1>

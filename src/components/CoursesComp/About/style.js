@@ -5,14 +5,14 @@ export const Container = styled.div`
   margin: 60px 0 100px;
   .about-head {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 50px;
     margin: 20px 0;
     &__img {
       width: 30%;
       img {
-        max-width: 330px;
-        max-height: 330px;
+        max-width: 300px;
+        max-height: 300px;
         width: 100%;
         height: 100%;
       }

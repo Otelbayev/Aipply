@@ -131,10 +131,6 @@ const Home = () => {
                   <img src={sqb} className="sqb" alt="" />
                   <img src={itpark} className="itpark" alt="" />
                 </div>
-                <div className="partners__right__item">
-                  <img src={selsil} className="selsil" alt="" />
-                  <img src={inoria} className="inoria" alt="" />
-                </div>
               </div>
             </div>
           </Partners>
