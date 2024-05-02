@@ -123,7 +123,7 @@ export const graphicDesign = {
     },
     {
       id: "03",
-      title: "Sun'iy intekektlar",
+      title: "Sun'iy intelektlar",
       body: [
         {
           id: 1,
