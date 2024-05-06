@@ -21,6 +21,8 @@ import dotnet from "../assets/images/dotnet.png";
 import frontend from "../assets/images/react.png";
 import design from "../assets/images/design.png";
 import motion from "../assets/images/motion.png";
+import hasan from "../assets/images/xasan.jpg";
+import avaz from "../assets/images/avaz.png";
 
 export const why = [
   {
@@ -211,7 +213,7 @@ export const mentor = [
   },
   {
     id: 6,
-    img: noimg,
+    img: hasan,
     name: "Abdullayev Hasan",
     job: "Motion Grafika va Vidomontaj",
     desc: "3 yil tajriba va 20 ga yaqin loyihalar Transport universitetida Montajyor",
@@ -225,7 +227,7 @@ export const mentor = [
   },
   {
     id: 3,
-    img: noimg,
+    img: avaz,
     name: "Ahmadaliyev Avazbek",
     job: "Interyer dizayn",
     desc: "4+ yil tajriba va 50 dan ortiq o'quvchilar. «DizaynLab» taʼsischisi, TSTrU da bo‘limi boshlig‘i.",
