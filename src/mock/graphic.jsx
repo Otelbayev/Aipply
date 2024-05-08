@@ -87,15 +87,16 @@ export const graphicDesign = {
       body: [
         {
           id: 1,
-          title: "none",
+          title:
+            "Photoshop dasturini o’rnatish va uning funksiyalari bilan tanishish.",
         },
         {
           id: 2,
-          title: "none",
+          title: "Ranglar bilan ishlash va rangli sxemalarni tushunish.",
         },
         {
           id: 3,
-          title: "none",
+          title: "Photoshop AI dasturi bilan taniashuv.",
         },
       ],
     },
@@ -105,63 +106,67 @@ export const graphicDesign = {
       body: [
         {
           id: 1,
-          title: "none",
+          title: "Vektor grafikasi asoslari va Illustrator interfeysi.",
         },
         {
           id: 2,
-          title: "none",
+          title: "Shriftlar va tipografiya bilan ishlash.",
         },
         {
           id: 3,
-          title: "none",
+          title: "Super prezintatsiya yasash va mijozga sotish.",
         },
         {
           id: 4,
-          title: "none",
+          title: "Brend Identity, brandbook va brend strategiya.",
         },
       ],
     },
     {
       id: "03",
-      title: "Sun'iy intelektlar",
+      title: "Figma + InDesign",
       body: [
         {
           id: 1,
-          title: "none",
+          title: "Figma dasturi bilan tanishish",
         },
         {
           id: 2,
-          title: "none",
+          title: "Figma: Hamkorlik va design system'lar yaratish",
         },
         {
           id: 3,
-          title: "none",
+          title:
+            "InDesign: Nashriyot va bosma dizayni, shuningdek broshyura va magazinlar tuzilishi",
         },
         {
           id: 4,
-          title: "none",
+          title:
+            "InDesign: Sahifalararo navigatsiya va tarkibli ma'lumotlarni qo'llash.",
         },
       ],
     },
     {
       id: "04",
-      title: "Figma",
+      title: "CorelDRAW va After Effects.",
       body: [
         {
           id: 1,
-          title: "none",
+          title: "CorelDRAW: Grafik dizayn asoslari va sozlamalari.",
         },
         {
           id: 2,
-          title: "none",
+          title:
+            "After Effects: Asosiy animatsiya texnikalari va kompozitsiya qurilishi.",
         },
         {
           id: 3,
-          title: "none",
+          title:
+            "After Effects: Grafik va matnli animatsiyalarni yaratish usullari.",
         },
         {
           id: 4,
-          title: "none",
+          title: "Mijoz bilan ishlash va frilancer saytlarida daromat qilish",
         },
       ],
     },
