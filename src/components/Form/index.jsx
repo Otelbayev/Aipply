@@ -49,7 +49,7 @@ const Form = ({
 
   function getId(path) {
     const obj = {
-      "/": 1,
+      "/": 10,
       "/graphic-design": 2,
       "/no-coding": 3,
       "/computer-science": 4,

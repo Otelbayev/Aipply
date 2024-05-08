@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: calc(100dvh - 64px);
+  /* min-height: calc(100dvh - 64px); */
+  margin: 50px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +10,10 @@ export const Container = styled.div`
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     &__left {
+      width: 50%;
       &__title {
         font-family: Gilroy;
         font-size: 50px;
@@ -21,10 +25,11 @@ export const Container = styled.div`
         background-clip: text;
         color: transparent;
         margin-bottom: 40px;
-        width: 60%;
+        /* width: 60%; */
       }
     }
     &__right {
+      width: 50%;
       &__img {
         width: 750px;
         height: 650px;
@@ -89,6 +94,11 @@ export const Container = styled.div`
           left: 20%;
         }
       }
+      &__grand {
+        width: 550px;
+        /* height: 400px; */
+        border-radius: 15px;
+      }
     }
   }
   @media (max-width: 1250px) {
@@ -122,17 +132,23 @@ export const Container = styled.div`
       flex-direction: column;
       padding: 50px 0;
       &__left {
+        width: 100%;
         &__title {
-          margin-bottom: 600px;
+          /* margin-bottom: 600px; */
           width: 100%;
           text-align: center;
         }
       }
       &__right {
+        width: 100%;
+        text-align: center;
         &__img {
           top: 180px;
           right: 50%;
           transform: translateX(48%);
+        }
+        &__grand {
+          width: 90%;
         }
       }
     }
@@ -144,7 +160,7 @@ export const Container = styled.div`
         &__title {
           font-size: 30px;
           line-height: 30px;
-          margin-bottom: 530px;
+          /* margin-bottom: 530px; */
         }
       }
       &__right {
@@ -161,13 +177,14 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 500px) {
+    margin: 0;
     .showcase-container {
       padding: 30px 0;
       &__left {
         &__title {
           font-size: 22px;
           line-height: 25px;
-          margin-bottom: 400px;
+          /* margin-bottom: 400px; */
         }
       }
       &__right {
@@ -193,7 +210,7 @@ export const Container = styled.div`
     .showcase-container {
       &__left {
         &__title {
-          margin-bottom: 350px;
+          /* margin-bottom: 350px; */
         }
       }
       &__right {
