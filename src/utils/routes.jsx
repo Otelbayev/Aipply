@@ -8,6 +8,7 @@ import { interior } from "../mock/interior";
 import { motion } from "../mock/motion";
 import { foundation } from "../mock/foundation";
 import { python } from "../mock/python";
+import { birOy } from "../mock/biroy";
 
 export const routes = [
   {
@@ -54,5 +55,10 @@ export const routes = [
     id: 9,
     path: "/python",
     element: <Course data={python} />,
+  },
+  {
+    id: 10,
+    path: "/bir-oyda-bir-veb-sayt",
+    element: <Course data={birOy} />,
   },
 ];

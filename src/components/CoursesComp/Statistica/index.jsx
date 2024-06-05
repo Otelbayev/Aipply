@@ -92,7 +92,7 @@ const Statistica = ({ data }) => {
               <div className="statistic-bottom__right__content__data">
                 <div>Protsessor: {data?.processor}</div>
                 <div>Hotira SSD: {data?.memory}</div>
-                <div>Operativka {data?.ram}</div>
+                <div>Operativka: {data?.ram}</div>
                 {data?.videoCard && (
                   <div>Videokarta RTX1650: {data?.videoCard}</div>
                 )}

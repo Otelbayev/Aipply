@@ -56,7 +56,7 @@ export const interior = {
       "Interior/Exterior dizaynni o’rganish uchun qanday kompyuter kerak?",
     ai: [ai5, ai6, ai4, ai3, ai2],
     processor: "i3-i7",
-    mamory: "256-512 GB",
+    memory: "256-512 GB",
     ram: "4-16 GB",
     videoCard: null,
   },

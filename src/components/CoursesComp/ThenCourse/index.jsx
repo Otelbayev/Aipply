@@ -5,7 +5,9 @@ const ThenCourse = ({ data }) => {
   return (
     <Container>
       <div className="title-dark then" data-aos="fade-right">
-        Kursni tugatib qayerlarda ishlashingiz mumkin
+        {window.location.pathname === "/bir-oyda-bir-veb-sayt"
+          ? "Kursda O'rganiladigan Bilimlar"
+          : "Kursni tugatib qayerlarda ishlashingiz mumkin"}
       </div>
       <div className="then-body">
         {data?.length &&

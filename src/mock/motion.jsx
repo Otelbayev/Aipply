@@ -59,9 +59,9 @@ export const motion = {
     computerTitle:
       "Motion dizayn va Videomontajni o’rganish uchun qanday kompyuter kerak?",
     ai: [ai5, ai6, ai4, ai3, ai2],
-    processor: "i3-i7",
-    mamory: "256-512 GB",
-    ram: "4-16 GB",
+    processor: "i5-i7",
+    memory: "512 GB",
+    ram: "8-16 GB",
     videoCard: null,
   },
   about: {

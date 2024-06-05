@@ -90,6 +90,17 @@ export const why = [
 
 export const course = [
   {
+    id: 100,
+    img: img2,
+    title: "Bir oyda bir veb-sayt",
+    path: "bir-oyda-bir-veb-sayt",
+    kurs: "1 oy",
+    dars: "Haftada 3 marta 2 soatdan",
+    tech: "Ushbu kurs barcha biznes egalariga mo'ljallangan bo'lib, kurs uchun joylarimiz soni va chegirma vaqti cheklangan. Tezda ro'yxatdan o'ting va o'z biznesingizni yangi olamga olib chiqish imkoniyatini qo'ldan boy bermang.",
+    slogan:
+      "Bir qator kodsiz g'oyalarni ilovalarga aylantiring loyihalaringiz kelajagi shu yerdan boshlanadi!",
+  },
+  {
     id: 1,
     img: img,
     title: "Grafik dizayn + AI 1.0",
@@ -99,17 +110,6 @@ export const course = [
     tech: "Photoshop, Illustrator, Figma, Indesign, Coreldraw dasturlari hamda ushbu soha bo'yicha sun’iy intellekt (Midjourney, Leanardo AI, DALL-E) lar yordamida sifatli 2D-vizualizatsiya va modellashtirish vositalarini batafsil o'rgatish. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
     slogan:
       " Grafik dizayn: g'oyadan eng Shedevrgacha. Ijodkorligingizni biz bilan boshlang!",
-  },
-  {
-    id: 2,
-    img: img2,
-    title: "No-Coding Web/Mobile 1.0",
-    path: "no-coding",
-    kurs: "6 oy",
-    dars: "Haftada 3 marta 2 soatdan",
-    tech: "Dasturlash tajribasiga ega bo'lmaganlarga grafik interfeyslar va mantiqiy konstruktorlar yordamida veb-saytlar, mobil ilovalar yaratish, vazifalarni avtomatlashtirish imkonini beradi. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
-    slogan:
-      "Bir qator kodsiz g'oyalarni ilovalarga aylantiring loyihalaringiz kelajagi shu yerdan boshlanadi!",
   },
   {
     id: 3,
@@ -132,6 +132,17 @@ export const course = [
     tech: " IT (dasturlash) olamiga kirish, akademiyada mavjud kurslar  va texnologiyalar bo'yicha boshlang'ich tushunchalar olish.",
     slogan:
       "Dasturlash san'atini o'zlashtirish uchun birinchi qadam bizdan boshlanadi!",
+  },
+  {
+    id: 2,
+    img: img2,
+    title: "No-Coding Web/Mobile 1.0",
+    path: "no-coding",
+    kurs: "6 oy",
+    dars: "Haftada 3 marta 2 soatdan",
+    tech: "Dasturlash tajribasiga ega bo'lmaganlarga grafik interfeyslar va mantiqiy konstruktorlar yordamida veb-saytlar, mobil ilovalar yaratish, vazifalarni avtomatlashtirish imkonini beradi. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
+    slogan:
+      "Bir qator kodsiz g'oyalarni ilovalarga aylantiring loyihalaringiz kelajagi shu yerdan boshlanadi!",
   },
   // {
   //   id: 5,

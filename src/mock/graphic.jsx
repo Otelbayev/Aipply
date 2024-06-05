@@ -58,7 +58,7 @@ export const graphicDesign = {
     computerTitle: "Grafik dizaynni o’rganish uchun qanday kompyuter kerak?",
     ai: [ai5, ai6, ai4, ai3, ai2],
     processor: "i5-i7",
-    mamory: "256-512 GB",
+    memory: "256-512 GB",
     ram: "8-16 GB",
     videoCard: "4-6 GB",
   },
@@ -96,7 +96,7 @@ export const graphicDesign = {
         },
         {
           id: 3,
-          title: "Photoshop AI dasturi bilan taniashuv.",
+          title: "Photoshop AI dasturi bilan tanishuv.",
         },
       ],
     },

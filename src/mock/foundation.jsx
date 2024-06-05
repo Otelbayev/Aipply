@@ -51,7 +51,7 @@ export const foundation = {
       "Coding Foundationni o‘rganish uchun qanday kompyuter kerak?",
     ai: [ai5, ai6, ai4, ai3, ai2],
     processor: "i5-i7",
-    mamory: "256-512 GB",
+    memory: "256-512 GB",
     ram: "8-16 GB",
     videoCard: null,
   },

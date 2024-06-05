@@ -31,12 +31,12 @@ const Desc = () => (
   </p>
 );
 
-export const noCoding = {
+export const birOy = {
   courseImg,
   name: "No Coding",
   keywords: "no coding, tilda, no coding uz, kod yozmasdan dastur yaratish",
   showcase: {
-    title: "Kod yozmasdan dastur yaratishni o’rganing",
+    title: "Bir oyda dastur yaratishni o’rganing",
     desc: "Biz sizga zamonaviy bilimlar asosida No-Codingni o’rgatamiz va sizni daromatga olib chiqamiz",
   },
   statistics: {
@@ -67,69 +67,66 @@ export const noCoding = {
       id: 1,
       icon: then1,
       title:
-        "Startaplar: No-Coding vositalari bilan prototiplar yaratish va tezkor mahsulot sinalarini o'tkazish, bu orqali startaplar o'z g'oyalarini tez va samarali tarzda sinab ko'rishlari mumkin.",
+        "•	Mahalliy server va hostingda ishlaydigan WordPress sayti yaratish.",
     },
     {
       id: 2,
       icon: then2,
       title:
-        "Kichik va o'rta bizneslar: Ular o'zlarining onlayn mavjudliklarini, masalan, veb-sayt va e-commerce platformalarini ishlab chiqish uchun no-code vositalaridan foydalanishlari mumkin.",
+        "•	Dizaynlangan va kontent bilan to'ldirilgan tayyor landing page yaratish.",
     },
     {
       id: 3,
       icon: then3,
       title:
-        "Korporativ tizimlar: Katta kompaniyalarda no-coding yondashuvi bilan biznes jarayonlarini avtomatlashtirish va korporativ ilovalarni yaratish mumkin.",
+        "•	Mahsulot qo'shish, buyurtmalarni boshqarish va mijozlar bilan ishlash imkoniyatiga ega bo'lgan elektron magazin yaratish.",
     },
     {
       id: 4,
       icon: then4,
       title:
-        "Marketing va reklama: No-Coding platformalar yordamida siz tezkor marketing kampaniyalari va foydalanuvchilarni jalb qiluvchi sahifalar yaratishingiz mumkin.",
+        "•	Turli xil plaginlar yordamida kod yozmasdan yaratilgan funksional veb ilovalar va saytlar.",
     },
     {
       id: 5,
       icon: then5,
-      title:
-        "Freelancing va mustaqil konsalting: No-Coding bilan siz mustaqil ravishda loyihalarni amalga oshirishingiz yoki boshqa kompaniyalar va shaxslarga maslahat va yechimlar taqdim etishingiz mumkin.",
-    },
-    {
-      id: 6,
-      icon: then5,
-      title:
-        "Ta'lim va o'qitish: No-Coding sohasini o'rganish orqali siz ushbu bilimlarni boshqalarga o'rgatish yoki o'quv kurslari va seminarlar o'tkazish imkoniyatiga ega bo'lishingiz mumkin.",
+      title: "•	Turli sun'iy intellektlarni kerakli maqsadlarda ishlatish.",
     },
   ],
   module: [
     {
       id: "01",
-      title: "No-Code va No-Code vositalari",
+      title: "WordPress asoslari va o'rnatish",
       body: [
         {
           id: 1,
-          title: "a. No-Code asoslari",
+          title: "a.	WordPress nima?",
         },
         {
           id: 2,
-          title: "b. Loyihani boshqarish va Agile-ga kirish",
+          title: "b.	WordPress o'rnatish",
+        },
+        {
+          id: 3,
+          title: "c.	Asosiy sozlamalar va boshqarish",
         },
       ],
     },
     {
       id: "02",
-      title: "No-Code veb-ilovalarini ishlab chiqish (Wordpress)",
+      title: "WordPress dizayni va kontentni boshqarish.",
       body: [
         {
           id: 1,
-          title: "a. WordPress Asoslari",
+          title: "a.	Sayt dizayni va mavzular",
         },
         {
           id: 2,
-          title: "b. WordPress-ning kengaytirilgan xususiyatlari",
+          title: "b.	Kontent yaratish va boshqarish",
         },
         {
           id: 3,
-          title: "c.WordPress-da dizayn va foydalanuvchi interfeysi",
+          title: "c.	Plaginlar va ularning imkoniyatlari",
         },
       ],
     },
@@ -153,29 +150,29 @@ export const noCoding = {
     },
     {
       id: "04",
-      title: "No-Code mobil ilovalarini ishlab chiqish (Adalon)",
+      title: "WooCommerce va elektron magazin",
       body: [
         {
           id: 1,
-          title: "a. Adalo Asoslari",
+          title: "a.	WooCommerce o'rnatish va sozlash",
         },
         {
           id: 2,
-          title: "b. Adaloning kengaytirilgan xususiyatlari",
+          title: "b.	Mahsulot qo'shish va boshqarish",
         },
         {
           id: 3,
-          title: "c. Adaloda optimallashtirish va foydalanuvchi tajribasi",
+          title: "c.	Buyurtmalarni boshqarish va mijozlar bilan ishlash",
         },
       ],
     },
     {
       id: "05",
-      title: "No-Code-da sun'iy intellektdan foydalanish",
+      title: "Saytni SEO-rivojlantirish va xavfsizlik",
       body: [
         {
           id: 1,
-          title: "a. No-Code uchun sun'iy intellektdan foydalanish",
+          title: "a.	Saytni SEO uchun optimallashtirish",
         },
         {
           id: 2,
@@ -183,33 +180,7 @@ export const noCoding = {
         },
         {
           id: 3,
-          title: "c. AI bilan loyixa ishlari",
-        },
-      ],
-    },
-    {
-      id: "06",
-      title: "Loyiha bilan ishlash va sinovdan o’tkazish",
-      body: [
-        {
-          id: 1,
-          title: "a. Loyihani ishlab chiqish va sinovdan o’tkazish",
-        },
-        {
-          id: 2,
-          title: "b. Loyihalarni nashr etish",
-        },
-        {
-          id: 3,
-          title: "c. Loyihalarni monetizatsiya qilish",
-        },
-        {
-          id: 4,
-          title: "d. Tahlil va optimallashtirish",
-        },
-        {
-          id: 5,
-          title: "e. Yakuniy imtihon va loyiha taqdimoti",
+          title: "c.	Sayt tezligini oshirish va texnik optimallashtirish",
         },
       ],
     },
