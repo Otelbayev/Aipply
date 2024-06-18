@@ -37,7 +37,7 @@ export const reactJs = {
   keywords:
     "Frontend, react, dasturlash, kod, web sayt,html,css, js, javaScript, reactjs",
   showcase: {
-    title: "Frontend sohasini zamon talabida o’rganing",
+    title: "Frontend sohasini zamon talabida o’rganing!",
     desc: "Siz singa zamonaviy bilimlar asosida dasturlashni o’rgatamiz va sizni daromatga olib chiqamiz",
   },
   statistics: {

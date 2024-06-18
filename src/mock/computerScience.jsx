@@ -34,7 +34,7 @@ export const computerScience = {
   name: "Kompyuter Savodxonligi",
   keywords: "kompyuter Savodxonligi, offis dasturlari, word, excel, powerpoint",
   showcase: {
-    title: "Ofis dasturlarida ishlashda peshqadam bo'ling!",
+    title: "Kompyuterdan samarali foydalaning!",
     desc: "Biz sizga ofis dasturlarida mukammal ishlashni o'rgatamiz va keyin siz esa siz har qanday ofis ishini bajarib keta olasiz!",
   },
   statistics: {

@@ -44,7 +44,7 @@ export const motion = {
   name: "Motion Dizayn",
   keywords: "Motion Dizayn, videomontaj, moshin dizayn",
   showcase: {
-    title: "Motion dizayn va Videomontaj sohasini zamon talabida o’rganing",
+    title: "Motion dizayn va Videomontaj sohasini zamon talabida o’rganing!",
     desc: "Siz singa zamonaviy bilimlar asosida Motion dizayn va Videomontajni o’rgatamiz va sizni daromatga olib chiqamiz",
   },
   statistics: {

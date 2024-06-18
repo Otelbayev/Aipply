@@ -184,6 +184,7 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 800px) {
+    margin: 10px 0;
     .statistic-content {
       &__left {
         grid-template-columns: 1fr;

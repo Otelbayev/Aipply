@@ -43,7 +43,7 @@ export const graphicDesign = {
   name: "Grafik Dizayn",
   keywords: "grafik dizayn, dizayn, figma uz, fotoshop uz",
   showcase: {
-    title: "Grafik dizaynni zamon talabida o’rganing",
+    title: "Grafik dizaynni zamon talabida o’rganing!",
     desc: "Siz singa zamonaviy bilimlar asosida grafik dizaynni o’rgatamiz va sizni daromatga olib chiqamiz",
   },
   statistics: {

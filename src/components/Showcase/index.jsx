@@ -21,7 +21,7 @@ const Showcase = () => {
           </h1>
           <Form
             data={{
-              title: "Grant olish uchun",
+              title: "Bepul darsga yozilish.",
               desc: "Telefon raqamingizni yozib qoldiring, biz Siz bilan bog'lanamiz va barcha savollaringizga javob beramiz!",
             }}
             border={"#02a5e0"}
@@ -32,7 +32,7 @@ const Showcase = () => {
           />
         </div>
         <div className="showcase-container__right">
-          {/* <div className="showcase-container__right__img">
+          <div className="showcase-container__right__img">
             <img src={bg} alt="" />
             <div className="abs-title">
               <h1>DASTURLASH</h1>
@@ -46,12 +46,12 @@ const Showcase = () => {
             <img className="ai-img ai3" src={ai3} alt="" />
             <img className="ai-img ai4" src={ai4} alt="" />
             <img className="ai-img ai5" src={ai5} alt="" />
-          </div> */}
-          <img
+          </div>
+          {/* <img
             className="showcase-container__right__grand"
             data-aos="fade-left"
             src={grand}
-          />
+          /> */}
         </div>
       </div>
     </Container>

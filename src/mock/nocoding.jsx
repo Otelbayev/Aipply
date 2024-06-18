@@ -36,7 +36,7 @@ export const noCoding = {
   name: "No Coding",
   keywords: "no coding, tilda, no coding uz, kod yozmasdan dastur yaratish",
   showcase: {
-    title: "Kod yozmasdan dastur yaratishni o’rganing",
+    title: "Kod yozmasdan dastur yaratishni o’rganing!",
     desc: "Biz sizga zamonaviy bilimlar asosida No-Codingni o’rgatamiz va sizni daromatga olib chiqamiz",
   },
   statistics: {

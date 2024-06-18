@@ -36,7 +36,7 @@ export const birOy = {
   name: "No Coding",
   keywords: "no coding, tilda, no coding uz, kod yozmasdan dastur yaratish",
   showcase: {
-    title: "Bir oyda dastur yaratishni o’rganing",
+    title: "Bir oyda veb sayt yaratishni o’rganing!",
     desc: "Biz sizga zamonaviy bilimlar asosida No-Codingni o’rgatamiz va sizni daromatga olib chiqamiz",
   },
   statistics: {

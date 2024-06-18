@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 50px 0;
-  height: calc(100dvh - 65px);
+  /* height: calc(100dvh - 65px); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@ export const Container = styled.div`
       display: flex;
       flex-direction: column;
       gap: 20px;
-      width: 50%;
+      width: 60%;
       &__title {
         font-family: Gilroy;
         font-size: 55px;
@@ -84,6 +84,7 @@ export const Container = styled.div`
   }
   @media (max-width: 700px) {
     .course-showcase {
+      gap: 0;
       &__left {
         &__title {
           font-size: 30px;

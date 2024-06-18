@@ -40,7 +40,7 @@ export const interior = {
   name: "Interior/Exterior Dizayn",
   keywords: "Interior, Exterior, dizayn, grifika, 3d max",
   showcase: {
-    title: "Interior/Exterior dizayn sohasini zamon talabida o’rganing",
+    title: "Interior/Exterior dizayn sohasini zamon talabida o’rganing!",
     desc: "Siz singa zamonaviy bilimlar asosida Interior/Exterior dizaynni o’rgatamiz va sizni daromatga olib chiqamiz",
   },
   statistics: {
