@@ -20,6 +20,10 @@ export const Container = styled.form`
   @media (max-width: 850px) {
     width: 100%;
   }
+  @media (max-width: 600px) {
+    padding: 20px;
+    border-radius: 15px;
+  }
 `;
 
 export const Title = styled.div`

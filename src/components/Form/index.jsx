@@ -58,7 +58,7 @@ const Form = ({
       "/reactjs": 7,
       "/in-ex-design": 8,
       "/motion-design": 9,
-      "/bir-oyda-bir-veb-sayt": 10,
+      "/bir-oyda-bir-veb-sayt": 11,
     };
     return obj[path];
   }

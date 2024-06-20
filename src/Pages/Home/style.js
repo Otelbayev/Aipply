@@ -5,6 +5,9 @@ export const Container = styled.div``;
 
 export const WhyContainer = styled.div`
   margin: 80px 0 50px;
+  @media (max-width: 700px) {
+    margin: 20px 0;
+  }
 `;
 
 WhyContainer.Main = styled.div`

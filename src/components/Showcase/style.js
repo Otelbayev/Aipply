@@ -134,7 +134,7 @@ export const Container = styled.div`
       &__left {
         width: 100%;
         &__title {
-          /* margin-bottom: 600px; */
+          margin-bottom: 550px;
           width: 100%;
           text-align: center;
         }
@@ -160,7 +160,7 @@ export const Container = styled.div`
         &__title {
           font-size: 30px;
           line-height: 30px;
-          /* margin-bottom: 530px; */
+          margin-bottom: 500px;
         }
       }
       &__right {
@@ -184,7 +184,7 @@ export const Container = styled.div`
         &__title {
           font-size: 22px;
           line-height: 25px;
-          /* margin-bottom: 400px; */
+          margin-bottom: 400px;
         }
       }
       &__right {

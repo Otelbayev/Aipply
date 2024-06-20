@@ -34,24 +34,25 @@ export const Container = styled.div`
       }
     }
     &__right {
-      width: 50%;
+      width: 40%;
       img {
-        height: 500px;
+        height: 400px;
       }
     }
   }
   @media (max-width: 1160px) {
     height: auto;
     .course-showcase {
+      gap: 10px;
       &__left {
-        width: 50%;
+        width: 60%;
         &__title {
           font-size: 40px;
           line-height: 43px;
         }
       }
       &__right {
-        width: 50%;
+        width: 40%;
         img {
           width: 100%;
           height: 100%;
@@ -62,7 +63,7 @@ export const Container = styled.div`
   @media (max-width: 800px) {
     .course-showcase {
       flex-direction: column;
-      gap: 50px;
+      gap: 10px;
       &__left {
         width: 100%;
         &__title {
@@ -84,7 +85,7 @@ export const Container = styled.div`
   }
   @media (max-width: 700px) {
     .course-showcase {
-      gap: 0;
+      /* gap: 0; */
       &__left {
         &__title {
           font-size: 30px;
@@ -93,7 +94,7 @@ export const Container = styled.div`
         }
       }
       &__right {
-        width: 70%;
+        width: 60%;
         img {
           width: 100%;
           height: 100%;
