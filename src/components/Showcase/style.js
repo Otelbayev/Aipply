@@ -127,14 +127,13 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 990px) {
-    height: auto;
     .showcase-container {
-      flex-direction: column;
-      padding: 50px 0;
+      flex-direction: column-reverse;
+      /* padding: 50px 0; */
       &__left {
         width: 100%;
+        margin-bottom: 500px;
         &__title {
-          margin-bottom: 550px;
           width: 100%;
           text-align: center;
         }
@@ -143,7 +142,8 @@ export const Container = styled.div`
         width: 100%;
         text-align: center;
         &__img {
-          top: 180px;
+          top: auto;
+          bottom: 0;
           right: 50%;
           transform: translateX(48%);
         }
@@ -155,19 +155,16 @@ export const Container = styled.div`
   }
   @media (max-width: 700px) {
     .showcase-container {
-      padding: 30px 0;
       &__left {
         &__title {
           font-size: 30px;
           line-height: 30px;
-          margin-bottom: 500px;
         }
       }
       &__right {
         &__img {
           width: 530px;
           height: 480px;
-          top: 150px;
           .ai-img {
             width: 40px;
             height: 40px;
@@ -179,19 +176,17 @@ export const Container = styled.div`
   @media (max-width: 500px) {
     margin: 0;
     .showcase-container {
-      padding: 30px 0;
       &__left {
+        margin-bottom: 400px;
         &__title {
           font-size: 22px;
           line-height: 25px;
-          margin-bottom: 400px;
         }
       }
       &__right {
         &__img {
           width: 430px;
           height: 380px;
-          top: 120px;
           .abs-title {
             h1 {
               font-size: 13px;
@@ -209,15 +204,14 @@ export const Container = styled.div`
   @media (max-width: 400px) {
     .showcase-container {
       &__left {
+        margin-bottom: 350px;
         &__title {
-          /* margin-bottom: 350px; */
         }
       }
       &__right {
         &__img {
           width: 100%;
           height: 45%;
-          top: 120px;
           .abs-title {
             h1 {
               font-size: 13px;
