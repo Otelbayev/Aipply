@@ -36,7 +36,7 @@ const Course = ({ data }) => {
           </div>
         </div>
         <Button onClick={() => navigate(`/${data?.path}`)}>
-          Bepul darsga yozilish
+          Bepul ochiq darsga yozilish
         </Button>
       </div>
     </Container>

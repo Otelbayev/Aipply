@@ -166,7 +166,7 @@ const Home = () => {
                 <div className="bottom__left__form">
                   <Form
                     data={{
-                      big: "Bepul darsga yozilish",
+                      big: "Bepul ochiq darsga yozilish",
                     }}
                     background="#F3F8FF"
                     grid={"1/3"}

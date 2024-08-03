@@ -22,7 +22,9 @@ const Footer = () => {
                 <Content.Link to="/#about">Biz haqimizda</Content.Link>
                 <Content.Link to="/#course">Kurslar</Content.Link>
                 <Content.Link to="/#mentor">Mentorlar</Content.Link>
-                <Content.Link to="/#free">Bepul darsga yozilish</Content.Link>
+                <Content.Link to="/#free">
+                  Bepul ochiq darsga yozilish
+                </Content.Link>
               </div>
               <div>
                 <div className="footer-media">

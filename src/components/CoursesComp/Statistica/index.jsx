@@ -71,7 +71,7 @@ const Statistica = ({ data }) => {
             <div className="statistic-content__right__form">
               <Form
                 background="#F3F8FF"
-                data={{ big: "Bepul darsga yoziling" }}
+                data={{ big: "Bepul ochiq darsga yoziling" }}
               />
             </div>
           </div>
