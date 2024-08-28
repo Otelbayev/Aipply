@@ -90,17 +90,6 @@ export const why = [
 
 export const course = [
   {
-    id: 100,
-    img: img2,
-    title: "Bir oyda bir veb-sayt",
-    path: "bir-oyda-bir-veb-sayt",
-    kurs: "1 oy",
-    dars: "Haftada 3 marta 2 soatdan",
-    tech: "Ushbu kurs barcha biznes egalariga mo'ljallangan bo'lib, kurs uchun joylarimiz soni va chegirma vaqti cheklangan. Tezda ro'yxatdan o'ting va o'z biznesingizni yangi olamga olib chiqish imkoniyatini qo'ldan boy bermang.",
-    slogan:
-      "Bir qator kodsiz g'oyalarni ilovalarga aylantiring loyihalaringiz kelajagi shu yerdan boshlanadi!",
-  },
-  {
     id: 1,
     img: img,
     title: "Grafik dizayn + AI 1.0",
@@ -110,71 +99,6 @@ export const course = [
     tech: "Photoshop, Illustrator, Figma, Indesign, Coreldraw dasturlari hamda ushbu soha bo'yicha sun’iy intellekt (Midjourney, Leanardo AI, DALL-E) lar yordamida sifatli 2D-vizualizatsiya va modellashtirish vositalarini batafsil o'rgatish. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
     slogan:
       " Grafik dizayn: g'oyadan eng Shedevrgacha. Ijodkorligingizni biz bilan boshlang!",
-  },
-  {
-    id: 3,
-    img: img3,
-    title: "Kompyuter savodxonligi 1.0",
-    path: "computer-science",
-    kurs: "1 oy",
-    dars: "Haftada 3 marta 2 soatdan",
-    tech: "Kompyuter qurilmalari, Operatsion tizimlar va ofis dasturlaridan foydalanishni o’rganish.",
-    slogan:
-      "Texnologiyani o'zlashtiring, kelajakni o'zlashtiring: kompyuter savodxonligiga yo'lingiz shu yerda boshlanadi!",
-  },
-  {
-    id: 4,
-    img: foundation,
-    title: "Coding foundation + AI 1.0",
-    path: "foundation",
-    kurs: "1 oy",
-    dars: "Haftada 3 marta 2 soatdan",
-    tech: " IT (dasturlash) olamiga kirish, akademiyada mavjud kurslar  va texnologiyalar bo'yicha boshlang'ich tushunchalar olish.",
-    slogan:
-      "Dasturlash san'atini o'zlashtirish uchun birinchi qadam bizdan boshlanadi!",
-  },
-  {
-    id: 2,
-    img: img2,
-    title: "No-Coding Web/Mobile 1.0",
-    path: "no-coding",
-    kurs: "6 oy",
-    dars: "Haftada 3 marta 2 soatdan",
-    tech: "Dasturlash tajribasiga ega bo'lmaganlarga grafik interfeyslar va mantiqiy konstruktorlar yordamida veb-saytlar, mobil ilovalar yaratish, vazifalarni avtomatlashtirish imkonini beradi. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
-    slogan:
-      "Bir qator kodsiz g'oyalarni ilovalarga aylantiring loyihalaringiz kelajagi shu yerdan boshlanadi!",
-  },
-  // {
-  //   id: 5,
-  //   img: dotnet,
-  //   title: "C#, .Net + AI 1.0",
-  //   path: "dotnet",
-  //   kurs: "6 oy",
-  //   dars: "Haftada 3 marta 2 soatdan",
-  //   tech: "C# va .Net ni o'zlashtirish, dasturlash asoslaridan tortib, professional dasturlarni yaratish va veb-ilova ishlab chiqishgacha. Professional texnologiyalar va sun’iy intellekt bilan kuchli, kengaytiriladigan yechimlarni yaratishni o'rgatish. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
-  //   slogan:
-  //     " C# va .Net ni mukammal o'zlashtiring: professional dasturlarni yaratish kaliti shu yerda!",
-  // },
-  {
-    id: 6,
-    img: python,
-    title: "Python-Django-TensorFlow +AI 1.0",
-    path: "python",
-    kurs: "6 oy",
-    dars: "Haftada 3 marta 2 soatdan",
-    tech: "Python ni o'zlashtirish, dasturlash asoslaridan tortib, professional dasturlarni yaratish va veb-ilova ishlab chiqishgacha. Professional texnologiyalar va sun’iy intellekt bilan kuchli, kengaytiriladigan yechimlarni yaratishni o'rgatish. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
-    slogan:
-      "G'oyalarni haqiqatga aylantirish: Python va Django sizning professional rivojlanishga ilk qadamingiz!",
-  },
-  {
-    id: 7,
-    img: frontend,
-    title: "Frontend React + AI 1.0",
-    path: "reactjs",
-    kurs: "8 oy",
-    dars: "Haftada 3 marta 2 soatdan",
-    tech: "React.js da dinamik, interaktiv veb-ilovalarni qanday yaratishni, front-end ishlab chiqishning eng yaxshi amaliyotlarini va zamonaviy vositalarni o‘rgatish. Professional texnologiyalar va sun’iy intellekt bilan kuchli, kengaytiriladigan yechimlarni yaratishni o'rgatish. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
-    slogan: "React.js dinamik va intuitiv veb-ilovalarni yaratish kalitidir!",
   },
   {
     id: 8,
@@ -197,6 +121,71 @@ export const course = [
     tech: "Adobe After Effects,  Adobe Premiere Pro, Adobe Audition, Adobe Encoder dasturlari hamda ushbu soha bo'yicha sun’iy intellektlar yordamida sifatli Videomontaj vositalarini batafsil o'rgatish. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
     slogan:
       "Moushen grafika va videomontaj, multimedia dizayni va yaratilishining ikki muhim sohasidir!",
+  },
+  {
+    id: 2,
+    img: img2,
+    title: "No-Coding Web/Mobile 1.0",
+    path: "no-coding",
+    kurs: "6 oy",
+    dars: "Haftada 3 marta 2 soatdan",
+    tech: "Dasturlash tajribasiga ega bo'lmaganlarga grafik interfeyslar va mantiqiy konstruktorlar yordamida veb-saytlar, mobil ilovalar yaratish, vazifalarni avtomatlashtirish imkonini beradi. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
+    slogan:
+      "Bir qator kodsiz g'oyalarni ilovalarga aylantiring loyihalaringiz kelajagi shu yerdan boshlanadi!",
+  },
+  {
+    id: 3,
+    img: img3,
+    title: "Kompyuter savodxonligi 1.0",
+    path: "computer-science",
+    kurs: "1 oy",
+    dars: "Haftada 3 marta 2 soatdan",
+    tech: "Kompyuter qurilmalari, Operatsion tizimlar va ofis dasturlaridan foydalanishni o’rganish.",
+    slogan:
+      "Texnologiyani o'zlashtiring, kelajakni o'zlashtiring: kompyuter savodxonligiga yo'lingiz shu yerda boshlanadi!",
+  },
+  {
+    id: 100,
+    img: img2,
+    title: "Bir oyda bir veb-sayt",
+    path: "bir-oyda-bir-veb-sayt",
+    kurs: "1 oy",
+    dars: "Haftada 3 marta 2 soatdan",
+    tech: "Ushbu kurs barcha biznes egalariga mo'ljallangan bo'lib, kurs uchun joylarimiz soni va chegirma vaqti cheklangan. Tezda ro'yxatdan o'ting va o'z biznesingizni yangi olamga olib chiqish imkoniyatini qo'ldan boy bermang.",
+    slogan:
+      "Bir qator kodsiz g'oyalarni ilovalarga aylantiring loyihalaringiz kelajagi shu yerdan boshlanadi!",
+  },
+  {
+    id: 4,
+    img: foundation,
+    title: "Coding foundation + AI 1.0",
+    path: "foundation",
+    kurs: "1 oy",
+    dars: "Haftada 3 marta 2 soatdan",
+    tech: " IT (dasturlash) olamiga kirish, akademiyada mavjud kurslar  va texnologiyalar bo'yicha boshlang'ich tushunchalar olish.",
+    slogan:
+      "Dasturlash san'atini o'zlashtirish uchun birinchi qadam bizdan boshlanadi!",
+  },
+  {
+    id: 7,
+    img: frontend,
+    title: "Frontend React + AI 1.0",
+    path: "reactjs",
+    kurs: "8 oy",
+    dars: "Haftada 3 marta 2 soatdan",
+    tech: "React.js da dinamik, interaktiv veb-ilovalarni qanday yaratishni, front-end ishlab chiqishning eng yaxshi amaliyotlarini va zamonaviy vositalarni o‘rgatish. Professional texnologiyalar va sun’iy intellekt bilan kuchli, kengaytiriladigan yechimlarni yaratishni o'rgatish. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
+    slogan: "React.js dinamik va intuitiv veb-ilovalarni yaratish kalitidir!",
+  },
+  {
+    id: 6,
+    img: python,
+    title: "Python-Django-TensorFlow +AI 1.0",
+    path: "python",
+    kurs: "6 oy",
+    dars: "Haftada 3 marta 2 soatdan",
+    tech: "Python ni o'zlashtirish, dasturlash asoslaridan tortib, professional dasturlarni yaratish va veb-ilova ishlab chiqishgacha. Professional texnologiyalar va sun’iy intellekt bilan kuchli, kengaytiriladigan yechimlarni yaratishni o'rgatish. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
+    slogan:
+      "G'oyalarni haqiqatga aylantirish: Python va Django sizning professional rivojlanishga ilk qadamingiz!",
   },
 ];
 
