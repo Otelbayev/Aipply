@@ -42,7 +42,12 @@ Courses.Item = styled.div`
   padding: 0 10px;
   width: 33.33333%;
   margin: 10px 0;
-  
+  @media screen and (max-width: 930px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 630px) {
+    width: 100%;
+  }
 `;
 
 export const Icons = styled.div``;

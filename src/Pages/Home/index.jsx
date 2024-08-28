@@ -92,14 +92,14 @@ const Home = () => {
               <div ref={courseRef} className="title">
                 Mavjud kurslar
               </div>
-              <div>
+              {/* <div>
                 <button onClick={() => sliderRef?.current?.slickPrev()}>
                   <Icons.Prev />
                 </button>
                 <button onClick={() => sliderRef?.current?.slickNext()}>
                   <Icons.Next />
                 </button>
-              </div>
+              </div> */}
             </Courses.Top>
             <Courses.Main>
               {/* <Slider ref={sliderRef} {...settings}> */}
