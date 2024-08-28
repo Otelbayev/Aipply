@@ -5,6 +5,7 @@ import { routes } from "../utils/routes";
 import Context from "../context";
 import { HelmetProvider } from "react-helmet-async";
 import Not from "../Pages/Not";
+import Coding from "../Pages/Coding";
 
 const Root = () => {
   return (
@@ -18,6 +19,7 @@ const Root = () => {
               ))}
             </Route>
             <Route path="*" element={<Not />} />
+            <Route path="/lid-for-coding" element={<Coding />} />
           </Routes>
         </BrowserRouter>
       </HelmetProvider>
