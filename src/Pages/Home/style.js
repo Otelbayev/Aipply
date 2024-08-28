@@ -35,9 +35,14 @@ Courses.Top = styled.div`
 
 Courses.Main = styled.div`
   margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
 `;
 Courses.Item = styled.div`
   padding: 0 10px;
+  width: 33.33333%;
+  margin: 10px 0;
+  
 `;
 
 export const Icons = styled.div``;

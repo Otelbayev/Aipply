@@ -10,11 +10,11 @@ const Course = ({ data }) => {
       <div className="course-content">
         <div>
           <div className="image-container">
-            <img className="course-content__img" src={data?.img} alt="" />
             <div className="course-content__title">{data?.title}</div>
+            <img className="course-content__img" src={data?.img} alt="" />
           </div>
           <div className="course-content__data">
-            <div className="course-content__data__item">
+            {/* <div className="course-content__data__item">
               <span>Kurs davomiyligi:</span>
               {data?.kurs}
             </div>
@@ -28,16 +28,18 @@ const Course = ({ data }) => {
             <div className="course-content__data__item">
               <span>Nimalar o'rgatiladi:</span>
               {data?.tech}
-            </div>
-            <div className="course-content__data__item">
+            </div> */}
+            {/* <div className="course-content__data__item">
               <span>Slogan:</span>
               {data?.slogan}
+            </div> */}
+            <div className="course-content__data__motiv">{data?.slogan}</div>
+            <div className="course-content__data__oy">
+              {data?.kurs} + sertifikat
             </div>
           </div>
         </div>
-        <Button onClick={() => navigate(`/${data?.path}`)}>
-          Bepul ochiq darsga yozilish
-        </Button>
+        <Button onClick={() => navigate(`/${data?.path}`)}>Batafsil</Button>
       </div>
     </Container>
   );

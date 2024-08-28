@@ -102,13 +102,13 @@ const Home = () => {
               </div>
             </Courses.Top>
             <Courses.Main>
-              <Slider ref={sliderRef} {...settings}>
+              {/* <Slider ref={sliderRef} {...settings}> */}
                 {course.map((data) => (
                   <Courses.Item key={data?.id}>
                     <Course data={data} />
                   </Courses.Item>
                 ))}
-              </Slider>
+              {/* </Slider> */}
             </Courses.Main>
           </Courses>
           <FormWrap />
