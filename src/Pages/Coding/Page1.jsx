@@ -8,9 +8,9 @@ const Page1 = ({ setSteps }) => {
   return (
     <div className="page1">
       <NavLink to="/">
-        <img className="logo" style={{ height: "100px" }} src={logo} />
+        <img className="logo"  src={logo} />
       </NavLink>
-      <div className="title">
+      <div className="title-page">
         Dasturlash sohasini mukammal o‘rganishni xohlaysizmi?
       </div>
       <ul className="list">
@@ -23,7 +23,7 @@ const Page1 = ({ setSteps }) => {
         <li>shaxsiy portfolio</li>
         <li>sertifikat</li>
       </ul>
-      <div className="title">To’liq kursga 40% chegirma!</div>
+      <div className="title-page">To’liq kursga 40% chegirma!</div>
       <Button
         style={{
           width: "200px",

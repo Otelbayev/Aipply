@@ -30,6 +30,9 @@ const Form = ({
   telegramName,
   telegramLink,
   telegramDesc,
+  style,
+  confirm,
+  formData,
 }) => {
   const [name, setName] = useState("");
   const [num, setNum] = useState("");
@@ -80,11 +83,14 @@ const Form = ({
         await axios
           .post(
             "https://admin.aipply.uz/api/create_order",
-            {
-              name: name,
-              phone: num,
-              course_id,
-            },
+            formData
+              ? { ...formData, name: name, phone: num }
+              : {
+                  name: name,
+                  phone: num,
+                  course_id,
+                  form_study_id: 1,
+                },
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -134,11 +140,12 @@ const Form = ({
         $blur={blur}
         $background={background}
         onSubmit={handleFormSubmit}
+        style={style}
       >
         <div>
-          <Title>{data?.title && data?.title}</Title>
-          <BigTitle $center={center}>{data?.big && data?.big}</BigTitle>
-          <Desc>{data?.desc && data?.desc}</Desc>
+          {data?.title && <Title>{data?.title}</Title>}
+          {data?.big && <BigTitle $center={center}>{data?.big}</BigTitle>}
+          {data?.desc && <Desc>{data?.desc}</Desc>}
         </div>
         <Wrap>
           <Input
@@ -162,7 +169,12 @@ const Form = ({
             }}
             value={num}
           />
-          <Button disabled={loading} $loading={loading} type="submit">
+          <Button
+            disabled={loading || !confirm}
+            $loading={loading}
+            style={!confirm ? { opacity: 0.5, cursor: "not-allowed" } : {}}
+            type="submit"
+          >
             {loading ? "Yuborilmoqda..." : "Yuborish"}
           </Button>
         </Wrap>

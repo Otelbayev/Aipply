@@ -6,30 +6,33 @@ import { NavLink } from "react-router-dom";
 import { Radio } from "antd";
 
 const Page3 = ({ setSteps, course, setCourse }) => {
+  console.log(course);
   return (
     <div className="page1">
       <NavLink to="/">
-        <img className="logo" style={{ height: "100px" }} src={logo} />
+        <img className="logo" src={logo} />
       </NavLink>
-      <div className="title">
+      <div className="title-page">
         Siz qiziqqan dasturlash kurslarini belgilashingiz mumkin!
       </div>
       <ul className="list">
         <Radio.Group
-          size="large"
+          defaultValue={course}
           onChange={(e) => setCourse(e.target.value)}
+          buttonStyle="solid"
           value={course}
+          size="large"
         >
-          <Radio value={4}>
-            <div>
+          <div>
+            <Radio value={4}>
               <li>Coding foundation</li>
-            </div>
-          </Radio>
-          <Radio value={3}>
-            <div>
+            </Radio>
+          </div>
+          <div>
+            <Radio value={3}>
               <li>Nocode web/mobile</li>
-            </div>
-          </Radio>
+            </Radio>
+          </div>
           <div>
             <Radio value={11}>
               <li>Nocode Bir oyda bir web-sayt</li>

@@ -9,29 +9,20 @@ const Page2 = ({ setSteps, online, setOnline }) => {
   return (
     <div className="page2">
       <NavLink to="/">
-        <img className="logo" style={{ height: "100px" }} src={logo} />
+        <img className="logo"  src={logo} />
       </NavLink>
-      <div className="title">O‘qishning qaysi shakli Siz uchun qulay?</div>
+      <div className="title-page">O‘qishning qaysi shakli Siz uchun qulay?</div>
 
       <Radio.Group
         defaultValue={online}
         onChange={(e) => setOnline(e.target.value)}
         buttonStyle="solid"
         value={online}
-        style={{ fontSize: "50px" }}
+        style={{ margin: "30px 0" }}
+        size="large"
       >
-        <Radio.Button
-          style={{ fontSize: "25px", height: "60px", lineHeight: "60px" }}
-          value={1}
-        >
-          Offline (Toshkent)
-        </Radio.Button>
-        <Radio.Button
-          style={{ fontSize: "25px", height: "60px", lineHeight: "60px" }}
-          value={2}
-        >
-          Online
-        </Radio.Button>
+        <Radio.Button value={1}>Offline (Toshkent)</Radio.Button>
+        <Radio.Button value={2}>Online</Radio.Button>
       </Radio.Group>
 
       <Button
