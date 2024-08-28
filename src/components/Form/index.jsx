@@ -170,9 +170,15 @@ const Form = ({
             value={num}
           />
           <Button
-            disabled={loading || !confirm}
+            disabled={loading || confirm?.toString() ? !confirm : false}
             $loading={loading}
-            style={!confirm ? { opacity: 0.5, cursor: "not-allowed" } : {}}
+            style={
+              confirm?.toString()
+                ? !confirm
+                  ? { opacity: 0.5, cursor: "not-allowed" }
+                  : {}
+                : {}
+            }
             type="submit"
           >
             {loading ? "Yuborilmoqda..." : "Yuborish"}
