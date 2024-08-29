@@ -6,6 +6,7 @@ import Context from "../context";
 import { HelmetProvider } from "react-helmet-async";
 import Not from "../Pages/Not";
 import Coding from "../Pages/Coding";
+import Privacy from "../Pages/Privacy";
 
 const Root = () => {
   return (
@@ -20,6 +21,7 @@ const Root = () => {
             </Route>
             <Route path="*" element={<Not />} />
             <Route path="/lid-for-coding" element={<Coding />} />
+            <Route path="/privacy" element={<Privacy />} />
           </Routes>
         </BrowserRouter>
       </HelmetProvider>
