@@ -222,6 +222,16 @@ export const Container = styled.div`
       &__form {
         width: 90%;
       }
+      &__list {
+        margin-left: 50px;
+      }
+      &__btns {
+        margin: 5px 0;
+      }
+      &__title {
+        font-size: 26px;
+        margin: 8px 0;
+      }
     }
   }
 `;

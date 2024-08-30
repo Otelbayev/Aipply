@@ -23,8 +23,6 @@ const Coding = () => {
     course_id: course,
   };
 
-  console.log(course);
-
   return (
     <div>
       {steps[1] && <Page1 setSteps={setSteps} />}
