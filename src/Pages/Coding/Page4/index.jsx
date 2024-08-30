@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import logo from "../../../assets/icons/logo1.png";
+import back from "../../../assets/icons/left-arrow.png";
 import { NavLink } from "react-router-dom";
 import { Checkbox, message } from "antd";
 import { Container } from "../style";
 import axios from "axios";
 
 const Page4 = ({ formData, setSteps }) => {
-  const [confirm, setConfirm] = useState(false);
-
   const token = import.meta.env.VITE_APP_API_TOKEN;
 
   const [nameStyle, setNameStyle] = useState(null);
@@ -120,19 +119,10 @@ const Page4 = ({ formData, setSteps }) => {
             type="submit"
             className="content__form__button"
             value={"Yuborish"}
-            disabled={!confirm}
-            style={
-              confirm
-                ? ({ cursor: "pointer" }, { opacity: 1 })
-                : ({ cursor: "not-allowed" }, { opacity: 0.5 })
-            }
           />
         </form>
         <div className="content__checkbox-wrap">
-          <Checkbox
-            onChange={(e) => setConfirm(e.target.checked)}
-            className="content__checkbox-wrap__checkbox"
-          >
+          <Checkbox checked={true} className="content__checkbox-wrap__checkbox">
             Men shaxsiy ma’lumotlarni qayta ishlash to‘g‘isidagi Nizom va
             Maxfiylik siyosatini o‘qib chiqtim va ularga{" "}
             <NavLink target="_blank" to="/privacy">
@@ -140,6 +130,22 @@ const Page4 = ({ formData, setSteps }) => {
             </NavLink>
             !
           </Checkbox>
+        </div>
+        <div className="content__btns">
+          <button
+            onClick={() => {
+              setSteps({
+                1: false,
+                2: false,
+                3: true,
+                4: false,
+                5: false,
+              });
+            }}
+            className="content__btns--back btn"
+          >
+            <img style={{ width: "30px" }} src={back} alt="" />
+          </button>
         </div>
       </div>
     </Container>

@@ -130,13 +130,12 @@ export const Container = styled.div`
       align-items: center;
       gap: 5px;
       .btn {
-        padding: 8px 20px;
         display: flex;
         align-items: center;
         gap: 5px;
         font-size: 16px;
         font-weight: 500;
-        border: none;
+
         cursor: pointer;
         color: #fff;
 
@@ -155,20 +154,19 @@ export const Container = styled.div`
         }
       }
       &--next {
+        padding: 8px 20px;
         background-image: linear-gradient(
           to right,
           #24c6dc 0%,
           #514a9d 51%,
           #24c6dc 100%
         );
+        border: none;
       }
       &--back {
-        background-image: linear-gradient(
-          to right,
-          #dc2424 0%,
-          #4a569d 51%,
-          #dc2424 100%
-        );
+        padding: 7px 20px;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 255, 0.3);
       }
     }
   }

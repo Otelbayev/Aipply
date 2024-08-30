@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../../assets/icons/logo1.png";
-import icon from "../../../assets/icons/iconnext.png";
+import icon from "../../../assets/icons/right-arrow.png";
 import { NavLink } from "react-router-dom";
 import { Container } from "../style";
 

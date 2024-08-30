@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../../assets/icons/logo1.png";
-import icon from "../../../assets/icons/iconnext.png";
+import icon from "../../../assets/icons/right-arrow.png";
+import back from "../../../assets/icons/left-arrow.png";
 import { Radio } from "antd";
 import { NavLink } from "react-router-dom";
 import { Container } from "../style";
@@ -40,12 +41,7 @@ const Page2 = ({ setSteps, online, setOnline }) => {
             }}
             className="content__btns--back btn"
           >
-            <img
-              style={{ width: "30px", transform: "rotate(180deg)" }}
-              src={icon}
-              alt=""
-            />{" "}
-            Orqaga
+            <img style={{ width: "30px" }} src={back} alt="" />
           </button>
           <button
             onClick={() =>
