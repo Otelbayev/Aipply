@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../../assets/icons/logo1.png";
 import back from "../../../assets/icons/left-arrow.png";
+import icon from "../../../assets/icons/right-arrow.png";
 import { NavLink } from "react-router-dom";
 import { Checkbox, message } from "antd";
 import { Container } from "../style";
@@ -93,7 +94,7 @@ const Page4 = ({ formData, setSteps }) => {
         <p className="content__min-title">
           Biz Sizga qo‘ng‘iroq qilamiz va barcha savollaringizga javob beramiz!
         </p>
-        <form className="content__form" onSubmit={handleSubmit}>
+        <form className="content__form">
           <input
             type="text"
             className="content__form__input"
@@ -115,29 +116,19 @@ const Page4 = ({ formData, setSteps }) => {
             }}
             value={num}
           />
-          <input
+          {/* <input
             type="submit"
             className="content__form__button"
             value={"Yuborish"}
-          />
+          /> */}
         </form>
-        <div className="content__checkbox-wrap">
-          <Checkbox checked={true} className="content__checkbox-wrap__checkbox">
-            Men shaxsiy ma’lumotlarni qayta ishlash to‘g‘isidagi Nizom va
-            Maxfiylik siyosatini o‘qib chiqtim va ularga{" "}
-            <NavLink target="_blank" to="/privacy">
-              roziman
-            </NavLink>
-            !
-          </Checkbox>
-        </div>
         <div className="content__btns">
           <button
             onClick={() => {
               setSteps({
                 1: false,
-                2: false,
-                3: true,
+                2: true,
+                3: false,
                 4: false,
                 5: false,
               });
@@ -146,6 +137,17 @@ const Page4 = ({ formData, setSteps }) => {
           >
             <img style={{ width: "30px" }} src={back} alt="" />
           </button>
+          <button onClick={handleSubmit} className="content__btns--next btn">
+            Yuborish <img style={{ width: "30px" }} src={icon} alt="" />
+          </button>
+        </div>
+        <div className="content__checkbox-wrap">
+          <Checkbox checked={true} className="content__checkbox-wrap__checkbox">
+            <NavLink target="_blank" to="/privacy">
+              Men shaxsiy ma’lumotlarni qayta ishlash to‘g‘isidagi Nizom va
+              Maxfiylik siyosatini o‘qib chiqtim va ularga roziman!
+            </NavLink>
+          </Checkbox>
         </div>
       </div>
     </Container>

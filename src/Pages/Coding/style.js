@@ -56,7 +56,6 @@ export const Container = styled.div`
       width: 90%;
       margin: 15px 0;
       &__checkbox {
-        /* color: #0000b0; */
         font-size: 16px;
       }
     }
@@ -112,9 +111,32 @@ export const Container = styled.div`
     &__link {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 15px;
       margin: 10px 0;
       text-decoration: none;
+      width: 280px;
+      margin: 10px 0;
+      padding: 8px 0;
+      position: relative;
+      $border: 5px;
+      background: #fff;
+      background-clip: padding-box;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 255, 0.2);
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -1px;
+        border-radius: inherit;
+        background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
+      }
 
       &__icon {
         width: 30px;
@@ -128,7 +150,7 @@ export const Container = styled.div`
       margin: 15px 0;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 10px;
       .btn {
         display: flex;
         align-items: center;
@@ -164,9 +186,27 @@ export const Container = styled.div`
         border: none;
       }
       &--back {
-        padding: 7px 20px;
+        padding: 7px 10px;
         background: #fff;
-        border: 1px solid rgba(0, 0, 255, 0.3);
+        position: relative;
+        $border: 5px;
+        background: #fff;
+        background-clip: padding-box;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.2);
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+          margin: -1px;
+          border-radius: inherit;
+          background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
+        }
       }
     }
   }

@@ -3,7 +3,7 @@ import logo from "../../../assets/icons/logo1.png";
 import icon from "../../../assets/icons/right-arrow.png";
 import back from "../../../assets/icons/left-arrow.png";
 import { NavLink } from "react-router-dom";
-import { Radio } from "antd";
+import { Checkbox, Radio } from "antd";
 import { Container } from "../style";
 
 const Page3 = ({ setSteps, course, setCourse }) => {
@@ -17,43 +17,37 @@ const Page3 = ({ setSteps, course, setCourse }) => {
           Siz qiziqqan dasturlash kurslarini belgilashingiz mumkin!
         </div>
         <ul className="content__list">
-          <Radio.Group
-            defaultValue={course}
-            onChange={(e) => setCourse(e.target.value)}
-            buttonStyle="solid"
-            value={course}
-            size="large"
-          >
+          <div>
             <div>
-              <Radio value={4}>
+              <Checkbox>
                 <li className="content__list__item">Coding foundation</li>
-              </Radio>
+              </Checkbox>
             </div>
             <div>
-              <Radio value={3}>
+              <Checkbox>
                 <li className="content__list__item">Nocode web/mobile</li>
-              </Radio>
+              </Checkbox>
             </div>
             <div>
-              <Radio value={11}>
+              <Checkbox>
                 <li className="content__list__item">
                   Nocode Bir oyda bir web-sayt
                 </li>
-              </Radio>
+              </Checkbox>
             </div>
             <div>
-              <Radio value={7}>
+              <Checkbox>
                 <li className="content__list__item">Frontend React.js +AI</li>
-              </Radio>
+              </Checkbox>
             </div>
             <div>
-              <Radio value={6}>
+              <Checkbox>
                 <li className="content__list__item">
                   Python Jango TensorFlow +AI
                 </li>
-              </Radio>
+              </Checkbox>
             </div>
-          </Radio.Group>
+          </div>
         </ul>
 
         <div className="content__btns">

@@ -48,8 +48,8 @@ const Page2 = ({ setSteps, online, setOnline }) => {
               setSteps({
                 1: false,
                 2: false,
-                3: true,
-                4: false,
+                3: false,
+                4: true,
                 5: false,
               })
             }

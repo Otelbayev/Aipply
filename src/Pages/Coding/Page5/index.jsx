@@ -15,9 +15,7 @@ const Page5 = ({ formData }) => {
         <div className="content__title">
           Siz muvofaqaiyatli ro'yxatdan o'tdingiz!
         </div>
-        <div className="content__title">
-          Sizni rasmiy sahifalarimizga taklif qilamiz.
-        </div>
+
         <div className="content__min-title">
           Bizning rasmiy sahifalarimiz orqali zamonaviy kasblar bo'yicha
           qiziqarli va foydali ma'lumotlarni olishingiz mumkin!

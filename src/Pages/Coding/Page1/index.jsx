@@ -44,7 +44,7 @@ const Page1 = ({ setSteps }) => {
             Davom Etish <img style={{ width: "30px" }} src={icon} alt="" />
           </button>
         </div>
-        <p className="content__call">Bizga qo'ng'iroq qiling.</p>
+        <p className="content__call">Bizga qo'ng'iroq qiling</p>
         <a className="content__phone" href="tel:+998771233300">
           +998771233300
         </a>
