@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Container } from "./style";
 import Page1 from "./Page1";
 import Page2 from "./Page2";
 import Page3 from "./Page3";
 import Page4 from "./Page4";
-import bg1 from "../../assets/videos/bg2.gif";
+import Page5 from "./Page5";
 
 const Coding = () => {
   const [steps, setSteps] = useState({
@@ -12,6 +12,7 @@ const Coding = () => {
     2: false,
     3: false,
     4: false,
+    5: false,
   });
 
   const [online, setOnline] = useState(1);
@@ -23,7 +24,7 @@ const Coding = () => {
   };
 
   return (
-    <Container $bg={bg1}>
+    <div>
       {steps[1] && <Page1 setSteps={setSteps} />}
       {steps[2] && (
         <Page2 online={online} setOnline={setOnline} setSteps={setSteps} />
@@ -31,8 +32,9 @@ const Coding = () => {
       {steps[3] && (
         <Page3 course={course} setCourse={setCourse} setSteps={setSteps} />
       )}
-      {steps[4] && <Page4 formData={formData} />}
-    </Container>
+      {steps[4] && <Page4 setSteps={setSteps} formData={formData} />}
+      {steps[5] && <Page5 />}
+    </div>
   );
 };
 

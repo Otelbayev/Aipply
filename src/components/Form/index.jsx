@@ -40,6 +40,7 @@ const Form = ({
 
   const [nameStyle, setNameStyle] = useState(null);
   const [numStyle, setNumStyle] = useState(null);
+  
   const [loading, setLoading] = useState(false);
 
   const handleChange = ({ target: { value } }) => {

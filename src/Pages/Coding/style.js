@@ -1,125 +1,189 @@
-import styled, { css } from "styled-components";
-
-const flex = css`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-`;
+import styled from "styled-components";
 
 export const Container = styled.div`
-  background-image: ${({ $bg }) => `url(${$bg})`};
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100dvh;
-  .page1,
-  .page2,
-  .page3,
-  .page4 {
-    ${flex}
-    background:rgba(255,255,255,0.7);
-    border: 1px solid rgba(0, 0, 255, 0.2);
-    border-radius: 25px;
-    width: 90%;
-    max-height: calc(100dvh - 50px);
-    backdrop-filter: blur(1px);
-    padding: 30px 0;
-    .logo {
-      height: 60px;
-    }
-    button {
-      margin-top: 20px;
-      img {
-        animation: spin 0.5s ease-in-out infinite alternate;
+  margin: 50px auto;
+  width: 900px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__list {
+      &__item {
+        font-size: 20px;
+        color: #0000b0;
+        font-weight: 500;
+        margin: 5px 0;
+      }
+      &__title {
+        color: #0000b0;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px;
+        transform: translateX(-35px);
       }
     }
-  }
-  .list {
-    li {
-      font-size: 20px;
+    &__title {
+      text-align: center;
+      font-family: Gilroy;
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
+      background-clip: text;
+      color: transparent;
+      margin: 15px auto;
+    }
+    &__min-title {
       color: #0000b0;
       font-weight: 500;
-      margin: 5px 0;
+      font-size: 20px;
+      text-align: center;
+      margin: 10px auto;
+      padding-top: 10px;
     }
-  }
-  .title-page {
-    text-align: center;
-    font-family: Gilroy;
-    font-size: 28px;
-    font-weight: 700;
-    margin: 10px 0;
-    width: 60%;
-    background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
-    background-clip: text;
-    color: transparent;
-    margin: 0 auto;
-  }
-  .min-title {
-    color: #0000b0;
-    font-weight: 500;
-    font-size: 20px;
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 10px;
-  }
-  .checkbox {
-    color: #0000b0;
-    font-size: 16px;
-  }
-  .checkbox-wrap {
-    width: 80%;
-  }
-  .page4 {
-    gap: 20px;
-  }
-  .footer-form {
-    height: 180px;
-  }
-
-  @media screen and (max-width: 750px) {
-    .page1,
-    .page2,
-    .page3,
-    .page4 {
-      width: 100%;
-      height: 100dvh;
-      max-height: 100dvh;
-      border-radius: 0;
-      button {
-        margin-top: 10px;
-      }
+    &__call {
+      color: #0000b0;
+      font-size: 18px;
+      padding: 10px 0;
+      font-weight: 600;
     }
-    .title-page {
+    &__phone {
+      color: #0000b0;
+      font-size: 25px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    &__checkbox-wrap {
       width: 90%;
-    }
-    .list {
-      li {
-        font-size: 18px;
+      margin: 15px 0;
+      &__checkbox {
+        /* color: #0000b0; */
+        font-size: 16px;
       }
     }
-    .page4 {
-      form {
-        width: 400px;
-        margin: 0 auto;
+    &__form {
+      margin: 15px 0;
+      padding: 15px;
+      border: 1px solid rgba(0, 0, 255, 0.4);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 60%;
+      &__input {
+        outline: none;
+        border: 0.71px solid #9b9b9b;
+        width: 100%;
+        border-radius: 4px;
+        padding: 10px 0 10px 15px;
+        font-size: 17px;
+        &::placeholder {
+          font-family: Gilroy;
+          font-size: 17px;
+          font-weight: 400;
+          color: #6d6d6d;
+        }
+        &:focus {
+          border: 1px solid #0808ff;
+          &::placeholder {
+            color: #0808ff;
+          }
+        }
+      }
+      &__button {
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
+        padding: 12px 20px;
+        font-family: DM Sans;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.3s;
+        &:hover {
+          box-shadow: 0 0 10px #02a5e0;
+        }
+        &:active {
+          transform: scale(0.97);
+          opacity: 0.8;
+        }
       }
     }
-  }
-  @media screen and (max-width: 450px) {
-    .page4 {
-      form {
-        width: 95%;
-      }
-    }
-  }
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 10px 0;
+      text-decoration: none;
 
-  @keyframes spin {
-    to {
-      transform: translateX(10px);
+      &__icon {
+        width: 30px;
+      }
+      &__title {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    &__btns {
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      .btn {
+        padding: 8px 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+
+        &:hover {
+          background-position: right center; /* change the direction of the change here */
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+      &--next {
+        background-image: linear-gradient(
+          to right,
+          #24c6dc 0%,
+          #514a9d 51%,
+          #24c6dc 100%
+        );
+      }
+      &--back {
+        background-image: linear-gradient(
+          to right,
+          #dc2424 0%,
+          #4a569d 51%,
+          #dc2424 100%
+        );
+      }
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    margin: 10px auto;
+    width: 95%;
+  }
+  @media screen and (max-width: 500px) {
+    .content {
+      &__logo {
+        height: 70px;
+      }
+      &__form {
+        width: 90%;
+      }
     }
   }
 `;
