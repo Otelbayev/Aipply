@@ -4,7 +4,6 @@ import close from "../../assets/icons/close.svg?react";
 export const Container = styled.div`
   border-bottom: 1px solid #dee5ed;
   backdrop-filter: blur(3px);
-  padding: 10px 0;
   @media (max-width: 700px) {
     border-bottom: none;
   }

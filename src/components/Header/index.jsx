@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Close, Content, Menu, Container } from "./style";
+import React from "react";
+import {  Content, Menu, Container } from "./style";
 import logo from "../../assets/icons/logo.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Button } from "../Generics";

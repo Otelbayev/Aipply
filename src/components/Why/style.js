@@ -54,32 +54,34 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 700px) {
-    border-bottom: none;
-    border-top: none;
-    border: 1px solid #0000001a;
-    box-shadow: 0px 4px 37px 0px #0000001a;
-    border-radius: 12px;
-    margin: 10px 0;
+    /* border-bottom: none; */
+    /* border-top: none; */
+    /* border: 1px solid #0000001a; */
+    /* box-shadow: 0px 4px 37px 0px #0000001a; */
+    border-radius: 0px;
+    margin:0;
+    padding: 15px 0;
     .why-content {
-      flex-direction: column;
+      flex-wrap: wrap;
       gap: 10px;
-      padding: 30px;
+      padding: 0px ;
       &__img {
+        width: 83px;
+        height: auto;
       }
       &__title {
-        width: 100%;
+        width: calc(100% - 90px);
+        text-align: left;
+        font-size: 19px;
         margin-bottom: 0;
-        text-align: center;
       }
       &__desc {
         width: 100%;
-        text-align: center;
       }
     }
   }
   @media (max-width: 500px) {
     .why-content {
-      padding: 15px 25px;
       gap: 5px;
       &__title {
         font-size: 22px;

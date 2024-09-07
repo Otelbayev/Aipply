@@ -33,6 +33,7 @@ const Form = ({
   style,
   confirm,
   formData,
+  color
 }) => {
   const [name, setName] = useState("");
   const [num, setNum] = useState("");
@@ -144,9 +145,9 @@ const Form = ({
         style={style}
       >
         <div>
-          {data?.title && <Title>{data?.title}</Title>}
-          {data?.big && <BigTitle $center={center}>{data?.big}</BigTitle>}
-          {data?.desc && <Desc>{data?.desc}</Desc>}
+          {data?.title && <Title color={color}>{data?.title}</Title>}
+          {data?.big && <BigTitle color={color} $center={center}>{data?.big}</BigTitle>}
+          {data?.desc && <Desc color={color}>{data?.desc}</Desc>}
         </div>
         <Wrap>
           <Input

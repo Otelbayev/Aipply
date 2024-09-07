@@ -11,6 +11,7 @@ import sqb from "../../assets/images/sqb.png";
 import talim from "../../assets/images/talim.png";
 import tstu from "../../assets/images/tstu.png";
 import boy from "../../assets/images/boy.png";
+import db from "../../assets/images/db.png";
 import {
   Container,
   Courses,
@@ -74,9 +75,9 @@ const Home = () => {
 
   return (
     <Container>
+          <Showcase />
       <div className="root-container">
         <div className="root-wrapper">
-          <Showcase />
           <WhyContainer ref={aboutRef}>
             <div className="title" data-aos="zoom-in">
               Nega aynan Aipply Academy?
@@ -127,6 +128,7 @@ const Home = () => {
                 <div className="partners__right__item">
                   <img src={tstu} className="tstu" alt="" />
                   <img src={talim} className="talim" alt="" />
+                  <img src={db} className="db" alt="" />
                 </div>
                 <div className="partners__right__item">
                   <img src={sqb} className="sqb" alt="" />

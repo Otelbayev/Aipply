@@ -9,7 +9,7 @@ export const Container = styled.form`
   border: ${({ $border }) => ($border ? `1px solid ${$border}` : "none")};
   border-radius: 20px;
   padding: 30px;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(10px);
   background: ${({ $background }) => ($background ? $background : "none")};
   width: ${({ width }) => (width ? width : "100%")};
   height: 100%;
@@ -32,11 +32,11 @@ export const Title = styled.div`
   font-weight: 700;
   letter-spacing: 0.7059179544448853px;
   text-align: left;
-  color: black;
+  color: ${({color}) => color ? color : "black"};
 `;
 
 export const BigTitle = styled(Title)`
-  color: #444444;
+  color: ${({color}) => color ? color : "#444444"};
   font-size: 32px;
   text-align: ${({ $center }) => ($center === "false" ? "start" : "center")};
   @media (max-width: 1024px) {
@@ -51,7 +51,7 @@ export const Desc = styled.div`
   line-height: 19px;
   letter-spacing: 0.7059179544448853px;
   padding: 10px 0;
-  color: black;
+  color: ${({color}) => color ? color : "black"};
   @media (max-width: 750px) {
     font-size: 14px;
   }

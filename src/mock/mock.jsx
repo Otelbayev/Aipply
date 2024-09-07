@@ -171,7 +171,7 @@ export const course = [
     img: frontend,
     title: "Frontend React + AI 1.0",
     path: "reactjs",
-    kurs: "8 oy",
+    kurs: "6 oy",
     dars: "Haftada 3 marta 2 soatdan",
     tech: "React.js da dinamik, interaktiv veb-ilovalarni qanday yaratishni, front-end ishlab chiqishning eng yaxshi amaliyotlarini va zamonaviy vositalarni o‘rgatish. Professional texnologiyalar va sun’iy intellekt bilan kuchli, kengaytiriladigan yechimlarni yaratishni o'rgatish. Kurs davomida loyihalar bilan ishlash, Kurs so’ngida bilimni monetizatsiya qilish o’rgatiladi.",
     slogan: "React.js dinamik va intuitiv veb-ilovalarni yaratish kalitidir!",

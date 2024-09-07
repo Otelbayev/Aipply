@@ -146,6 +146,10 @@ export const Partners = styled.div`
         align-items: center;
         justify-content: space-around;
       }
+      .db {
+        width: 150px;
+
+      }
     }
   }
   @media (max-width: 1024px) {
