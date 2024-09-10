@@ -108,10 +108,8 @@ export const Partners = styled.div`
     background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
     border-radius: 30px;
     padding: 50px;
-    display: flex;
-    align-items: center;
+
     &__left {
-      width: 50%;
       &__title {
         font-family: Gilroy;
         font-size: 43px;
@@ -139,16 +137,41 @@ export const Partners = styled.div`
       }
     }
     &__right {
-      width: 50%;
-      &__item {
-        margin: 20px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-      }
-      .db {
-        width: 150px;
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 50px;
 
+      img:nth-child(1) {
+      }
+      img:nth-child(2) {
+      }
+      img:nth-child(3) {
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        width: 200px;
+      }
+      img:nth-child(4) {
+        width: 150px;
+        border-radius: 3px;
+      }
+      img:nth-child(5) {
+      }
+      img:nth-child(6) {
+      }
+
+      img:nth-child(7) {
+        width: 150px;
+        border-radius: 3px;
+      }
+      img:nth-child(8) {
+        width: 150px;
+        border-radius: 3px;
+        background: #fff;
+        padding: 10px;
       }
     }
   }
@@ -166,45 +189,14 @@ export const Partners = styled.div`
           line-height: 25px;
         }
       }
-      &__right {
-        .tstu {
-          width: 200px;
-          height: 45px;
-        }
-        .talim {
-          width: 75px;
-          height: 75px;
-        }
-        .sqb {
-          width: 180px;
-          height: 90px;
-        }
-        .itpark {
-          width: 110px;
-          height: 38px;
-        }
-        .selsil {
-          width: 110px;
-          height: 40px;
-        }
-        .inoria {
-          width: 130px;
-          height: 45px;
-        }
-      }
     }
   }
   @media (max-width: 825px) {
     .partners {
-      flex-direction: column;
       &__left {
-        width: 100%;
         &__desc {
           padding-top: 10px;
         }
-      }
-      &__right {
-        width: 100%;
       }
     }
   }
@@ -222,29 +214,28 @@ export const Partners = styled.div`
         }
       }
       &__right {
-        .tstu {
+        img:nth-child(1) {
+        }
+        img:nth-child(2) {
+        }
+        img:nth-child(3) {
           width: 150px;
-          height: 35px;
         }
-        .talim {
-          width: 60px;
-          height: 60px;
+        img:nth-child(4) {
+          width: 120px;
         }
-        .sqb {
-          width: 140px;
-          height: 70px;
+        img:nth-child(5) {
+          width: 150px;
         }
-        .itpark {
-          width: 90px;
-          height: 30px;
+        img:nth-child(6) {
         }
-        .selsil {
-          width: 90px;
-          height: 30px;
+
+        img:nth-child(7) {
+          width: 130px;
+          border-radius: 3px;
         }
-        .inoria {
-          width: 100px;
-          height: 30px;
+        img:nth-child(8) {
+          width: 130px;
         }
       }
     }
@@ -327,6 +318,25 @@ export const Bottom = styled.div`
       &__right {
         width: 50%;
       }
+    }
+  }
+`;
+
+export const Comments = styled.div`
+  margin: 20px 0;
+  height: 600px;
+  div {
+    padding: 0 5px;
+    img {
+      width: 100%;
+      border-radius: 3px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 400px;
+    div {
+      padding: 0 1px;
     }
   }
 `;

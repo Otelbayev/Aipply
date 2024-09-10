@@ -191,13 +191,6 @@ export const course = [
 
 export const mentor = [
   {
-    id: 1,
-    img: mentor0,
-    name: "Momedov Mustafo",
-    job: "Grafik dizayn PRO",
-    desc: "3 yil tajriba va 20 dan ortiq o’quvchilar. Texnopark va Transport universitetida grafik dizayner",
-  },
-  {
     id: 5,
     img: noimg,
     name: "Adham Bahodirovich",
@@ -205,18 +198,25 @@ export const mentor = [
     desc: "8+ yil ish tajribasi va 200 dan oshiq o‘quvchilar. «ASIAGOOD» taʼsischisi, TSTrU da raqamlashtirish bo‘limi boshlig‘i",
   },
   {
-    id: 4,
-    img: mentor1,
-    name: "O'telbayev Jasurbek",
-    job: "Frontend ReactJs",
-    desc: "2 yil tajribga va 10 dan ortiq real loyihalar. Transport universitetida frontend dasturchi.",
+    id: 1,
+    img: mentor0,
+    name: "Momedov Mustafo",
+    job: "Grafik dizayn PRO",
+    desc: "ish tajriba 3 yildan ortiq 50 dan ortiq o'quvchi chiqargan. Faoliyati davomida Sel sil, Inoria, Texnopark, Candy Gold, Mumtoz, Avangart brendlari bilan ishlagan",
+  },
+  {
+    id: 3,
+    img: avaz,
+    name: "Ahmadaliyev Avazbek",
+    job: "Interyer dizayn",
+    desc: "4+ yil tajriba, 100 ga yaqin loyihalar muallifi va 70 dan ortiq o'quvchilar. TSTrU universitetida dizayner bo'lib ishlaydi",
   },
   {
     id: 6,
     img: hasan,
     name: "Abdullayev Hasan",
     job: "Motion Grafika va Vidomontaj",
-    desc: "3 yil tajriba va 20 ga yaqin loyihalar Transport universitetida Montajyor",
+    desc: "Moushen grafika va videomontaj boʻyicha mentor. Tajriba 3+ Loyihalar 50+ Oliya taʼlim muassasasida montaj ustasi.",
   },
   {
     id: 2,
@@ -226,10 +226,10 @@ export const mentor = [
     desc: "3+ yil ish tajribasi va 100 dan ortiq o’quvchilar. “Apps Able” IT academyda mentor",
   },
   {
-    id: 3,
-    img: avaz,
-    name: "Ahmadaliyev Avazbek",
-    job: "Interyer dizayn",
-    desc: "4+ yil tajriba va 50 dan ortiq o'quvchilar. «DizaynLab» taʼsischisi, TSTrU da bo‘limi boshlig‘i.",
+    id: 4,
+    img: mentor1,
+    name: "O'telbayev Jasurbek",
+    job: "Frontend ReactJs",
+    desc: "2 yil tajribga va 10 dan ortiq real loyihalar. Transport universitetida frontend dasturchi.",
   },
 ];

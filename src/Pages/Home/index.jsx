@@ -12,6 +12,16 @@ import talim from "../../assets/images/talim.png";
 import tstu from "../../assets/images/tstu.png";
 import boy from "../../assets/images/boy.png";
 import db from "../../assets/images/db.png";
+import sp1 from "../../assets/icons/sp1.jpeg";
+import sp3 from "../../assets/icons/sp3.jpg";
+import sp4 from "../../assets/icons/sp4.webp";
+import kom1 from "../../assets/images/kom1.png";
+import kom2 from "../../assets/images/kom2.png";
+import kom3 from "../../assets/images/kom8.png";
+import kom4 from "../../assets/images/kom4.png";
+import kom5 from "../../assets/images/kom5.png";
+import kom6 from "../../assets/images/kom6.png";
+import kom7 from "../../assets/images/kom7.png";
 import {
   Container,
   Courses,
@@ -20,13 +30,13 @@ import {
   Mentors,
   Partners,
   Bottom,
+  Comments,
 } from "./style";
 import Form from "../../components/Form";
 import { useScrollContext } from "../../context/ScrollContext";
 import { useLocation } from "react-router-dom";
 
 const Home = () => {
-  const sliderRef = useRef(null);
   const slider2Ref = useRef(null);
   const location = useLocation();
   const { courseRef, aboutRef, mentorRef, freeLessonRef, contactRef } =
@@ -37,7 +47,7 @@ const Home = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    dots: true,
+
     responsive: [
       {
         breakpoint: 1024,
@@ -49,6 +59,23 @@ const Home = () => {
         breakpoint: 750,
         settings: {
           slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  const settings2 = {
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
         },
       },
     ],
@@ -75,7 +102,7 @@ const Home = () => {
 
   return (
     <Container>
-          <Showcase />
+      <Showcase />
       <div className="root-container">
         <div className="root-wrapper">
           <WhyContainer ref={aboutRef}>
@@ -104,11 +131,11 @@ const Home = () => {
             </Courses.Top>
             <Courses.Main>
               {/* <Slider ref={sliderRef} {...settings}> */}
-                {course.map((data) => (
-                  <Courses.Item key={data?.id}>
-                    <Course data={data} />
-                  </Courses.Item>
-                ))}
+              {course.map((data) => (
+                <Courses.Item key={data?.id}>
+                  <Course data={data} />
+                </Courses.Item>
+              ))}
               {/* </Slider> */}
             </Courses.Main>
           </Courses>
@@ -125,15 +152,14 @@ const Home = () => {
                 </div>
               </div>
               <div className="partners__right">
-                <div className="partners__right__item">
-                  <img src={tstu} className="tstu" alt="" />
-                  <img src={talim} className="talim" alt="" />
-                  <img src={db} className="db" alt="" />
-                </div>
-                <div className="partners__right__item">
-                  <img src={sqb} className="sqb" alt="" />
-                  <img src={itpark} className="itpark" alt="" />
-                </div>
+                <img src={tstu} alt="" />
+                <img src={talim} alt="" />
+                <img src={db} alt="" />
+                <img src={sp1} alt="" />
+                <img src={sqb} alt="" />
+                <img src={itpark} alt="" />
+                <img src={sp4} alt="" />
+                <img src={sp3} alt="" />
               </div>
             </div>
           </Partners>
@@ -159,6 +185,35 @@ const Home = () => {
               </button>
             </Mentors.Bottom>
           </Mentors>
+
+          <div data-aos="zoom-in" className="title-dark title-mentor">
+            Izohlar
+          </div>
+          <Comments>
+            <Slider {...settings2}>
+              <div>
+                <img src={kom1} alt="" />
+              </div>
+              <div>
+                <img src={kom2} alt="" />
+              </div>
+              <div>
+                <img src={kom3} alt="" />
+              </div>
+              <div>
+                <img src={kom4} alt="" />
+              </div>
+              <div>
+                <img src={kom5} alt="" />
+              </div>
+              <div>
+                <img src={kom6} alt="" />
+              </div>
+              <div>
+                <img src={kom7} alt="" />
+              </div>
+            </Slider>
+          </Comments>
           <Bottom ref={freeLessonRef}>
             <div className="bottom">
               <div className="bottom__left" data-aos="fade-right">
