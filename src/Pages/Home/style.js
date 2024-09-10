@@ -324,19 +324,29 @@ export const Bottom = styled.div`
 
 export const Comments = styled.div`
   margin: 20px 0;
-  height: 600px;
+  height: 550px;
   div {
     padding: 0 5px;
     img {
       width: 100%;
+      max-height: 550px;
       border-radius: 3px;
     }
   }
 
   @media screen and (max-width: 800px) {
-    height: 400px;
     div {
       padding: 0 1px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 600px;
+    div {
+      padding: 0 2px;
+      img {
+        max-height: 650px;
+      }
     }
   }
 `;
