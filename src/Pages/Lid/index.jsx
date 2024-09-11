@@ -28,9 +28,9 @@ const Coding = () => {
       {steps[2] && (
         <Page2 online={online} setOnline={setOnline} setSteps={setSteps} />
       )}
-      {/* {steps[3] && (
+      {steps[3] && (
         <Page3 course={course} setCourse={setCourse} setSteps={setSteps} />
-      )} */}
+      )}
       {steps[4] && <Page4 setSteps={setSteps} formData={formData} />}
       {steps[5] && <Page5 />}
     </div>
