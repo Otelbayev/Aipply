@@ -6,7 +6,7 @@ import bg from "../../../assets/images/lid-bg.jpg";
 
 const Page1 = ({ setSteps }) => {
   return (
-    <Container $bg={bg}>
+    <Container>
       <div className="abs"></div>
       <div className="content">
         <div className="content__title">
@@ -14,7 +14,7 @@ const Page1 = ({ setSteps }) => {
         </div>
         <div className="content__profile">
           <img className="content__profile__logo" src={logo} alt="" />
-          <div className="content__profile__name">Aipply Academy</div>
+          <div className="content__profile__name t-dark">Aipply Academy</div>
         </div>
         <ul className="content__list">
           <li className="content__list__item">-Kasbda daromad qilish;</li>

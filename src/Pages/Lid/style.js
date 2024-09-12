@@ -1,23 +1,26 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-image: ${({ $bg }) => ($bg ? `url(${$bg})` : "none")};
-  background-size: cover;
+  /* background-image: ${({ $bg }) => ($bg ? `url(${$bg})` : "none")}; */
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   height: 100dvh;
   position: relative;
-  display: grid;
-  place-items: center;
-  .abs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: grid;
+  place-items: center; */
+  /* .abs {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 0;
-  }
+  } */
 
   .content {
     display: flex;
@@ -27,10 +30,13 @@ export const Container = styled.div`
     z-index: 10;
     width: 400px;
     &__title {
-      color: #fff;
+      /* color: #fff; */
       font-weight: 700;
       font-size: 25px;
       text-align: center;
+      background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
+      background-clip: text;
+      color: transparent;
     }
     &__profile {
       display: flex;
@@ -43,18 +49,22 @@ export const Container = styled.div`
         border-radius: 50%;
       }
       &__name {
-        color: #fff;
         font-size: 20px;
         font-weight: 600;
+        background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
+        background-clip: text;
+        color: transparent;
       }
     }
     &__list {
       list-style-type: none;
       margin-bottom: 20px;
       &__item {
-        color: #fff;
         font-size: 16px;
         font-weight: 500;
+        background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
+        background-clip: text;
+        color: transparent;
       }
     }
     &__btns {
