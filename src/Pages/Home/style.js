@@ -108,7 +108,6 @@ export const Partners = styled.div`
     background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
     border-radius: 30px;
     padding: 50px;
-
     &__left {
       &__title {
         font-family: Gilroy;
@@ -324,7 +323,7 @@ export const Comments = styled.div`
       }
     }
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 440px) {
     height: 470px;
   }
   @media screen and (max-width: 400px) {
