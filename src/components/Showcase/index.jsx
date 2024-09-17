@@ -21,7 +21,7 @@ const Showcase = () => {
           </h1>
           <Form
             data={{
-              title: "Bepul ochiq darsga yozilish.",
+              title: "Bepul ochiq darsga yozilish!",
               desc: "Telefon raqamingizni yozib qoldiring, biz Siz bilan bog'lanamiz va barcha savollaringizga javob beramiz!",
             }}
             border={"#F3F8FF33"}

@@ -127,23 +127,13 @@ const Home = () => {
               <div ref={courseRef} className="title">
                 Mavjud kurslar
               </div>
-              {/* <div>
-                <button onClick={() => sliderRef?.current?.slickPrev()}>
-                  <Icons.Prev />
-                </button>
-                <button onClick={() => sliderRef?.current?.slickNext()}>
-                  <Icons.Next />
-                </button>
-              </div> */}
             </Courses.Top>
             <Courses.Main>
-              {/* <Slider ref={sliderRef} {...settings}> */}
               {course.map((data) => (
                 <Courses.Item key={data?.id}>
                   <Course data={data} />
                 </Courses.Item>
               ))}
-              {/* </Slider> */}
             </Courses.Main>
           </Courses>
           <FormWrap />
@@ -192,7 +182,6 @@ const Home = () => {
               </button>
             </Mentors.Bottom>
           </Mentors>
-
           <div data-aos="zoom-in" className="title-dark title-mentor">
             Izohlar
           </div>
@@ -230,7 +219,7 @@ const Home = () => {
                 <div className="bottom__left__form">
                   <Form
                     data={{
-                      big: "Bepul ochiq darsga yozilish",
+                      big: "Bepul ochiq darsga yozilish!",
                     }}
                     background="#F3F8FF"
                     grid={"1/3"}

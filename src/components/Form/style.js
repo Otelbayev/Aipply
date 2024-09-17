@@ -32,11 +32,12 @@ export const Title = styled.div`
   font-weight: 700;
   letter-spacing: 0.7059179544448853px;
   text-align: left;
-  color: ${({color}) => color ? color : "black"};
+  color: ${({ color }) => (color ? color : "black")};
+  padding-bottom: 5px;
 `;
 
 export const BigTitle = styled(Title)`
-  color: ${({color}) => color ? color : "#444444"};
+  color: ${({ color }) => (color ? color : "#444444")};
   font-size: 32px;
   text-align: ${({ $center }) => ($center === "false" ? "start" : "center")};
   @media (max-width: 1024px) {
@@ -50,8 +51,8 @@ export const Desc = styled.div`
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 0.7059179544448853px;
-  padding: 10px 0;
-  color: ${({color}) => color ? color : "black"};
+  padding: 5px 0 10px;
+  color: ${({ color }) => (color ? color : "black")};
   @media (max-width: 750px) {
     font-size: 14px;
   }

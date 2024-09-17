@@ -243,7 +243,7 @@ export const Partners = styled.div`
 `;
 
 export const Bottom = styled.div`
-  margin: 80px 0;
+  margin: 50px 0;
   .bottom {
     display: flex;
     align-items: center;
@@ -275,7 +275,6 @@ export const Bottom = styled.div`
   }
 
   @media (max-width: 1024px) {
-    margin: 40px 0;
     .bottom {
       &__left {
         &__title {
@@ -323,30 +322,31 @@ export const Bottom = styled.div`
 `;
 
 export const Comments = styled.div`
-  margin: 20px 0;
   height: 550px;
+  margin: 10px 0;
   div {
     padding: 0 5px;
     img {
       width: 100%;
-      max-height: 550px;
+      height: 100%;
       border-radius: 3px;
     }
   }
-
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 680px) {
+    height: 550px;
     div {
       padding: 0 1px;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    height: 600px;
-    div {
-      padding: 0 2px;
       img {
-        max-height: 650px;
       }
     }
+  }
+  @media screen and (max-width: 450px) {
+    height: 500px;
+  }
+  @media screen and (max-width: 400px) {
+    height: 450px;
+  }
+  @media screen and (max-width: 380px) {
+    height: 400px;
   }
 `;

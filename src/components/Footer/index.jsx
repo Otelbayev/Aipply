@@ -23,7 +23,7 @@ const Footer = () => {
                 <Content.Link to="/#course">Kurslar</Content.Link>
                 <Content.Link to="/#mentor">Mentorlar</Content.Link>
                 <Content.Link to="/#free">
-                  Bepul ochiq darsga yozilish
+                  Bepul ochiq darsga yozilish!
                 </Content.Link>
               </div>
               <div>

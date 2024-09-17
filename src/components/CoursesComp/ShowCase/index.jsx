@@ -10,7 +10,7 @@ const Showcase = ({ data, img }) => {
           <div className="course-showcase__left__title">{data?.title}</div>
           <Form
             data={{
-              title: "Bepul ochiq darsga yozilish",
+              title: "Bepul ochiq darsga yozilish!",
               desc: "Telefon raqamingizni yozib qoldiring, biz Siz bilan bog'lanamiz va barcha savollaringizga javob beramiz!",
             }}
             border={"#02a5e0"}
