@@ -108,7 +108,6 @@ export const Partners = styled.div`
     background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
     border-radius: 30px;
     padding: 50px;
-
     &__left {
       &__title {
         font-family: Gilroy;
@@ -144,34 +143,8 @@ export const Partners = styled.div`
       align-items: center;
       gap: 50px;
 
-      img:nth-child(1) {
-      }
-      img:nth-child(2) {
-      }
-      img:nth-child(3) {
-        background: #fff;
-        padding: 10px;
-        border-radius: 10px;
-        width: 200px;
-      }
-      img:nth-child(4) {
-        width: 150px;
-        border-radius: 3px;
-      }
-      img:nth-child(5) {
-      }
-      img:nth-child(6) {
-      }
-
-      img:nth-child(7) {
-        width: 150px;
-        border-radius: 3px;
-      }
-      img:nth-child(8) {
-        width: 150px;
-        border-radius: 3px;
-        background: #fff;
-        padding: 10px;
+      img {
+        max-width: 200px;
       }
     }
   }
@@ -304,6 +277,7 @@ export const Bottom = styled.div`
   }
   @media (max-width: 700px) {
     .bottom {
+      margin: 0;
       flex-direction: column;
       &__left {
         width: 100%;

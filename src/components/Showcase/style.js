@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import bg from "../../assets/images/bg-showcase.png";
+import mbg from "../../assets/images/mobilebg.png";
 
 export const Container = styled.div`
   min-height: calc(100dvh - 64px);
@@ -22,16 +23,15 @@ export const Container = styled.div`
       }
     }
   }
-  
+
   @media screen and (max-width: 900px) {
-    background-position: 35%;
+    background-position: 95%;
     .showcase-container {
       &__left {
         width: 100%;
-      &__title{
-        font-size: 40px;
-
-      }
+        &__title {
+          font-size: 40px;
+        }
       }
     }
   }
@@ -40,13 +40,18 @@ export const Container = styled.div`
     .showcase-container {
       &__left {
         width: 100%;
-      &__title{
-        font-size: 30px;
-        text-align: center;
-        width: 100%;
-
-      }
+        &__title {
+          font-size: 30px;
+          text-align: center;
+          width: 100%;
+        }
       }
     }
+  }
+  @media screen and (max-width: 550px) {
+    background: url("${mbg}");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 `;
