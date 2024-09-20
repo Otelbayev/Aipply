@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  border-top: 1px solid #606060;
-  border-bottom: ${({ $last }) => $last && "1px solid #606060"};
+  border-top: 1px solid #d6d6d6;
+  border-bottom: ${({ $last }) => $last && "1px solid #d6d6d6"};
   padding: 20px 0;
   .why-content {
     display: flex;
@@ -59,12 +59,12 @@ export const Container = styled.div`
     /* border: 1px solid #0000001a; */
     /* box-shadow: 0px 4px 37px 0px #0000001a; */
     border-radius: 0px;
-    margin:0;
+    margin: 0;
     padding: 15px 0;
     .why-content {
       flex-wrap: wrap;
       gap: 10px;
-      padding: 0px ;
+      padding: 0px;
       &__img {
         width: 83px;
         height: auto;
