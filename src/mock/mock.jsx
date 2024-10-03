@@ -11,9 +11,9 @@ import icon10 from "../assets/icons/sertificat.png";
 import img from "../assets/icons/course.png";
 import img2 from "../assets/icons/coding.png";
 import img3 from "../assets/icons/komp.png";
-import mentor1 from "../assets/images/mentor.jpg";
-import mentor2 from "../assets/images/mentor2.jpg";
-import mentor0 from "../assets/images/mentor0.png";
+import mentor1 from "../assets/teachers/jasurbek.jpg";
+import mentor2 from "../assets/teachers/navodir.jpg";
+import mentor0 from "../assets/teachers/mustafo.jpg";
 import noimg from "../assets/images/noimg.png";
 import foundation from "../assets/images/foundation.png";
 import python from "../assets/images/python.png";
@@ -21,8 +21,8 @@ import dotnet from "../assets/images/dotnet.png";
 import frontend from "../assets/images/react.png";
 import design from "../assets/images/design.png";
 import motion from "../assets/images/motion.png";
-import hasan from "../assets/images/xasan.jpg";
-import avaz from "../assets/images/avaz.png";
+import hasan from "../assets/teachers/hasan.jpg";
+import avaz from "../assets/teachers/avaz.jpg";
 
 export const why = [
   {
