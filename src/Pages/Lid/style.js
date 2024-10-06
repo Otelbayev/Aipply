@@ -28,11 +28,10 @@ export const Container = styled.div`
     align-items: center;
     position: relative;
     z-index: 10;
-    width: 400px;
+    width: 600px; //400
     &__title {
-      /* color: #fff; */
       font-weight: 700;
-      font-size: 25px;
+      font-size: 36px; //25
       text-align: center;
       background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
       background-clip: text;
@@ -44,12 +43,12 @@ export const Container = styled.div`
       margin: 20px 0;
       gap: 10px;
       &__logo {
-        width: 50px;
-        height: 50px;
+        width: 80px; //50
+        height: 80px;
         border-radius: 50%;
       }
       &__name {
-        font-size: 20px;
+        font-size: 30px; //20
         font-weight: 600;
         background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
         background-clip: text;
@@ -60,7 +59,8 @@ export const Container = styled.div`
       list-style-type: none;
       margin-bottom: 20px;
       &__item {
-        font-size: 16px;
+        font-size: 20px; //16
+        padding: 3px 0;
         font-weight: 500;
         background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
         background-clip: text;
@@ -262,7 +262,16 @@ export const Container = styled.div`
 
   @media screen and (max-width: 700px) {
     .content {
-      width: 90%;
+      width: 95%;
+      &__profile {
+        &__logo {
+          width: 55px;
+          height: 55px;
+        }
+        &__name {
+          font-size: 22px;
+        }
+      }
       &__logo {
         height: 70px;
       }

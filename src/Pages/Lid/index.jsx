@@ -14,7 +14,7 @@ const Coding = () => {
     5: false,
   });
 
-  const [online, setOnline] = useState(1);
+  const [online, setOnline] = useState(null);
   const [course, setCourse] = useState(4);
 
   const formData = {

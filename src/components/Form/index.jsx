@@ -12,7 +12,7 @@ import {
 } from "./style";
 import { Modal, message } from "antd";
 import axios from "axios";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import telegram from "../../assets/icons/telegram.svg";
 
 const token = import.meta.env.VITE_APP_API_TOKEN;
@@ -33,7 +33,7 @@ const Form = ({
   style,
   confirm,
   formData,
-  color
+  color,
 }) => {
   const [name, setName] = useState("");
   const [num, setNum] = useState("");
@@ -41,7 +41,7 @@ const Form = ({
 
   const [nameStyle, setNameStyle] = useState(null);
   const [numStyle, setNumStyle] = useState(null);
-  
+
   const [loading, setLoading] = useState(false);
 
   const handleChange = ({ target: { value } }) => {
@@ -49,6 +49,8 @@ const Form = ({
       setNum(value);
     }
   };
+
+  const navigate = useNavigate();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -146,11 +148,15 @@ const Form = ({
       >
         <div>
           {data?.title && <Title color={color}>{data?.title}</Title>}
-          {data?.big && <BigTitle color={color} $center={center}>{data?.big}</BigTitle>}
+          {data?.big && (
+            <BigTitle color={color} $center={center}>
+              {data?.big}
+            </BigTitle>
+          )}
           {data?.desc && <Desc color={color}>{data?.desc}</Desc>}
         </div>
         <Wrap>
-          <Input
+          {/* <Input
             style={nameStyle}
             $grid={grid}
             type="text"
@@ -170,20 +176,22 @@ const Form = ({
               setNumStyle(null);
             }}
             value={num}
-          />
+          /> */}
           <Button
-            disabled={loading || confirm?.toString() ? !confirm : false}
-            $loading={loading}
-            style={
-              confirm?.toString()
-                ? !confirm
-                  ? { opacity: 0.5, cursor: "not-allowed" }
-                  : {}
-                : {}
-            }
-            type="submit"
+            // disabled={loading || confirm?.toString() ? !confirm : false}
+            // $loading={loading}
+            // style={
+            //   confirm?.toString()
+            //     ? !confirm
+            //       ? { opacity: 0.5, cursor: "not-allowed" }
+            //       : {}
+            //     : {}
+            // }
+            // type="submit"
+            onClick={() => navigate("/lid")}
           >
-            {loading ? "Yuborilmoqda..." : "Yuborish"}
+            {/* {loading ? "Yuborilmoqda..." : "Yuborish"} */}
+            Bepul birinchi darsga yoziling
           </Button>
         </Wrap>
       </Container>

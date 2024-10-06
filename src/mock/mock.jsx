@@ -41,7 +41,7 @@ export const why = [
     id: 3,
     icon: icon3,
     title: "Bilimingizni muvaffaqiyatli soting!",
-    desc: "Bizning kurslarimiz nafaqat aniq bir zamonaviy kasbni o'rgatadi balki, mijozlar bilan ishlashni, qo'shimcha daromad qilishni va to'g'ri ish joyini tanlashni ham o'rgatadi.",
+    desc: "Bizning kurslarimiz nafaqat aniq bir zamonaviy kasbni o'rgatadi balki, mijozlar bilan ishlashni, daromad qilishni o'rgatamiz!",
   },
   {
     id: 4,
@@ -169,7 +169,7 @@ export const course = [
   {
     id: 7,
     img: frontend,
-    title: "Frontend React + AI 1.0",
+    title: "Frontend React JS + AI 1.0",
     path: "reactjs",
     kurs: "6 oy",
     dars: "Haftada 3 marta 2 soatdan",

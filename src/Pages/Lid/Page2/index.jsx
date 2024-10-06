@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../../assets/icons/logo1.png";
 import icon from "../../../assets/icons/right-arrow.png";
 import back from "../../../assets/icons/left-arrow.png";
@@ -7,22 +7,44 @@ import { NavLink } from "react-router-dom";
 import { Container } from "../style";
 
 const Page2 = ({ setSteps, online, setOnline }) => {
+  const [redStyle, setRedStyle] = useState({ margin: "30px 0" });
+  const handleClick = () => {
+    if (!online) {
+      setRedStyle({
+        margin: "30px 0",
+        boxShadow: "0 4px 8px rgba(255, 0, 0, 0.5)",
+        borderRadius: "10px",
+      });
+    } else {
+      setSteps({
+        1: false,
+        2: false,
+        3: true,
+        4: false,
+        5: false,
+      });
+    }
+  };
+
   return (
     <Container>
       <div className="content">
         <NavLink to="/">
           <img className="content__logo" src={logo} />
         </NavLink>
-        <div className="content__dark">
-          O‘qishning qaysi shakli Siz uchun qulay?
-        </div>
+        <div className="content__dark">O'qish shaklini tanlang!</div>
 
         <Radio.Group
           defaultValue={online}
-          onChange={(e) => setOnline(e.target.value)}
+          onChange={(e) => {
+            setOnline(e.target.value);
+            setRedStyle({
+              margin: "30px 0",
+            });
+          }}
           buttonStyle="solid"
           value={online}
-          style={{ margin: "30px 0" }}
+          style={redStyle}
           size="large"
         >
           <Radio.Button value={1}>Offline (Toshkent)</Radio.Button>
@@ -38,23 +60,16 @@ const Page2 = ({ setSteps, online, setOnline }) => {
                 4: false,
                 5: false,
               });
+              setRedStyle({
+                margin: "30px 0",
+              });
+              setOnline(null);
             }}
             className="content__btns--back btn"
           >
             <img style={{ width: "30px" }} src={back} alt="" />
           </button>
-          <button
-            onClick={() =>
-              setSteps({
-                1: false,
-                2: false,
-                3: true,
-                4: false,
-                5: false,
-              })
-            }
-            className="content__btns--next btn"
-          >
+          <button onClick={handleClick} className="content__btns--next btn">
             Davom Etish <img style={{ width: "30px" }} src={icon} alt="" />
           </button>
         </div>
