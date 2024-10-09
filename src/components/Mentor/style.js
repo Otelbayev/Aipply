@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   box-shadow: 0px 4px 52.900001525878906px 0px #0000001a;
-  border: 1px solid #425ed0;
-  padding: 18px;
+  border: 1px solid #425ed5;
+  /* padding: 18px; */
   border-radius: 12px;
   min-height: 250px;
   .mentor-content {
@@ -46,5 +46,9 @@ export const Container = styled.div`
       text-align: left;
       padding-top: 15px;
     }
+  }
+  .only-image {
+    border-radius: 12px;
+    width: 100%;
   }
 `;

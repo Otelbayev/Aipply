@@ -26,7 +26,7 @@ const Showcase = () => {
             }}
             border={"#F3F8FF33"}
             boxShadow="true"
-            width={"90%"}
+            width={"65%"}
             blur="true"
             background="rgba(255,255,255,0.2)"
             color={"#fff"}

@@ -11,18 +11,17 @@ import icon10 from "../assets/icons/sertificat.png";
 import img from "../assets/icons/course.png";
 import img2 from "../assets/icons/coding.png";
 import img3 from "../assets/icons/komp.png";
-import mentor1 from "../assets/teachers/jasurbek.jpg";
-import mentor2 from "../assets/teachers/navodir.jpg";
-import mentor0 from "../assets/teachers/mustafo.jpg";
-import noimg from "../assets/images/noimg.png";
 import foundation from "../assets/images/foundation.png";
 import python from "../assets/images/python.png";
-import dotnet from "../assets/images/dotnet.png";
+// import dotnet from "../assets/images/dotnet.png";
 import frontend from "../assets/images/react.png";
 import design from "../assets/images/design.png";
 import motion from "../assets/images/motion.png";
 import hasan from "../assets/teachers/hasan.jpg";
 import avaz from "../assets/teachers/avaz.jpg";
+import mentor2 from "../assets/teachers/navodir.jpg";
+import mentor0 from "../assets/teachers/mustafo.jpg";
+import adham from "../assets/teachers/adhamaka.jpg";
 
 export const why = [
   {
@@ -192,10 +191,11 @@ export const course = [
 export const mentor = [
   {
     id: 5,
-    img: noimg,
+    img: adham,
     name: "Adham Bahodirovich",
     job: "No-Coding",
     desc: "8+ yil ish tajribasi va 200 dan oshiq o‘quvchilar. «ASIAGOOD» taʼsischisi, TSTrU da raqamlashtirish bo‘limi boshlig‘i",
+    only: true,
   },
   {
     id: 1,
@@ -203,6 +203,7 @@ export const mentor = [
     name: "Momedov Mustafo",
     job: "Grafik dizayn PRO",
     desc: "ish tajriba 3 yildan ortiq 50 dan ortiq o'quvchi chiqargan. Faoliyati davomida Sel sil, Inoria, Texnopark, Candy Gold, Mumtoz, Avangart brendlari bilan ishlagan",
+    only: true,
   },
   {
     id: 3,
@@ -210,6 +211,7 @@ export const mentor = [
     name: "Ahmadaliyev Avazbek",
     job: "Interyer dizayn",
     desc: "4+ yil tajriba, 100 ga yaqin loyihalar muallifi va 70 dan ortiq o'quvchilar. TSTrU universitetida dizayner bo'lib ishlaydi",
+    only: true,
   },
   {
     id: 6,
@@ -217,6 +219,7 @@ export const mentor = [
     name: "Abdullayev Hasan",
     job: "Motion Grafika va Vidomontaj",
     desc: "Moushen grafika va videomontaj boʻyicha mentor. Tajriba 3+ Loyihalar 50+ Oliya taʼlim muassasasida montaj ustasi.",
+    only: true,
   },
   {
     id: 2,
@@ -224,12 +227,6 @@ export const mentor = [
     name: "Navodir Davronov",
     job: "Coding Foundation, Kompyuter savodxonligi",
     desc: "3+ yil ish tajribasi va 100 dan ortiq o’quvchilar. “Apps Able” IT academyda mentor",
-  },
-  {
-    id: 4,
-    img: mentor1,
-    name: "O'telbayev Jasurbek",
-    job: "Frontend ReactJs",
-    desc: "2 yil tajribga va 10 dan ortiq real loyihalar. Transport universitetida frontend dasturchi.",
+    only: true,
   },
 ];

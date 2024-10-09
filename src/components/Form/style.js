@@ -33,7 +33,7 @@ export const Title = styled.div`
   letter-spacing: 0.7059179544448853px;
   text-align: left;
   color: ${({ color }) => (color ? color : "black")};
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 `;
 
 export const BigTitle = styled(Title)`
@@ -104,7 +104,7 @@ export const Button = styled.button`
   letter-spacing: 0.7059179544448853px;
   color: #ffff;
   background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
-  padding: 10px;
+  padding: 15px;
   transition: 0.1s;
 
   ${({ $loading }) =>

@@ -2,6 +2,14 @@ import React from "react";
 import { Container } from "./style";
 
 const Mentor = ({ data }) => {
+  if (data.only) {
+    return (
+      <Container>
+        <img className="only-image" src={data.img} alt="" />
+      </Container>
+    );
+  }
+
   return (
     <Container data-aos="zoom-in">
       <div className="mentor-content">
