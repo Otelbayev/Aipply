@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useMenuContext } from "../context/menu-context";
 import Showcase from "../components/Showcase/showcase.jsx";
 import Why from "../components/Why/why.jsx";
