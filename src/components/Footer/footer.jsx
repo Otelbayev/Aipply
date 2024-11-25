@@ -15,6 +15,7 @@ const Footer = () => {
             <iframe
               allowFullScreen
               src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=75493422112"
+              loading="lazy"
             ></iframe>
           </Content.Left>
           <Content.Right>
