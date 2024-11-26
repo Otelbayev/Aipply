@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 67px;
+  padding: 10px 0;
   header {
     display: flex;
     align-items: center;
@@ -51,7 +52,7 @@ export const Container = styled.div`
     }
     .black-bg {
       position: absolute;
-      top: 67px;
+      top: 76px;
       width: 100%;
       z-index: 1;
       height: calc(100dvh - 67px);
@@ -77,7 +78,7 @@ export const Container = styled.div`
       &__nav {
         position: absolute;
         transition: height 0.3s;
-        top: 56px;
+        top: 76px;
         left: 0;
         width: 100%;
         height: ${({ open }) => (open ? "150px" : "0")};
