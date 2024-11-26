@@ -1,10 +1,9 @@
 import React from "react";
-import { Container } from "./showcase.style";
 import Form from "../Form/form";
 
 const Showcase = () => {
   return (
-    <Container>
+    <div className="preload-showcase">
       <div className="container">
         <div className="showcase">
           <div className="showcase__title title">
@@ -16,7 +15,7 @@ const Showcase = () => {
           </div>
         </div>
       </div>
-    </Container>
+    </div>
   );
 };
 
