@@ -83,6 +83,7 @@ export const Container = styled.div`
 
         &--item {
           margin: 10px 0;
+          object-fit: cover;
           &:nth-child(1) {
             width: 135px;
           }
@@ -99,10 +100,10 @@ export const Container = styled.div`
             width: 115px;
           }
           &:nth-child(6) {
-            width: auto;
+            width: 120px;
           }
           &:nth-child(7) {
-            width: auto;
+            width: 120px;
           }
           &:nth-child(8) {
             width: 129px;
