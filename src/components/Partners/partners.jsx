@@ -14,9 +14,7 @@ const Partners = () => {
     <div className="container">
       <Container>
         <div className="partners">
-          <div className="partners__title">
-            Hamkor va mijozlarimiz jamoasining a`zosiga aylaning.
-          </div>
+          <div className="partners__title">Bitiruvchilarimiz ish joylari</div>
           <div className="partners__desc">
             Aipplyning eng yaxshi bitiruvchilarini bizning hamkorlar –
             O'zbekistonning yetakchi kompaniyalari ishga qabul qiladilar.

@@ -18,6 +18,7 @@ import { useMenuContext } from "../context/menu-context";
 import Banner from "../components/Banner/bannder";
 import Moduls from "../components/Moduls";
 import { Helmet } from "react-helmet-async";
+import Numbers from "../components/Statistica/numbers";
 
 const Course = () => {
   const { path } = useParams();
@@ -51,6 +52,9 @@ const Course = () => {
       </Helmet>
       {!showMenu && (
         <>
+          {path !== "computer-science" && path !== "foundation" && (
+            <Numbers path={path} />
+          )}
           <Statistica data={data?.statistics} />
           <About data={data?.about} />
           <ThenCourse data={data?.then} />

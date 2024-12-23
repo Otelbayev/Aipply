@@ -4,7 +4,6 @@ export const Container = styled.div`
   margin: 50px 0;
   .then-body {
     &__item {
-      margin: 20px 0;
       display: flex;
       align-items: center;
       gap: 25px;

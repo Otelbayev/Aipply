@@ -7,8 +7,6 @@ const Showcase = () => {
       <div className="container">
         <div className="showcase">
           <div className="showcase__title title">
-            {/* Aipply Academy - sun'iy intellektga ixtisoslashtirilgan zamonaviy
-            kasblar o'quv markazi! */}
             O'zbekistondagi birinchi Sun'iy intellektga ixtisoslashtirilgan
             zamonaviy kasblar o'quv markazi!
           </div>

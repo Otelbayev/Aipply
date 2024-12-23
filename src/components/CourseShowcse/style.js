@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: calc(100dvh - 67px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,7 +49,6 @@ export const Container = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-    height: calc(100dvh - 56px);
     .course-showcase {
       flex-direction: column-reverse;
       gap: 10px;

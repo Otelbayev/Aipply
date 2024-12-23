@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin: 80px 0;
+  margin: 20px 0;
   .statistic-title {
     width: 70%;
   }
@@ -145,11 +145,10 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 900px) {
-    margin: 20px 0;
     .statistic-title {
       width: 100%;
       font-size: 30px;
-      line-height:35px;
+      line-height: 35px;
     }
     .statistic-content {
       flex-direction: column;

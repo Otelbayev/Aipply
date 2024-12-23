@@ -10,8 +10,38 @@ import img7 from "../../assets/images/comments/7.png";
 import img8 from "../../assets/images/comments/8.png";
 import img9 from "../../assets/images/comments/9.png";
 import img11 from "../../assets/images/comments/10.png";
+import Slider from "react-slick";
 
 const Comments = () => {
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: false,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  const slides = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img11];
+
   return (
     <div>
       <Container>
@@ -19,93 +49,18 @@ const Comments = () => {
           <div className="container">
             <div className="comments__title">Izohlar</div>
           </div>
-          <div className="comments__body">
-            <div className="comments__body item1 stop-anim">
-              <img loading="lazy" effect="blur" src={img1} alt="" />
-              <img loading="lazy" effect="blur" src={img2} alt="" />
-              <img loading="lazy" effect="blur" src={img3} alt="" />
-              <img loading="lazy" effect="blur" src={img4} alt="" />
-              <img loading="lazy" effect="blur" src={img5} alt="" />
-              <img loading="lazy" effect="blur" src={img6} alt="" />
-              <img loading="lazy" effect="blur" src={img7} alt="" />
-              <img loading="lazy" effect="blur" src={img8} alt="" />
-              <img loading="lazy" effect="blur" src={img9} alt="" />
-              <img loading="lazy" effect="blur" src={img11} alt="" />
-            </div>
-          </div>
-          <div className="comments__body">
-            <div className="comments__body item2 stop-anim">
-              <img
-                loading="lazy"
-                effect="blur"
-                src={img11}
-                alt=""
-                className="comments__body__item"
-              />
-              <img
-                loading="lazy"
-                effect="blur"
-                src={img9}
-                alt=""
-                className="comments__body__item"
-              />
-              <img
-                loading="lazy"
-                effect="blur"
-                src={img8}
-                alt=""
-                className="comments__body__item"
-              />
-              <img
-                loading="lazy"
-                effect="blur"
-                src={img7}
-                alt=""
-                className="comments__body__item"
-              />
-              <img
-                loading="lazy"
-                effect="blur"
-                src={img6}
-                alt=""
-                className="comments__body__item"
-              />
-              <img
-                loading="lazy"
-                effect="blur"
-                src={img5}
-                alt=""
-                className="comments__body__item"
-              />
-              <img
-                loading="lazy"
-                effect="blur"
-                src={img4}
-                alt=""
-                className="comments__body__item"
-              />
-              <img
-                loading="lazy"
-                effect="blur"
-                src={img3}
-                alt=""
-                className="comments__body__item"
-              />
-              <img
-                loading="lazy"
-                effect="blur"
-                src={img2}
-                alt=""
-                className="comments__body__item"
-              />
-              <img
-                loading="lazy"
-                effect="blur"
-                src={img1}
-                alt=""
-                className="comments__body__item"
-              />
-            </div>
+          <div>
+            <Slider {...settings}>
+              {slides.map((slide, index) => (
+                <img
+                  style={{
+                    margin: "10px",
+                  }}
+                  src={slide}
+                  key={index}
+                />
+              ))}
+            </Slider>
           </div>
         </div>
       </Container>

@@ -7,10 +7,10 @@ const Statistica = ({ data }) => {
   return (
     <div className="container">
       <Container>
-        <div className="title-dark statistic-title" data-aos="fade-right">
+        {/* <div className="title-dark statistic-title" data-aos="fade-right">
           Kursni tugatganlarni o’rtacha statistikasi
-        </div>
-
+        </div> */}
+{/* 
         <div className="statistic-content" data-aos="zoom-in">
           <div className="statistic-content__left">
             <div className="statistic-content__left__item grid-first">
@@ -54,7 +54,7 @@ const Statistica = ({ data }) => {
               <Form background="#F3F8FF" />
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="statistic-bottom">
           <div className="statistic-bottom__left" data-aos="fade-right">
             <div className="statistic-bottom__left__title">{data?.aiDesc}</div>

@@ -8,20 +8,23 @@ import Partners from "../components/Partners/partners.jsx";
 import Mentors from "../components/Mentors/mentors.jsx";
 import Comments from "../components/Comments/comments.jsx";
 import Bottom from "../components/Bottom/bottom.jsx";
+import Numbers from "../components/Statistica/numbers.jsx";
+import Results from "../components/Results/index.jsx";
 
 const Home = () => {
   const { showMenu } = useMenuContext();
 
   return (
     <>
-      blur
       <Showcase />
+      {!showMenu && <Numbers />}
       {!showMenu && <Why />}
-      {!showMenu && <Courses />}
-      {!showMenu && <Banner />}
-      {!showMenu && <Partners />}
-      {!showMenu && <Mentors />}
       {!showMenu && <Comments />}
+      {!showMenu && <Banner course />}
+      {!showMenu && <Courses />}
+      {!showMenu && <Partners />}
+      {!showMenu && <Results />}
+      {!showMenu && <Mentors />}
       {!showMenu && <Bottom />}
     </>
   );

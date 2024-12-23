@@ -17,14 +17,14 @@ export const courseData = [
   },
   {
     img: img2,
-    title: "Interior/Exterior design +AI 1.0",
+    title: "Interior/Exterior dizayn +AI 1.0",
     path: "in-ex-design",
     desc: "Interer dizayni: mukammal makon yaratish san'ati. Professionallik sari sayohatingizni bugun boshlang!",
     month: 3,
   },
   {
     img: img3,
-    title: "Motion design va Videomontaj +AI 1.0",
+    title: "Motion dizayn va Videomontaj +AI 1.0",
     path: "motion-design",
     desc: "Moushen grafika va videomontaj, multimedia dizayni va yaratilishining ikki muhim sohasidir!",
     month: 3,

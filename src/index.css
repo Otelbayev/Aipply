@@ -41,12 +41,6 @@ html {
   }
 }
 
-@media screen and (max-width: 776px) {
-  .container {
-    width: 97%;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -200,7 +194,6 @@ html {
   width: 0%;
   left: 50%;
 }
-
 
 #nav-icon4 span:nth-child(1) {
   top: 0px;
