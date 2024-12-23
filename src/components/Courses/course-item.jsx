@@ -6,7 +6,13 @@ const CourseItem = ({ data }) => {
   return (
     <div className="course">
       <div className="course__title title">{data.title}</div>
-      <img loading="lazy" src={data.img} className="course__icon" alt="" />
+      <img
+        loading="lazy"
+        effect="blur"
+        src={data.img}
+        className="course__icon"
+        alt=""
+      />
       <div className="course__desc">{data.desc}</div>
       <div className="course__month title">{data.month} oy + sertifikat</div>
       <button

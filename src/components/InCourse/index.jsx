@@ -15,7 +15,14 @@ const InCourse = ({ video, project }) => {
         ) : (
           project?.length &&
           project.map((e, index) => (
-            <img key={index} loading="lazy" src={e} data-aos="fade-up" alt="" />
+            <img
+              key={index}
+              loading="lazy"
+              effect="blur"
+              src={e}
+              data-aos="fade-up"
+              alt=""
+            />
           ))
         )}
       </div>

@@ -14,6 +14,7 @@ const Page1 = ({ setSteps }) => {
         <div className="content__profile">
           <img
             loading="lazy"
+            effect="blur"
             className="content__profile__logo"
             src={logo}
             alt=""
@@ -45,7 +46,13 @@ const Page1 = ({ setSteps }) => {
             }
           >
             Davom Etish{" "}
-            <img loading="lazy" style={{ width: "30px" }} src={icon} alt="" />
+            <img
+              loading="lazy"
+              effect="blur"
+              style={{ width: "30px" }}
+              src={icon}
+              alt=""
+            />
           </button>
         </div>
       </div>

@@ -22,6 +22,7 @@ const Footer = () => {
               allowFullScreen
               src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=75493422112"
               loading="lazy"
+              effect="blur"
             ></iframe>
           </Content.Left>
           <Content.Right>

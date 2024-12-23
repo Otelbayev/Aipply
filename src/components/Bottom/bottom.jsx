@@ -21,7 +21,13 @@ const Bottom = () => {
             </Link>
           </div>
         </div>
-        <img loading="lazy" src={boy} alt="" className="bottom__right" />
+        <img
+          loading="lazy"
+          effect="blur"
+          src={boy}
+          alt=""
+          className="bottom__right"
+        />
       </div>
     </Container>
   );

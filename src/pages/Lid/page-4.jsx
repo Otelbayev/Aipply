@@ -89,7 +89,12 @@ const Page4 = ({ formData, setSteps }) => {
     <Container>
       <div className="content">
         <NavLink to="/">
-          <img loading="lazy" className="content__logo" src={logo} />
+          <img
+            loading="lazy"
+            effect="blur"
+            className="content__logo"
+            src={logo}
+          />
         </NavLink>
 
         <div className="content__title">Telefon raqamingizni qoldiring!</div>
@@ -132,11 +137,23 @@ const Page4 = ({ formData, setSteps }) => {
             }}
             className="content__btns--back btn"
           >
-            <img loading="lazy" style={{ width: "30px" }} src={back} alt="" />
+            <img
+              loading="lazy"
+              effect="blur"
+              style={{ width: "30px" }}
+              src={back}
+              alt=""
+            />
           </button>
           <button onClick={handleSubmit} className="content__btns--next btn">
             Yuborish{" "}
-            <img loading="lazy" style={{ width: "30px" }} src={icon} alt="" />
+            <img
+              loading="lazy"
+              effect="blur"
+              style={{ width: "30px" }}
+              src={icon}
+              alt=""
+            />
           </button>
         </div>
         <div className="content__checkbox-wrap">

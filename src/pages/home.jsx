@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <>
-      jasurbek
+      blur
       <Showcase />
       {!showMenu && <Why />}
       {!showMenu && <Courses />}

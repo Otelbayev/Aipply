@@ -24,48 +24,56 @@ const Partners = () => {
           <div className="partners__icons">
             <img
               loading="lazy"
+              effect="blur"
               src={icon1}
               className="partners__icons--item"
               alt=""
             />
             <img
               loading="lazy"
+              effect="blur"
               src={icon2}
               className="partners__icons--item"
               alt=""
             />
             <img
               loading="lazy"
+              effect="blur"
               src={icon3}
               className="partners__icons--item"
               alt=""
             />
             <img
               loading="lazy"
+              effect="blur"
               src={icon4}
               className="partners__icons--item"
               alt=""
             />
             <img
               loading="lazy"
+              effect="blur"
               src={icon5}
               className="partners__icons--item"
               alt=""
             />
             <img
               loading="lazy"
+              effect="blur"
               src={icon6}
               className="partners__icons--item"
               alt=""
             />
             <img
               loading="lazy"
+              effect="blur"
               src={icon7}
               className="partners__icons--item"
               alt=""
             />
             <img
               loading="lazy"
+              effect="blur"
               src={icon8}
               className="partners__icons--item"
               alt=""

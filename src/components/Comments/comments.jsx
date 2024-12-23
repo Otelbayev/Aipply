@@ -21,76 +21,86 @@ const Comments = () => {
           </div>
           <div className="comments__body">
             <div className="comments__body item1 stop-anim">
-              <img loading="lazy" src={img1} alt="" />
-              <img loading="lazy" src={img2} alt="" />
-              <img loading="lazy" src={img3} alt="" />
-              <img loading="lazy" src={img4} alt="" />
-              <img loading="lazy" src={img5} alt="" />
-              <img loading="lazy" src={img6} alt="" />
-              <img loading="lazy" src={img7} alt="" />
-              <img loading="lazy" src={img8} alt="" />
-              <img loading="lazy" src={img9} alt="" />
-              <img loading="lazy" src={img11} alt="" />
+              <img loading="lazy" effect="blur" src={img1} alt="" />
+              <img loading="lazy" effect="blur" src={img2} alt="" />
+              <img loading="lazy" effect="blur" src={img3} alt="" />
+              <img loading="lazy" effect="blur" src={img4} alt="" />
+              <img loading="lazy" effect="blur" src={img5} alt="" />
+              <img loading="lazy" effect="blur" src={img6} alt="" />
+              <img loading="lazy" effect="blur" src={img7} alt="" />
+              <img loading="lazy" effect="blur" src={img8} alt="" />
+              <img loading="lazy" effect="blur" src={img9} alt="" />
+              <img loading="lazy" effect="blur" src={img11} alt="" />
             </div>
           </div>
           <div className="comments__body">
             <div className="comments__body item2 stop-anim">
               <img
                 loading="lazy"
+                effect="blur"
                 src={img11}
                 alt=""
                 className="comments__body__item"
               />
               <img
                 loading="lazy"
+                effect="blur"
                 src={img9}
                 alt=""
                 className="comments__body__item"
               />
               <img
                 loading="lazy"
+                effect="blur"
                 src={img8}
                 alt=""
                 className="comments__body__item"
               />
               <img
                 loading="lazy"
+                effect="blur"
                 src={img7}
                 alt=""
                 className="comments__body__item"
               />
               <img
                 loading="lazy"
+                effect="blur"
                 src={img6}
                 alt=""
                 className="comments__body__item"
               />
               <img
                 loading="lazy"
+                effect="blur"
                 src={img5}
                 alt=""
                 className="comments__body__item"
               />
               <img
                 loading="lazy"
+                effect="blur"
                 src={img4}
                 alt=""
                 className="comments__body__item"
               />
               <img
                 loading="lazy"
+                effect="blur"
                 src={img3}
                 alt=""
                 className="comments__body__item"
               />
               <img
                 loading="lazy"
+                effect="blur"
                 src={img2}
                 alt=""
                 className="comments__body__item"
               />
               <img
                 loading="lazy"
+                effect="blur"
                 src={img1}
                 alt=""
                 className="comments__body__item"

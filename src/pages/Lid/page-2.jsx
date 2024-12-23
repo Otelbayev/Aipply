@@ -30,7 +30,12 @@ const Page2 = ({ setSteps, online, setOnline }) => {
     <Container>
       <div className="content">
         <NavLink to="/">
-          <img loading="lazy" className="content__logo" src={logo} />
+          <img
+            loading="lazy"
+            effect="blur"
+            className="content__logo"
+            src={logo}
+          />
         </NavLink>
         <div className="content__dark">O'qish shaklini tanlang!</div>
 
@@ -67,11 +72,23 @@ const Page2 = ({ setSteps, online, setOnline }) => {
             }}
             className="content__btns--back btn"
           >
-            <img loading="lazy" style={{ width: "30px" }} src={back} alt="" />
+            <img
+              loading="lazy"
+              effect="blur"
+              style={{ width: "30px" }}
+              src={back}
+              alt=""
+            />
           </button>
           <button onClick={handleClick} className="content__btns--next btn">
             Davom Etish{" "}
-            <img loading="lazy" style={{ width: "30px" }} src={icon} alt="" />
+            <img
+              loading="lazy"
+              effect="blur"
+              style={{ width: "30px" }}
+              src={icon}
+              alt=""
+            />
           </button>
         </div>
       </div>

@@ -43,7 +43,12 @@ const Mentors = () => {
           <Slider ref={slider2Ref} {...settings}>
             {images.map((image, index) => (
               <div key={index} className="mentors-item">
-                <img src={image} loading="lazy" alt={`Slide ${index}`} />
+                <img
+                  src={image}
+                  loading="lazy"
+                  effect="blur"
+                  alt={`Slide ${index}`}
+                />
               </div>
             ))}
           </Slider>

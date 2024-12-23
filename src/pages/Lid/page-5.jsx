@@ -10,7 +10,12 @@ const Page5 = ({ formData }) => {
     <Container>
       <div className="content">
         <NavLink to="/">
-          <img loading="lazy" className="content__logo" src={logo} />
+          <img
+            loading="lazy"
+            effect="blur"
+            className="content__logo"
+            src={logo}
+          />
         </NavLink>
         <div className="content__title">
           Siz muvofaqaiyatli ro'yxatdan o'tdingiz!
@@ -25,6 +30,7 @@ const Page5 = ({ formData }) => {
         <NavLink to="/" className="content__link">
           <img
             loading="lazy"
+            effect="blur"
             src={web}
             alt=""
             className="content__link__icon"
@@ -37,6 +43,7 @@ const Page5 = ({ formData }) => {
         >
           <img
             loading="lazy"
+            effect="blur"
             src={ins}
             alt=""
             className="content__link__icon"

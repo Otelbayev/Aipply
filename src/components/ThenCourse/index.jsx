@@ -14,7 +14,13 @@ const ThenCourse = ({ data }) => {
           {data?.length &&
             data.map(({ icon, id, title }) => (
               <div key={id} className="then-body__item" data-aos={`fade-left`}>
-                <img src={icon} alt="" loading="lazy" className="then-body__item__img" />
+                <img
+                  src={icon}
+                  alt=""
+                  loading="lazy"
+                  effect="blur"
+                  className="then-body__item__img"
+                />
                 <div className="then-body__item__title">{title}</div>
               </div>
             ))}

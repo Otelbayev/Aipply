@@ -79,6 +79,7 @@ const Statistica = ({ data }) => {
               <img
                 src={computer}
                 loading="lazy"
+                effect="blur"
                 className="statistic-bottom__right__content__img"
                 alt=""
               />

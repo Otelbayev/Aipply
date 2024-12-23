@@ -20,7 +20,13 @@ const Banner = ({ course }) => {
             </>
           )}
         </div>
-        <img loading="lazy" src={banner} alt="" className="banner__img" />
+        <img
+          loading="lazy"
+          effect="blur"
+          src={banner}
+          alt=""
+          className="banner__img"
+        />
       </div>
     </Container>
   );

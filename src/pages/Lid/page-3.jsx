@@ -37,7 +37,12 @@ const Page3 = ({ setSteps, course, setCourse }) => {
     <Container>
       <div className="content">
         <NavLink to="/">
-          <img loading="lazy" className="content__logo" src={logo} />
+          <img
+            loading="lazy"
+            effect="blur"
+            className="content__logo"
+            src={logo}
+          />
         </NavLink>
         <div className="content__dark">Kursni tanlang!</div>
 
@@ -66,7 +71,13 @@ const Page3 = ({ setSteps, course, setCourse }) => {
             }}
             className="content__btns--back btn"
           >
-            <img loading="lazy" style={{ width: "30px" }} src={back} alt="" />
+            <img
+              loading="lazy"
+              effect="blur"
+              style={{ width: "30px" }}
+              src={back}
+              alt=""
+            />
           </button>
           <button
             onClick={() =>
@@ -81,7 +92,13 @@ const Page3 = ({ setSteps, course, setCourse }) => {
             className="content__btns--next btn"
           >
             Davom Etish{" "}
-            <img loading="lazy" style={{ width: "30px" }} src={icon} alt="" />
+            <img
+              loading="lazy"
+              effect="blur"
+              style={{ width: "30px" }}
+              src={icon}
+              alt=""
+            />
           </button>
         </div>
       </div>

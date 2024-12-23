@@ -45,7 +45,13 @@ const Header = () => {
               <span></span>
             </button>
             <Link to="/">
-              <img loading="lazy" src={logo} alt="" className="header__logo" />
+              <img
+                loading="lazy"
+                effect="blur"
+                src={logo}
+                alt=""
+                className="header__logo"
+              />
             </Link>
             <nav className="header__nav">
               <button

@@ -16,7 +16,7 @@ const CourseShowcase = ({ data, icon }) => {
           </div>
         </div>
         <div className="course-showcase__right">
-          <img loading="lazy" src={icon} alt="" />
+          <img loading="lazy" effect="blur" src={icon} alt="" />
         </div>
       </div>
     </Container>
