@@ -14,6 +14,7 @@ const Home = () => {
 
   return (
     <>
+      jasurbek
       <Showcase />
       {!showMenu && <Why />}
       {!showMenu && <Courses />}
