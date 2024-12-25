@@ -22,7 +22,7 @@ const CourseTime = ({ month }) => {
               <div className="course-time__item--title">Davomiyligi</div>
             </div>
             <div className="course-time__item">
-              <div className="course-time__item--count title">2 kun</div>
+              <div className="course-time__item--count title">3 kun</div>
               <div className="course-time__item--line"></div>
               <div className="course-time__item--title">Haftada</div>
             </div>
@@ -56,7 +56,7 @@ const Container = styled.div`
       text-align: center;
       width: 100%;
       &--count {
-        font-size: 55px;
+        font-size: 50px;
         font-weight: 700;
       }
       &--line {
@@ -82,7 +82,7 @@ const Container = styled.div`
       }
       &__item {
         &--count {
-          font-size: 50px;
+          font-size: 45px;
         }
       }
     }
