@@ -38,7 +38,7 @@ export const computerScience = {
     title: "Kompyuterdan samarali foydalaning!",
     desc: "Biz sizga ofis dasturlarida mukammal ishlashni o'rgatamiz va keyin siz esa siz har qanday ofis ishini bajarib keta olasiz!",
     keywords:
-      "kompyuter Savodxonligi, offis dasturlari, word, excel, powerpoint, word , excel, powerpoint, kompyuter Savodxonligi, google sheets, google slides, google docs, google drive,Foundation kurslari, Foundation framework o‘rganish, CSS frameworklar, responsiv dizayn, grid tizimi, veb dizayn asoslari, Foundation darslari, Foundation o‘qitish, Foundation framework ishlatish, boshlang‘ich Foundation kurslari, HTML va CSS frameworklari, frontend frameworklar, Foundation grid tizimi, adaptiv dizayn, Foundation tutorial, web development foundation",
+      "Aipply Academy, Kompyuter savodxonligi, Kompyuter asoslari, Office dasturlari kurslari, Microsoft Word darslari, Microsoft Excel kurslari, PowerPoint darslari, Kompyuter o‘rganish, Boshlang‘ich kompyuter kurslari, IT savodxonligi, Toshkentda kompyuter kurslari, Kompyuter foydalanuvchisi bo‘lish, Internet asoslari, Kompyuter va texnologiya kurslari, Aipply kompyuter akademiyasi",
   },
   statistics: {
     succes: "80",

@@ -39,7 +39,7 @@ export const python = {
     title: "Python-Django-TensorFlow + AI 1.0",
     desc: "Siz singa zamonaviy bilimlar asosida dasturlashni o’rgatamiz va sizni daromatga olib chiqamiz",
     keywords:
-      "Python kurslari, Python dasturlash, Python o‘rganish, dasturlash asoslari, Python boshlang‘ich darslari, Python o‘qitish, Python bo‘yicha onlayn kurslar, Python texnologiyalari, web development Python, data science Python, Python mashin learning, Python bilan dasturlash, Django kurslari, Flask kurslari, Python kod yozish, Python algoritmlari, Python darslari, avtomatlashtirish Python, Python sertifikat olish",
+      "Aipply Academy, Python TensorFlow kurslari, TensorFlow darslari, TensorFlow o'rganish, TensorFlow bo'yicha treninglar, Toshkentda TensorFlow kurslari, Mashinaviy o'qitish, Sun'iy intellekt, Neural network kurslari, AI darslari, Deep learning, Data science, Python darslari, TensorFlow amaliyotlari, TensorFlow O'zbekiston, Aipply o'quv markazi",
   },
   statistics: {
     succes: "80",

@@ -38,7 +38,7 @@ export const birOy = {
     title: "Bir oyda veb sayt yaratishni o’rganing!",
     desc: "Biz sizga zamonaviy bilimlar asosida No-Codingni o’rgatamiz va sizni daromatga olib chiqamiz",
     keywords:
-      "no coding, tilda, no coding uz, kod yozmasdan dastur yaratish,No Code kurslari, dasturlashsiz veb yaratish, No Code platformalar, veb-sayt yaratish, mobil ilova yaratish, no-code texnologiyalar, Webflow kurslari, Bubble.io kurslari, WordPress darslari, Shopify o‘rganish, Airtable asoslari, no-code dasturlash, onlayn no-code kurslari, kodsiz dasturlash, boshlang‘ich no-code darslari, vizual dasturlash, no-code bo‘yicha o‘qitish, veb-sayt dizayn qilish, no-code tools",
+      "Aipply Academy, Bir oyda veb-sayt yaratish, No-Code kurslari, Kod yozmasdan sayt yaratish, Webflow kurslari, Bubble.io darslari, Veb-sayt ishlab chiqish, Node code veb-sayt, Toshkentda no-code kurslari, Tezkor sayt yaratish, Veb-dizayn asoslari, Airtable darslari, Kod yozmasdan biznes uchun sayt, Bir oyda IT ko'nikma, No-Code bo‘yicha amaliy kurslar",
   },
   statistics: {
     succes: "80",

@@ -45,7 +45,7 @@ export const graphicDesign = {
     title: "Grafik dizaynni zamon talabida o’rganing!",
     desc: "Siz singa zamonaviy bilimlar asosida grafik dizaynni o’rgatamiz va sizni daromatga olib chiqamiz",
     keywords:
-      "grafik dizayn kurslari, grafik dizayn o‘rganish, grafik dizayner bo‘lish, Adobe Photoshop kurslari, Adobe Illustrator kurslari, grafik dizayn darslari, logo dizayn qilish, vizitka dizayni, kreativ dizayn, boshlang‘ich grafik dizayn kurslari, dizayn dasturlarini o‘rganish, grafik dizayn o‘qitish, onlayn grafik dizayn kurslari, grafik dizayn bo‘yicha darslar, grafik dizayn maktabi",
+      "Aipply Academy, Grafik dizayn kursi, Grafik dizayn o'quv markazi, Grafik dizayn darslari, Grafik dizayn bo'yicha o'quv kurslari, Grafik dizayn O'zbekiston, Grafik dizayn Toshkent, Aipply dizayn kurslari, Dizayn o'rganish, Adobe Photoshop kurslari, Adobe Illustrator kurslari, CorelDRAW o'quv kursi, Rastr va vektor grafika, Dizayn asoslari, Dizaynerlik kurslari, Grafik dizayn treninglari",
   },
   statistics: {
     succes: "80",

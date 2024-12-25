@@ -47,7 +47,7 @@ export const motion = {
     title: "Motion dizayn va Videomontaj sohasini zamon talabida o’rganing!",
     desc: "Siz singa zamonaviy bilimlar asosida Motion dizayn va Videomontajni o’rgatamiz va sizni daromatga olib chiqamiz",
     keywords:
-      "Motion Dizayn, videomontaj, moshin dizayn,Motion Design kurslari, motion graphics o‘rganish, After Effects kurslari, animatsiya yaratish, 2D animatsiya, 3D animatsiya, video montaj, motion dizayn darslari, grafik animatsiya, kreativ motion dizayn, vizual effektlar, motion graphics texnologiyalari, onlayn motion design kurslari, boshlang‘ich motion design, video dizayn, animatsion kontent yaratish, motion design bo‘yicha o‘qitish, motion dizayn sertifikati, veb animatsiya",
+      "Aipply Academy, Motion dizayn kurslari, Harakatli grafika, Motion dizayn darslari, Motion dizayner bo'lish, Toshkentda motion dizayn kurslari, Adobe After Effects kurslari, Premiere Pro darslari, Animatsiya kurslari, Video montaj darslari, Motion dizayn bo'yicha treninglar, Harakatli dizayn, 2D animatsiya, 3D animatsiya, Videografika o'rganish, Aipply dizayn akademiyasi, Motion dizayn O'zbekiston",
   },
   statistics: {
     succes: "80",

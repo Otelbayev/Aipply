@@ -36,7 +36,8 @@ export const foundation = {
     title:
       "IT sohasiga kirish uchun qulay va samarali ilk qadamni biz bilan boshlang!",
     desc: "Biz sizga yo'nalish tanlashda yordam beramiz va dasturlash olamida o'z o'rningizni topishingizga yordam beramiz",
-    keywords: "foundation, frontend, backend, mobile, code uz, dasturlash, kurs ",
+    keywords:
+      "Aipply Academy, Coding Foundation kurslari, Dasturlash asoslari, Dasturlashni o'rganish, Coding asoslari, Beginner dasturlash kurslari, Dasturlash darslari Toshkent, Python asoslari, JavaScript asoslari, HTML va CSS darslari, Coding o'quv kurslari, Dasturlash bo'yicha treninglar, Algoritmlar va dasturlash, Web development asoslari, Aipply Coding Academy",
   },
   statistics: {
     succes: "80",

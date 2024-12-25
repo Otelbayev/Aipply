@@ -38,7 +38,7 @@ export const noCoding = {
     title: "Kod yozmasdan dastur yaratishni o’rganing!",
     desc: "Biz sizga zamonaviy bilimlar asosida No-Codingni o’rgatamiz va sizni daromatga olib chiqamiz",
     keywords:
-      "No Code kurslari, dasturlashsiz veb yaratish, No Code platformalar, veb-sayt yaratish, mobil ilova yaratish, no-code texnologiyalar, Webflow kurslari, Bubble.io kurslari, WordPress darslari, Shopify o‘rganish, Airtable asoslari, no-code dasturlash, onlayn no-code kurslari, kodsiz dasturlash, boshlang‘ich no-code darslari, vizual dasturlash, no-code bo‘yicha o‘qitish, veb-sayt dizayn qilish, no-code tools",
+      "Aipply Academy, No-Code kurslari, No-Code dasturlash, Kod yozmasdan dasturlash, No-Code platformalar, Webflow kurslari, Bubble.io darslari, Airtable asoslari, Kod yozmasdan veb sayt yaratish, Mobil ilovalar yaratish, IT boshlang‘ichlar uchun kurslar, No-Code bo‘yicha treninglar, Tezkor dasturlash, Aipply no-code akademiyasi, App development no-code",
   },
   statistics: {
     succes: "80",

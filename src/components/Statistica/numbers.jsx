@@ -10,7 +10,7 @@ const Numbers = ({ path }) => {
         <div className="prices">
           <div className="prices__item">
             <span className="prices__item--title ">Grafik dizayn</span>
-            <span className="prices__item--price ">$300</span>
+            <span className="prices__item--price ">$350</span>
           </div>
         </div>
       ),
@@ -74,7 +74,7 @@ const Numbers = ({ path }) => {
           </div>
           <div className="prices__item">
             <span className="prices__item--title ">Dizayn</span>
-            <span className="prices__item--price ">$300</span>
+            <span className="prices__item--price ">$350</span>
           </div>
         </div>
       )
@@ -84,8 +84,11 @@ const Numbers = ({ path }) => {
   return (
     <div className="container">
       <Wrapper>
-        <div className="title-dark statistic-title">
-          Kursni tugatganlarni o’rtacha statistikasi
+        <div
+          className="title statistic-title"
+          style={{ width: "100%", paddingBottom: "15px" }}
+        >
+          “Aipply Academy” natijasi raqamlarda
         </div>
         <div className="num-content">
           <div className="num-content__item">
@@ -108,9 +111,15 @@ const Numbers = ({ path }) => {
             </div>
             {getPrice(path)}
             <p>
+              <div>
+                <i>
+                  O'quv markazini endi tugatgan bitiruvchilarning o'rtacha
+                  maoshi.
+                </i>
+              </div>
               <i>
                 Tajriba ortgani sayin zamonaviy kasblarda daromad ham muntazam
-                oshishib boradi.
+                oshib boradi.
               </i>
             </p>
           </div>
@@ -125,6 +134,8 @@ export default Numbers;
 export const Wrapper = styled.div`
   .statistic-title {
     margin: 20px 0;
+    font-size: 43px;
+    font-weight: 700;
   }
   .num-content {
     display: flex;
