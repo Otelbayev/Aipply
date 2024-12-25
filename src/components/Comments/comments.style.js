@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  margin-top: 50px;
   .comments {
     &__title {
       font-weight: 700;

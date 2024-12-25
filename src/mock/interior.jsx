@@ -35,6 +35,7 @@ const Desc = () => (
 
 export const interior = {
   path: "in-ex-design",
+  month: 3,
   courseImg,
   name: "Interior/Exterior Dizayn",
   keywords: "Interior, Exterior, dizayn, grifika, 3d max",

@@ -28,6 +28,7 @@ const DesignDesc = () => (
 
 export const foundation = {
   path: "foundation",
+  month: 1,
   courseImg,
   name: "Foundation",
   description: "",

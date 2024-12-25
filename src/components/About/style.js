@@ -35,6 +35,8 @@ export const Container = styled.div`
     img,
     video {
       width: 33%;
+      border-radius: 10px;
+      object-fit: cover;
     }
   }
 

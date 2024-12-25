@@ -91,21 +91,21 @@ const Numbers = ({ path }) => {
           “Aipply Academy” natijasi raqamlarda
         </div>
         <div className="num-content">
-          <div className="num-content__item">
+          <div className="num-content__item" data-aos="fade-up">
             <div className="num-content__item--count title">80%</div>
             <div className="num-content__item--text title">
               Muvaffaqiyatli tugatganlar
             </div>
             <img src={img1} className="num-content__item--img" alt="" />
           </div>
-          <div className="num-content__item">
+          <div className="num-content__item" data-aos="fade-up">
             <div className="num-content__item--count title">95%</div>
             <div className="num-content__item--text title">
               Ishga joylashgan bitiruvchilarimiz
             </div>
             <img src={img2} className="num-content__item--img" alt="" />
           </div>
-          <div className="num-content__last">
+          <div className="num-content__last" data-aos="fade-up">
             <div className="num-content__last--title title">
               Bitiruvchilarning o‘rtacha maoshi
             </div>

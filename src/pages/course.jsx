@@ -19,6 +19,7 @@ import Banner from "../components/Banner/bannder";
 import Moduls from "../components/Moduls";
 import { Helmet } from "react-helmet-async";
 import Numbers from "../components/Statistica/numbers";
+import CourseTime from "../components/CourseTime";
 
 const Course = () => {
   const { path } = useParams();
@@ -52,6 +53,7 @@ const Course = () => {
       </Helmet>
       {!showMenu && (
         <>
+          <CourseTime month={data.month} />
           {path !== "computer-science" && path !== "foundation" && (
             <Numbers path={path} />
           )}

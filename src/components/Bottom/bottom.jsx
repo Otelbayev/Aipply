@@ -15,7 +15,7 @@ const Bottom = () => {
           </div>
           <div className="bottom__left--form">
             <div>Bepul ochiq darsga</div>
-            <div>yozilish!</div>
+            <div>yoziling!</div>
             <Link to="/lid">
               <button className="btn">Bepul ochiq darsga yoziling!</button>
             </Link>

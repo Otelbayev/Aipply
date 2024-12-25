@@ -15,7 +15,7 @@ export const whyData = [
   { icon: icon3, title: "Bilimingizni muvaffaqiyatli soting!" },
   { icon: icon1, title: "Mablag'ingiz yo'qmi?-yechimi bor!" },
   { icon: icon5, title: "Eng so‘ngi o‘quv dasturlari Siz uchun!" },
-  { icon: icon6, title: "Kuchlimutaxas-sislardan sifatli ta’lim oning!" },
+  { icon: icon6, title: "Kuchli mutaxassislardan sifatli ta’lim oling!" },
   { icon: icon7, title: "Amaliyot, real loyihalar va portfolio!" },
   { icon: icon8, title: "Zamonaviy muhit  bepul Coworking va Wi-fi" },
   { icon: icon9, title: "Bepul mahorat darslari va musobaqalar" },

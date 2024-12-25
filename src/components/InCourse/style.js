@@ -4,6 +4,8 @@ export const Container = styled.div`
   img,
   video {
     width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
   }
 
   .tt {

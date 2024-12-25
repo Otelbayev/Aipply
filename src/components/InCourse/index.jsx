@@ -22,6 +22,7 @@ const InCourse = ({ video, project }) => {
               src={e}
               data-aos="fade-up"
               alt=""
+              
             />
           ))
         )}

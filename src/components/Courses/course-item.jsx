@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const CourseItem = ({ data }) => {
   const navigate = useNavigate();
   return (
-    <div className="course">
+    <div className="course" data-aos="zoom-in">
       <div className="course__title title">{data.title}</div>
       <img
         loading="lazy"

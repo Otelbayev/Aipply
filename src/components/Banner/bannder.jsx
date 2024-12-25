@@ -5,7 +5,7 @@ import Form from "../Form/form";
 
 const Banner = ({ course }) => {
   return (
-    <Container className="container">
+    <Container className="container" data-aos="fade-up">
       <div className="banner">
         <div>
           <p className="banner__text">

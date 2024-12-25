@@ -38,6 +38,7 @@ const DesignDesc = () => (
 
 export const graphicDesign = {
   courseImg: width,
+  month: 5,
   path: "graphic-design",
   name: "Grafik Dizayn",
   keywords: "grafik dizayn, dizayn, figma uz, fotoshop uz",

@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   .course-showcase {
-    padding: 50px 0;
+    padding: 100px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,6 +33,7 @@ export const Container = styled.div`
   }
   @media screen and (max-width: 992px) {
     .course-showcase {
+      padding: 70px 0 10px;
       &__left {
         width: 60%;
         &--title {

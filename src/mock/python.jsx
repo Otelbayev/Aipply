@@ -34,6 +34,7 @@ export const python = {
   courseImg,
   path: "python",
   name: "Python",
+  month: 6,
   keywords: "Aipply Academy, Python kusi, python uz, ",
   showcase: {
     title: "Python-Django-TensorFlow + AI 1.0",

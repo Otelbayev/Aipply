@@ -40,6 +40,7 @@ const Desc = () => (
 
 export const motion = {
   courseImg,
+  month: 3,
   path: "motion-design",
   name: "Motion Dizayn",
   keywords: "Motion Dizayn, videomontaj, moshin dizayn",

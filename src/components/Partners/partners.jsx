@@ -11,7 +11,7 @@ import icon8 from "../../assets/icons/partners/8.png";
 
 const Partners = () => {
   return (
-    <div className="container">
+    <div className="container" data-aos="fade-up">
       <Container>
         <div className="partners">
           <div className="partners__title">Bitiruvchilarimiz ish joylari</div>

@@ -18,12 +18,12 @@ const Home = () => {
     <>
       <Showcase />
       {!showMenu && <Numbers />}
+      {!showMenu && <Results />}
       {!showMenu && <Why />}
       {!showMenu && <Comments />}
       {!showMenu && <Banner course />}
       {!showMenu && <Courses />}
       {!showMenu && <Partners />}
-      {!showMenu && <Results />}
       {!showMenu && <Mentors />}
       {!showMenu && <Bottom />}
     </>

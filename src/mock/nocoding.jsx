@@ -31,6 +31,7 @@ const Desc = () => (
 
 export const noCoding = {
   courseImg,
+  month: 6,
   name: "No Coding",
   path: "no-coding",
   keywords: "no coding, tilda, no coding uz, kod yozmasdan dastur yaratish",

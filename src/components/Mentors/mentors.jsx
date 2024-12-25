@@ -38,7 +38,7 @@ const Mentors = () => {
   return (
     <div className="container" ref={mentorsRef}>
       <Container>
-        <div className="mentors">
+        <div className="mentors" data-aos="fade-up">
           <div className="mentors__title">Bizning mentorlarimiz</div>
           <Slider ref={slider2Ref} {...settings}>
             {images.map((image, index) => (

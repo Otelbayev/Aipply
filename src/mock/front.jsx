@@ -31,6 +31,7 @@ const FrontendDesc = () => (
 
 export const reactJs = {
   path: "reactjs",
+  month: 6,
   courseImg,
   name: "Frontend",
   keywords:

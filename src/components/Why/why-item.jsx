@@ -2,7 +2,7 @@ import React from "react";
 
 const WhyItem = ({ title, icon }) => {
   return (
-    <div className="why__item">
+    <div className="why__item" data-aos="zoom-in">
       <img
         loading="lazy"
         effect="blur"

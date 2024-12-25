@@ -30,7 +30,7 @@ const DesignDesc = () => (
 
 export const computerScience = {
   courseImg,
-
+  month: 1,
   path: "computer-science",
   name: "Kompyuter Savodxonligi",
   keywords: "kompyuter Savodxonligi, offis dasturlari, word, excel, powerpoint",

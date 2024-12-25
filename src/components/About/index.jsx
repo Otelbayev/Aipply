@@ -19,7 +19,7 @@ const About = ({ data }) => {
         </div>
         <div className="about-body">
           {data?.projects?.map((img, index) => (
-            <img key={index} src={img} data-aos="fade-up" />
+            <img key={index}  src={img} data-aos="fade-up" />
           ))}
         </div>
       </Container>
