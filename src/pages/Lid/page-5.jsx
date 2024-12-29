@@ -5,7 +5,8 @@ import { Container } from "./style";
 import ins from "../../assets/icons/ins.png";
 import web from "../../assets/icons/web.png";
 
-const Page5 = ({ formData }) => {
+const Page5 = () => {
+  
   return (
     <Container>
       <div className="content">

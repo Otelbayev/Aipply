@@ -3,7 +3,7 @@ import logo from "../../assets/images/img.jpg";
 import icon from "../../assets/icons/right-arrow.png";
 import { Container } from "./style";
 
-const Page1 = ({ setSteps }) => {
+const Page1 = ({ setCurrentStep }) => {
   return (
     <Container>
       <div className="abs"></div>
@@ -22,28 +22,20 @@ const Page1 = ({ setSteps }) => {
           <div className="content__profile__name t-dark">Aipply Academy</div>
         </div>
         <ul className="content__list">
-          <li className="content__list__item">-Kasbda daromad qilish;</li>
           <li className="content__list__item">
-            -Kasbda sun’iy intellektni qo‘llash;
+            -Sun’iy intellektni professional qo‘llash!
           </li>
-          <li className="content__list__item">-Kuchli mentorlar;</li>
-          <li className="content__list__item">-Real loyiha va portfolio;</li>
-          <li className="content__list__item">-Ish topishda yordam beramiz;</li>
-          <li className="content__list__item">-Sertifikat</li>
+          <li className="content__list__item">-Daromad qilish sirlari!</li>
+          <li className="content__list__item">-Real loyiha va portfolio!</li>
+          <li className="content__list__item">-Kuchli mentorlar!</li>
+          <li className="content__list__item">-Ish topishda yordam beramiz!</li>
+          <li className="content__list__item">-Sertifikat!</li>
           <li className="content__list__item">-Bepul Coworking wifi!</li>
         </ul>
         <div className="content__btns">
           <button
             className="btn content__btns--next"
-            onClick={() =>
-              setSteps({
-                1: false,
-                2: true,
-                3: false,
-                4: false,
-                5: false,
-              })
-            }
+            onClick={() => setCurrentStep(3)}
           >
             Davom Etish{" "}
             <img

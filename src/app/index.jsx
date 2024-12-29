@@ -5,6 +5,7 @@ import { page, routes } from "../utils/router";
 import Loading from "../pages/Lid/loading";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ReactPixel from "react-facebook-pixel";
 
 const App = () => {
   useEffect(() => {
@@ -14,6 +15,12 @@ const App = () => {
       once: false,
       mirror: true,
     });
+
+    ReactPixel.init("434174359005882", null, {
+      autoConfig: true,
+    });
+
+    ReactPixel.pageView();
   }, []);
 
   return (

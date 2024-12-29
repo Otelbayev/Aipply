@@ -24,6 +24,7 @@ html {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  font-family: "Inter", sans-serif;
 }
 
 .btn {
@@ -278,7 +279,6 @@ html {
   }
 }
 
-/* Main Content */
 #content {
   padding: 20px;
 }
@@ -293,6 +293,7 @@ html {
   background-clip: text;
   color: transparent;
   width: 50%;
+  font-family: "Inter", sans-serif;
 }
 
 .slick-prev,

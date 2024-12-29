@@ -21,6 +21,7 @@ export const Container = styled.div`
       background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
       background-clip: text;
       color: transparent;
+      font-family: "Inter", sans-serif;
     }
     &__min-title {
       text-align: center;
@@ -80,7 +81,7 @@ export const Container = styled.div`
         border-radius: 10px;
 
         &:hover {
-          background-position: right center; /* change the direction of the change here */
+          background-position: right center;
           color: #fff;
           text-decoration: none;
         }
@@ -121,7 +122,7 @@ export const Container = styled.div`
     }
     &__dark {
       text-align: center;
-      font-family: Gilroy;
+      font-family: "Inter", sans-serif;
       font-size: 28px;
       font-weight: 700;
       background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
@@ -177,7 +178,7 @@ export const Container = styled.div`
         padding: 10px 0 10px 15px;
         font-size: 17px;
         &::placeholder {
-          font-family: Gilroy;
+          font-family: "Inter", sans-serif;
           font-size: 17px;
           font-weight: 400;
           color: #6d6d6d;

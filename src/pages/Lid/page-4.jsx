@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import logo from "../../assets/icons/logo1.png";
 import back from "../../assets/icons/left-arrow.png";
 import icon from "../../assets/icons/right-arrow.png";
@@ -6,16 +6,23 @@ import { NavLink } from "react-router-dom";
 import { Checkbox, message } from "antd";
 import { Container } from "./style";
 import axios from "axios";
+import ReactPixel from "react-facebook-pixel";
 
-const Page4 = ({ formData, setSteps }) => {
+const Page4 = ({ formData, setCurrentStep, selectedCourse }) => {
   const token = import.meta.env.VITE_APP_API_TOKEN;
   const pathName = window.location.pathname;
   const [nameStyle, setNameStyle] = useState(null);
   const [numStyle, setNumStyle] = useState(null);
   const [name, setName] = useState("");
   const [num, setNum] = useState("");
+  const inputRef = useRef(null);
 
   const handleChange = ({ target: { value } }) => {
+    const cleanedValue = "+998 " + value.slice(5).replace(/\D/g, "");
+
+    if (cleanedValue.length <= 13) {
+      setNum(cleanedValue);
+    }
     if (value.length >= 5 && value.length < 15) {
       setNum(value);
     }
@@ -51,16 +58,14 @@ const Page4 = ({ formData, setSteps }) => {
                 key: "key",
                 content: "Malmotingiz muvofaqaiyatli jo'natildi!",
               });
+              ReactPixel.track("Lead", {
+                name: name,
+                phone: num,
+                course: selectedCourse.title,
+              });
               setName("");
               setNum("");
-
-              setSteps({
-                1: false,
-                2: false,
-                3: false,
-                4: false,
-                5: true,
-              });
+              setCurrentStep(5);
             } else {
               throw new Error();
             }
@@ -83,6 +88,20 @@ const Page4 = ({ formData, setSteps }) => {
         content: "Malmotingiz jo'natishda xatolik!",
       });
     }
+  };
+
+  const handleFocus = () => {
+    setNumStyle(null);
+    if (!num.startsWith("+998 ")) {
+      setNum("+998 ");
+    }
+
+    setTimeout(() => {
+      const input = inputRef.current;
+      if (input) {
+        input.setSelectionRange(5, 5);
+      }
+    }, 0);
   };
 
   return (
@@ -111,29 +130,33 @@ const Page4 = ({ formData, setSteps }) => {
             value={name}
             onChange={({ target: { value } }) => setName(value)}
           />
-          <input
+          {/* <input
             className="content__form__input"
             style={numStyle}
             onChange={handleChange}
             type="tel"
             placeholder="Telefon raqamingiz"
             onFocus={() => {
-              setNum("+998 ");
               setNumStyle(null);
+              setNum("+998 ");
             }}
+            value={num}
+          /> */}
+          <input
+            ref={inputRef}
+            className="content__form__input"
+            style={numStyle}
+            type="tel"
+            placeholder="Telefon raqamingiz"
+            onFocus={handleFocus}
+            onChange={handleChange}
             value={num}
           />
         </form>
         <div className="content__btns">
           <button
             onClick={() => {
-              setSteps({
-                1: false,
-                2: false,
-                3: true,
-                4: false,
-                5: false,
-              });
+              setCurrentStep(3);
             }}
             className="content__btns--back btn"
           >
