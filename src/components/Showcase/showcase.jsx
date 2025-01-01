@@ -7,7 +7,7 @@ const Showcase = () => {
       <div className="container">
         <div className="showcase">
           <div className="showcase__title title">
-            Zamonaviy kasblarni sifatli o'rgatib, unda sun'iy intellektni
+            Zamonaviy kasblarni sifatli o'rgatib, <br /> unda sun'iy intellektni
             professional qo'llashni ham o'rgatamiz!
           </div>
           <div className="showcase__form">
