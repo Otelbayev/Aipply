@@ -38,7 +38,7 @@ export const reactJs = {
     "Frontend, react, dasturlash, kod, web sayt,html,css, js, javaScript, reactjs",
   showcase: {
     title: "Frontend sohasini zamon talabida o’rganing!",
-    desc: "Siz singa zamonaviy bilimlar asosida dasturlashni o’rgatamiz va sizni daromatga olib chiqamiz",
+    desc: "Biz sizga zamonaviy bilimlar asosida dasturlashni o’rgatamiz va sizni daromatga olib chiqamiz",
     keywords:
       "Aipply Academy, Frontend kurslari, React.js kurslari, React darslari, Frontend dasturlash, Toshkentda frontend kurslari, JavaScript bo'yicha darslar, React o'rganish, React.js amaliy kurslari, Toshkentda dasturlash kurslari, Web dasturlash, React componentlar, React Hooks, SPA o'rganish, Frontend bo'yicha treninglar, Aipply Frontend akademiyasi",
   },

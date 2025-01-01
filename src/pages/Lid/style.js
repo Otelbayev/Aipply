@@ -16,7 +16,8 @@ export const Container = styled.div`
     width: 600px; //400
     &__title {
       font-weight: 700;
-      font-size: 36px; //25
+      font-size: 36px;
+      padding: 20px 0;
       text-align: center;
       background: linear-gradient(278.99deg, #02a5e0 19.32%, #0000b0 105%);
       background-clip: text;

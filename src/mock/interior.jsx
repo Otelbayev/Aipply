@@ -41,7 +41,7 @@ export const interior = {
   keywords: "Interior, Exterior, dizayn, grifika, 3d max",
   showcase: {
     title: "Interior/Exterior dizayn sohasini zamon talabida o’rganing!",
-    desc: "Siz singa zamonaviy bilimlar asosida Interior/Exterior dizaynni o’rgatamiz va sizni daromatga olib chiqamiz",
+    desc: "Biz sizga zamonaviy bilimlar asosida Interior/Exterior dizaynni o’rgatamiz va sizni daromatga olib chiqamiz",
     keywords:
       "Aipply Academy, Interior dizayn kurslari, Exterior dizayn kurslari, Ichki makon dizayni, Tashqi makon dizayni, Interior dizayn o'quv markazi, Exterior dizayn bo'yicha treninglar, Ichki va tashqi dizayn darslari, 3D max kurslari, ArchiCAD darslari, SketchUp dizayn, Toshkentda dizayn kurslari, Uy dizayni, Landshaft dizayni, Interyer dizayn asoslari, Tashqi dizayn o'rganish, Aipply dizayn akademiyasi",
   },

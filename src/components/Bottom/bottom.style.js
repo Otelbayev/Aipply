@@ -31,7 +31,7 @@ export const Container = styled.div`
           width: 100%;
           border: none;
           color: #fff;
-          font-size: 14px;
+          font-size: 18px;
           font-weight: 400;
           border-radius: 4px;
           padding: 15px;
@@ -51,6 +51,9 @@ export const Container = styled.div`
         }
         &--form {
           width: 100%;
+          button {
+            font-size: 16px;
+          }
         }
       }
       &__right {

@@ -44,7 +44,7 @@ export const graphicDesign = {
   keywords: "grafik dizayn, dizayn, figma uz, fotoshop uz",
   showcase: {
     title: "Grafik dizaynni zamon talabida o’rganing!",
-    desc: "Siz singa zamonaviy bilimlar asosida grafik dizaynni o’rgatamiz va sizni daromatga olib chiqamiz",
+    desc: "Biz sizga zamonaviy bilimlar asosida grafik dizaynni o’rgatamiz va sizni daromatga olib chiqamiz",
     keywords:
       "Aipply Academy, Grafik dizayn kursi, Grafik dizayn o'quv markazi, Grafik dizayn darslari, Grafik dizayn bo'yicha o'quv kurslari, Grafik dizayn O'zbekiston, Grafik dizayn Toshkent, Aipply dizayn kurslari, Dizayn o'rganish, Adobe Photoshop kurslari, Adobe Illustrator kurslari, CorelDRAW o'quv kursi, Rastr va vektor grafika, Dizayn asoslari, Dizaynerlik kurslari, Grafik dizayn treninglari",
   },

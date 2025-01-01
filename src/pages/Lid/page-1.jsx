@@ -1,26 +1,26 @@
 import React from "react";
-import logo from "../../assets/images/img.jpg";
+import logo from "../../assets/icons/logo1.png";
 import icon from "../../assets/icons/right-arrow.png";
 import { Container } from "./style";
+import { NavLink } from "react-router-dom";
 
 const Page1 = ({ setCurrentStep }) => {
   return (
     <Container>
       <div className="abs"></div>
       <div className="content">
-        <div className="content__title">
-          Zamonaviy kasblarni mukammal o'rganing!
-        </div>
-        <div className="content__profile">
+        <NavLink to="/">
           <img
             loading="lazy"
             effect="blur"
-            className="content__profile__logo"
+            className="content__logo"
             src={logo}
-            alt=""
           />
-          <div className="content__profile__name t-dark">Aipply Academy</div>
+        </NavLink>
+        <div className="content__title">
+          Zamonaviy kasblarni mukammal o'rganing!
         </div>
+
         <ul className="content__list">
           <li className="content__list__item">
             -Sun’iy intellektni professional qo‘llash!

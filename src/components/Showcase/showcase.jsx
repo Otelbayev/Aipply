@@ -7,8 +7,8 @@ const Showcase = () => {
       <div className="container">
         <div className="showcase">
           <div className="showcase__title title">
-            O'zbekistondagi birinchi Sun'iy intellektga ixtisoslashtirilgan
-            zamonaviy kasblar o'quv markazi!
+            Zamonaviy kasblarni sifatli o'rgatib, unda sun'iy intellektni
+            professional qo'llashni ham o'rgatamiz!
           </div>
           <div className="showcase__form">
             <Form />

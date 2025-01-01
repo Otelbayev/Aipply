@@ -9,8 +9,8 @@ const Banner = ({ course }) => {
       <div className="banner">
         <div>
           <p className="banner__text">
-            Sun'iy intellekt - bu kelajak, zamonaviy kasblarda sun'iy
-            intellektni samarali qo'llash esa - bu zamon talabi!
+            O'zbekistondagi birinchi Sun'iy intellektga ixtisoslashtirilgan
+            zamonaviy kasblar o'quv markazi!
           </p>
 
           {course && (

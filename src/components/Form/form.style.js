@@ -31,7 +31,7 @@ export const Container = styled.div`
       width: 100%;
       color: #fff;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 20px;
       margin-top: 10px;
     }
   }
@@ -44,7 +44,7 @@ export const Container = styled.div`
         font-size: 12px;
       }
       &__button {
-        font-size: 12px;
+        font-size: 16px;
       }
     }
   }

@@ -20,8 +20,8 @@ const Home = () => {
       {!showMenu && <Numbers />}
       {!showMenu && <Results />}
       {!showMenu && <Why />}
-      {!showMenu && <Comments />}
       {!showMenu && <Banner course />}
+      {!showMenu && <Comments />}
       {!showMenu && <Courses />}
       {!showMenu && <Partners />}
       {!showMenu && <Mentors />}

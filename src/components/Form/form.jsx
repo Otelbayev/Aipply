@@ -6,11 +6,11 @@ const Form = ({ background }) => {
   return (
     <Container $bg={background}>
       <div className="form">
-        <div className="form__title title">Bepul ochiq darsga yoziling!</div>
-        <div className="form__desc title">
+        <div className="form__title title">Ochiq darsga yoziling!</div>
+        {/* <div className="form__desc title">
           Telefon raqamingizni yozib qoldiring, biz Siz bilan bog'lanamiz va
           barcha savollaringizga javob beramiz!
-        </div>
+        </div> */}
         <Link to="/lid">
           <button className="form__button btn">Ro'yxatdan o'tish</button>
         </Link>
