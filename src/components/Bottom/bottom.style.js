@@ -21,7 +21,7 @@ export const Container = styled.div`
         div {
           text-align: center;
           color: #444444;
-          font-size: 30px;
+          font-size: 36px;
           font-weight: 700;
         }
         button {
@@ -31,7 +31,7 @@ export const Container = styled.div`
           width: 100%;
           border: none;
           color: #fff;
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 400;
           border-radius: 4px;
           padding: 15px;
@@ -51,8 +51,12 @@ export const Container = styled.div`
         }
         &--form {
           width: 100%;
+
+          div {
+            font-size: 34px;
+          }
           button {
-            font-size: 16px;
+            font-size: 18px;
           }
         }
       }

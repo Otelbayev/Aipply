@@ -15,8 +15,9 @@ export const Container = styled.div`
     justify-content: space-between;
     &__title {
       font-weight: 700;
-      font-size: 20px;
+      font-size: 34px;
       padding-bottom: 10px;
+      text-align: center;
     }
     &__desc {
       font-size: 15px;
@@ -31,20 +32,20 @@ export const Container = styled.div`
       width: 100%;
       color: #fff;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 22px;
       margin-top: 10px;
     }
   }
   @media screen and (max-width: 576px) {
     .form {
       &__title {
-        font-size: 16px;
+        font-size: 28px;
       }
       &__desc {
         font-size: 12px;
       }
       &__button {
-        font-size: 16px;
+        font-size: 18px;
       }
     }
   }
