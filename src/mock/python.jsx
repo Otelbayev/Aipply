@@ -3,7 +3,7 @@ import then2 from "../assets/icons/then2.png";
 import then3 from "../assets/icons/then3.png";
 import then4 from "../assets/icons/then4.png";
 import then5 from "../assets/icons/then5.png";
-import img2 from "../assets/images/python.webp";
+import img from "../assets/images/python.webp";
 import project1 from "../assets/images/front1.jpg";
 import project2 from "../assets/images/front2.webp";
 import project3 from "../assets/images/front3.webp";
@@ -18,6 +18,10 @@ import ai4 from "../assets/images/ai3.png";
 import ai5 from "../assets/images/ai4.png";
 import ai6 from "../assets/images/ai5.png";
 import courseImg from "../assets/images/course/python.png";
+import img1 from "../assets/images/results/dasturlash/1.jpg";
+import img2 from "../assets/images/results/dasturlash/2.png";
+import img3 from "../assets/images/results/dasturlash/3.png";
+import img4 from "../assets/images/results/dasturlash/4.jpg";
 
 const FrontendTitle = () => "";
 
@@ -60,7 +64,7 @@ export const python = {
   },
   about: {
     name: "Python-Django-TensorFlow",
-    img: img2,
+    img: img,
     title: <FrontendTitle />,
     desc: <FrontendDesc />,
     projects: [project1, project2, project3, project4, project5, project6],
@@ -171,4 +175,5 @@ export const python = {
     },
   ],
   project: [project8, project7],
+  results: [img1, img2, img3, img4],
 };

@@ -31,12 +31,17 @@ export const page = [
     element: <Lid />,
   },
   {
-    id: 2,
+    id: 3,
     path: "/flyer",
     element: <Lid />,
   },
   {
-    id: 3,
+    id: 4,
+    path: "/xat",
+    element: <Lid />,
+  },
+  {
+    id: 5,
     path: "*",
     element: <Not />,
   },

@@ -20,6 +20,7 @@ import Moduls from "../components/Moduls";
 import { Helmet } from "react-helmet-async";
 import Numbers from "../components/Statistica/numbers";
 import CourseTime from "../components/CourseTime";
+import Results from "../components/Results";
 
 const Course = () => {
   const { path } = useParams();
@@ -58,6 +59,7 @@ const Course = () => {
             <Numbers path={path} />
           )}
           <Statistica data={data?.statistics} />
+          <Results slides={data?.results} />
           <About data={data?.about} />
           <ThenCourse data={data?.then} />
           <Moduls data={data?.module} />

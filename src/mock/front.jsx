@@ -17,6 +17,10 @@ import ai4 from "../assets/images/ai3.png";
 import ai5 from "../assets/images/ai4.png";
 import ai6 from "../assets/images/ai5.png";
 import courseImg from "../assets/images/course/react.png";
+import img1 from "../assets/images/results/dasturlash/1.jpg";
+import img2 from "../assets/images/results/dasturlash/2.png";
+import img3 from "../assets/images/results/dasturlash/3.png";
+import img4 from "../assets/images/results/dasturlash/4.jpg";
 
 const FrontendTitle = () => "";
 
@@ -171,4 +175,5 @@ export const reactJs = {
     },
   ],
   project: [project8, project7],
+  results: [img1, img2, img3, img4],
 };

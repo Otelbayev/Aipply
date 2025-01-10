@@ -15,6 +15,11 @@ import ai4 from "../assets/images/ai3.png";
 import ai5 from "../assets/images/ai4.png";
 import ai6 from "../assets/images/ai5.png";
 import courseImg from "../assets/images/course/inexdesign.png";
+import img8 from "../assets/images/results/inex/1.png";
+import img9 from "../assets/images/results/inex/2.png";
+import img10 from "../assets/images/results/inex/3.png";
+import img11 from "../assets/images/results/inex/4.png";
+import img12 from "../assets/images/results/inex/5.png";
 
 const Title = () => "";
 
@@ -191,4 +196,5 @@ export const interior = {
     },
   ],
   project: [inex4, inex5, inex6],
+  results: [img9, img8, img10, img11, img12],
 };

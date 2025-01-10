@@ -16,6 +16,9 @@ import ai3 from "../assets/images/ai2.png";
 import ai4 from "../assets/images/ai3.png";
 import ai5 from "../assets/images/ai4.png";
 import ai6 from "../assets/images/ai5.png";
+import img5 from "../assets/images/results/grafik/1.png";
+import img6 from "../assets/images/results/grafik/2.png";
+import img7 from "../assets/images/results/grafik/3.png";
 
 const DesignTitle = () => (
   <p>
@@ -315,4 +318,5 @@ export const graphicDesign = {
     },
   ],
   project: [projectss],
+  results: [img5, img6, img7, img5],
 };
