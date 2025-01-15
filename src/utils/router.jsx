@@ -41,6 +41,11 @@ export const page = [
     element: <Lid />,
   },
   {
+    id: 6,
+    path: "/hamkorlik",
+    element: <Lid />,
+  },
+  {
     id: 5,
     path: "*",
     element: <Not />,
