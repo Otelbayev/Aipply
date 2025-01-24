@@ -63,7 +63,7 @@ const Course = () => {
           <About data={data?.about} />
           <ThenCourse data={data?.then} />
           <Moduls data={data?.module} />
-          <InCourse video={data?.video} project={data?.project} />
+          {/* <InCourse video={data?.video} project={data?.project} /> */}
           <Banner course={true} />
         </>
       )}

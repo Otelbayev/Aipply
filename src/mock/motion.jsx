@@ -45,7 +45,7 @@ export const motion = {
   name: "Motion Dizayn",
   keywords: "Motion Dizayn, videomontaj, moshin dizayn",
   showcase: {
-    title: "Motion dizayn va Videomontaj sohasini zamon talabida o’rganing!",
+    title: "Motion dizayn va Videomontaj orqali daromadga chiqing!",
     desc: "Biz sizga zamonaviy bilimlar asosida Motion dizayn va Videomontajni o’rgatamiz va sizni daromatga olib chiqamiz",
     keywords:
       "Aipply Academy, Motion dizayn kurslari, Harakatli grafika, Motion dizayn darslari, Motion dizayner bo'lish, Toshkentda motion dizayn kurslari, Adobe After Effects kurslari, Premiere Pro darslari, Animatsiya kurslari, Video montaj darslari, Motion dizayn bo'yicha treninglar, Harakatli dizayn, 2D animatsiya, 3D animatsiya, Videografika o'rganish, Aipply dizayn akademiyasi, Motion dizayn O'zbekiston",

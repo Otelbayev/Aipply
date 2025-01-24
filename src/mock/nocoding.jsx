@@ -36,7 +36,7 @@ export const noCoding = {
   path: "no-coding",
   keywords: "no coding, tilda, no coding uz, kod yozmasdan dastur yaratish",
   showcase: {
-    title: "Kod yozmasdan dastur yaratishni o’rganing!",
+    title: "No-Code orqali daromadga chiqing!",
     desc: "Biz sizga zamonaviy bilimlar asosida No-Codingni o’rgatamiz va sizni daromatga olib chiqamiz",
     keywords:
       "Aipply Academy, No-Code kurslari, No-Code dasturlash, Kod yozmasdan dasturlash, No-Code platformalar, Webflow kurslari, Bubble.io darslari, Airtable asoslari, Kod yozmasdan veb sayt yaratish, Mobil ilovalar yaratish, IT boshlang‘ichlar uchun kurslar, No-Code bo‘yicha treninglar, Tezkor dasturlash, Aipply no-code akademiyasi, App development no-code",

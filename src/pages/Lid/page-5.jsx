@@ -6,7 +6,6 @@ import ins from "../../assets/icons/ins.png";
 import web from "../../assets/icons/web.png";
 
 const Page5 = () => {
-  
   return (
     <Container>
       <div className="content">
@@ -19,7 +18,7 @@ const Page5 = () => {
           />
         </NavLink>
         <div className="content__title">
-          Siz muvofaqaiyatli ro'yxatdan o'tdingiz!
+          Siz muvaffaqiyatli ro'yxatdan o'tdingiz!
         </div>
 
         <div className="content__min-title">

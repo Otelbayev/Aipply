@@ -41,7 +41,7 @@ export const python = {
   month: 6,
   keywords: "Aipply Academy, Python kusi, python uz, ",
   showcase: {
-    title: "Python-Django-TensorFlow + AI 1.0",
+    title: "Python-Django orqali daromadga chiqing!",
     desc: "Biz sizga zamonaviy bilimlar asosida dasturlashni o’rgatamiz va sizni daromatga olib chiqamiz",
     keywords:
       "Aipply Academy, Python TensorFlow kurslari, TensorFlow darslari, TensorFlow o'rganish, TensorFlow bo'yicha treninglar, Toshkentda TensorFlow kurslari, Mashinaviy o'qitish, Sun'iy intellekt, Neural network kurslari, AI darslari, Deep learning, Data science, Python darslari, TensorFlow amaliyotlari, TensorFlow O'zbekiston, Aipply o'quv markazi",

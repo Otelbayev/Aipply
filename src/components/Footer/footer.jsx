@@ -38,7 +38,7 @@ const Footer = () => {
                 Mentorlar
               </Content.Link>
               <Content.Link onClick={() => useScroll(firstRef)}>
-                Bepul ochiq darsga yoziling!
+                Ochiq darsga yoziling!
               </Content.Link>
             </div>
             <div>

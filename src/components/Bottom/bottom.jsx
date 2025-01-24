@@ -14,10 +14,10 @@ const Bottom = () => {
             Aipply Academy bilan zamonaviy kasblarni zamon talabida o’rganing
           </div>
           <div className="bottom__left--form">
-            <div>Bepul ochiq darsga</div>
+            <div>Ochiq darsga</div>
             <div>yoziling!</div>
             <Link to="/lid">
-              <button className="btn">Bepul ochiq darsga yoziling!</button>
+              <button className="btn">Ochiq darsga yoziling!</button>
             </Link>
           </div>
         </div>
