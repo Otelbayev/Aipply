@@ -14,6 +14,9 @@ import ai4 from "../assets/images/ai3.png";
 import ai5 from "../assets/images/ai4.png";
 import ai6 from "../assets/images/ai5.png";
 import courseImg from "../assets/images/course/computerscience.png";
+import img1 from "../assets/images/results/ks/1.jpg";
+import img2 from "../assets/images/results/ks/2.jpg";
+import img3 from "../assets/images/results/ks/3.jpg";
 
 const DesignTitle = () => <p></p>;
 
@@ -146,4 +149,5 @@ export const computerScience = {
     },
   ],
   project: [project4, project5, project6],
+  results: [img1, img2, img3, img1, img2, img3],
 };

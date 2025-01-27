@@ -17,7 +17,10 @@ const Page1 = ({ setCurrentStep }) => {
             src={logo}
           />
         </NavLink>
-        <div className="content__title">Daromad qilishni o'rgatamiz!</div>
+        <div className="content__title">
+       
+          Daromadli kelajak sari qadam tashlang!
+        </div>
 
         <ul className="content__list">
           <li className="content__list__item">
