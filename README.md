@@ -1,8 +1,38 @@
-# React + Vite
+# Aipply Education - Learning Center Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aipply Education is a modern and user-friendly website designed for an educational center, providing detailed information about courses, instructors, and student services.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
+- **React.js** – Frontend framework
+- **Styled Components** – CSS-in-JS styling
+- **React Router** – Navigation management
+- **Ant Design** – UI component library
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📂 Features
+- Course catalog with detailed descriptions
+- Instructor profiles
+- Online registration for students
+- Responsive design for all devices
+- SEO optimization for better visibility
+
+## 🔧 Installation & Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Otelbayev/Aipply.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd Aipply
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm start
+   ```
+
+## 📬 Contact
+- **GitHub:** [Otelbayev](https://github.com/Otelbayev/Aipply)
+
