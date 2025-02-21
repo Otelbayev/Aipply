@@ -5,7 +5,7 @@ const Home = React.lazy(() => import("../pages/home"));
 const Not = React.lazy(() => import("../pages/not-found"));
 const Course = React.lazy(() => import("../pages/course"));
 const Privacy = React.lazy(() => import("../pages/privacy"));
-const Lid = React.lazy(() => import("../pages/Lid"));
+// const Lid = React.lazy(() => import("../pages/Lid"));
 
 export const routes = [
   {
@@ -34,17 +34,17 @@ export const page = [
   {
     id: 3,
     path: "/flyer",
-    element: <Lid />,
+    element: <CrmForm />,
   },
   {
     id: 4,
     path: "/xat",
-    element: <Lid />,
+    element: <CrmForm />,
   },
   {
     id: 6,
     path: "/hamkorlik",
-    element: <Lid />,
+    element: <CrmForm />,
   },
   {
     id: 5,
