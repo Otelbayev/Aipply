@@ -1,4 +1,5 @@
 import React from "react";
+import CrmForm from "../pages/crm-form";
 
 const Home = React.lazy(() => import("../pages/home"));
 const Not = React.lazy(() => import("../pages/not-found"));
@@ -28,7 +29,7 @@ export const page = [
   {
     id: 2,
     path: "/lid",
-    element: <Lid />,
+    element: <CrmForm />,
   },
   {
     id: 3,
