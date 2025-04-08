@@ -20,6 +20,7 @@ const Icon = styled.img`
 `;
 
 const Button = styled.button`
+  font-family: "Inter", sans-serif;
   width: 100%;
   border: 1px solid #013a87;
   font-size: 20px;
@@ -38,6 +39,7 @@ const Button = styled.button`
 `;
 
 const Title = styled.div`
+  font-family: "Inter", sans-serif;
   text-align: center;
   font-size: 35px;
   line-height: 38px;
@@ -48,6 +50,7 @@ const Title = styled.div`
 `;
 
 const Label = styled.span`
+  font-family: "Inter", sans-serif;
   color: #013a87;
   font-weight: 400;
   font-size: 20px;
@@ -57,6 +60,7 @@ const Label = styled.span`
 `;
 
 const Type = styled.div`
+  font-family: "Inter", sans-serif;
   text-align: center;
   font-size: 24px;
   font-weight: 400;
@@ -156,7 +160,10 @@ export default function KSFORM() {
                 ]}
               >
                 <Input
+                  type="tel"
                   placeholder="99-999-99-99"
+                  max={9}
+                  min={9}
                   style={{ border: "1px solid #013a87" }}
                   prefix={
                     <span>

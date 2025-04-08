@@ -28,6 +28,7 @@ const Card = styled.div`
 `;
 
 const Title = styled.h2`
+  font-family: "Inter", sans-serif;
   font-size: 40px;
   font-weight: 700;
   color: #0b3d91;
@@ -39,6 +40,7 @@ const Title = styled.h2`
 `;
 
 const Subtitle = styled.p`
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   color: #3a6ea5;
   line-height: 1.5;
@@ -69,6 +71,7 @@ const Arrows = styled.div`
 `;
 
 const Button = styled.a`
+  font-family: "Inter", sans-serif;
   display: inline-flex;
   align-items: center;
   background: #4a90e2;

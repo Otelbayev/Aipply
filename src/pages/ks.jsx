@@ -3,6 +3,7 @@ import logo from "../assets/icons/logo1.png";
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 import AOS from "aos";
+// import Footer from "../components/Footer/footer";
 
 const bg = css`
   background: linear-gradient(90deg, #005e89 0%, #002b87 100%);
@@ -234,58 +235,61 @@ const Container = styled.div`
 
 export default function KS() {
   return (
-    <Container>
-      <div className="ks">
-        <div className="ks__content" data-aos="fade-right">
-          <div className="ks__content__words">
-            <div className="ks-name">
-              <img className="logo" src={logo} alt="Davronov Navodir" />
-              <div className="line"></div>
-              <span>Davronov Navodir</span>
+    <>
+      <Container>
+        <div className="ks">
+          <div className="ks__content" data-aos="fade-right">
+            <div className="ks__content__words">
+              <div className="ks-name">
+                <img className="logo" src={logo} alt="Davronov Navodir" />
+                <div className="line"></div>
+                <span>Davronov Navodir</span>
+              </div>
+              <p className="ks-desc">
+                1 oylik Kompyuter savodxonligi + AI kursi uchun
+              </p>
+              <h2 className="ks-title">
+                <div>Ochiq darsda ishtirok eting</div>
+                <div>va chegirmalarni qo'lga kiriting!</div>
+              </h2>
             </div>
-            <p className="ks-desc">
-              1 oylik Kompyuter savodxonligi + AI kursi uchun
-            </p>
-            <h2 className="ks-title">
-              <div>Ochiq darsda ishtirok eting</div>
-              <div>va chegirmalarni qo'lga kiriting!</div>
-            </h2>
+            <div className="ks__content__boxes">
+              <ul className="ks__content__boxes--box">
+                <li>Kursni tugatganda Siz:</li>
+                <li>1. Ofis dasturlaridan samarali foydalanishni;</li>
+                <li>2. Sun'iy intellekt va undan unumli foydalanish;</li>
+                <li>3. Internet va brauzerlarni;</li>
+                <li>4. Vaqtingizni tejovchi foydali saytlarni;</li>
+                <li>5. Ma'lumotlarni xavfsiz saqlashni;</li>
+                <li>6. Kompyuterga xizmat ko'rsatishni o'rganasiz!</li>
+              </ul>
+              <ul className="ks__content__boxes--box">
+                <li>Shuningdek, biz Sizga</li>
+                <li>1. Kuchli o'quv metodikasi;</li>
+                <li>2. Kuchli intizom;</li>
+                <li>3. Bepul Coworking va Wi-Fi;</li>
+                <li>4. Kurs so'ngida sertifikatni taqdim etamiz!</li>
+              </ul>
+              <Link to="/ks-form" className="ks__content__btn">
+                Ochiq darsda ishtirok etish
+              </Link>
+              <Link to="/ks-form" className="ks__content__btn abs-btn">
+                Ochiq darsda ishtirok etish
+              </Link>
+            </div>
           </div>
-          <div className="ks__content__boxes">
-            <ul className="ks__content__boxes--box">
-              <li>Kursni tugatganda Siz:</li>
-              <li>1. Ofis dasturlaridan samarali foydalanishni;</li>
-              <li>2. Sun'iy intellekt va undan unumli foydalanish;</li>
-              <li>3. Internet va brauzerlarni;</li>
-              <li>4. Vaqtingizni tejovchi foydali saytlarni;</li>
-              <li>5. Ma'lumotlarni xavfsiz saqlashni;</li>
-              <li>6. Kompyuterga xizmat ko'rsatishni o'rganasiz!</li>
-            </ul>
-            <ul className="ks__content__boxes--box">
-              <li>Shuningdek, biz Sizga</li>
-              <li>1. Kuchli o'quv metodikasi;</li>
-              <li>2. Kuchli intizom;</li>
-              <li>3. Bepul Coworking va Wi-Fi;</li>
-              <li>4. Kurs so'ngida sertifikatni taqdim etamiz!</li>
-            </ul>
-            <Link to="/ks-form" className="ks__content__btn">
-              Ochiq darsda ishtirok etish
-            </Link>
-            <Link to="/ks-form" className="ks__content__btn abs-btn">
-              Ochiq darsda ishtirok etish
-            </Link>
-          </div>
+          <img
+            src={img}
+            className="ks__img"
+            data-aos="fade-left"
+            alt="Davronov Navodir"
+            onLoad={() => AOS.refresh()}
+          />
         </div>
-        <img
-          src={img}
-          className="ks__img"
-          data-aos="fade-left"
-          alt="Davronov Navodir"
-          onLoad={() => AOS.refresh()}
-        />
-      </div>
-      <div className="shadow sh-f"></div>
-      <div className="shadow sh-s"></div>
-    </Container>
+        <div className="shadow sh-f"></div>
+        <div className="shadow sh-s"></div>
+      </Container>
+      {/* <Footer /> */}
+    </>
   );
 }
