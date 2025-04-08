@@ -121,7 +121,9 @@ export default function KSFORM() {
 
     if (res.status === 200) {
       message.success({ key: "cont", content: "Muvaffaqiyatli yuborildi!" });
-      active === "offline" ? navigate("/ks-insta") : navigate("/last-step");
+      active === "offline"
+        ? navigate("/last-step?type=offile")
+        : navigate("/last-step?type=online");
     } else {
       message.error({ key: "cont", content: "Xatolik!" });
     }
