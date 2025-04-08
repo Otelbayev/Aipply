@@ -106,8 +106,8 @@ const SubscribeCard = () => {
       <Card>
         <Title>Oxirgi qadam qoldi!</Title>
         <Subtitle>
-          Ochiq darsda qatanashish uchun quyidagi tugmani bosib{" "}
-          {type === "online" ? "yopiq" : ""} kanalga obuna bo‘ling!
+          Ochiq darsda qatanashish uchun quyidagi tugmani bosib yopiq kanalga
+          obuna bo‘ling!
         </Subtitle>
         <div className="arrow">
           <img src={arrow} alt="" />
@@ -115,8 +115,8 @@ const SubscribeCard = () => {
         <Button
           href={
             type === "online"
-              ? "https://t.me/aipplyacademy"
-              : "https://t.me/aipplyacademy"
+              ? "https://t.me/+6LMc4T36BZ81MTUy"
+              : "https://t.me/+H9RDHyooSOM5NGE6"
           }
         >
           OBUNA BO‘LISH <FaTelegramPlane size={35} />

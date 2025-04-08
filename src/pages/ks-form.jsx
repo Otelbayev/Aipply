@@ -205,7 +205,7 @@ export default function KSFORM() {
               </Form.Item>
             </Col>
             <Col span={24}>
-              <Type>Ta’lim shaklini tanlang</Type>
+              <Type>Ta’lim shaklini tanlang!</Type>
             </Col>
             <Col span={12}>
               <Button
