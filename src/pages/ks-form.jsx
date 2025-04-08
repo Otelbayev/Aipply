@@ -162,8 +162,8 @@ export default function KSFORM() {
                 <Input
                   type="tel"
                   placeholder="99-999-99-99"
-                  max={9}
-                  min={9}
+                  maxLength={9}
+                  minLength={9}
                   style={{ border: "1px solid #013a87" }}
                   prefix={
                     <span>
