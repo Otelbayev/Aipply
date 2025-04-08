@@ -103,6 +103,7 @@ export default function KSFORM() {
   const [active, setActive] = useState(null);
   const [error, setError] = useState(false);
   const navigate = useNavigate();
+  const form = Form.useForm();
 
   const onFinish = async (values) => {
     if (!active) {
@@ -120,11 +121,7 @@ export default function KSFORM() {
 
     if (res.status === 200) {
       message.success({ key: "cont", content: "Muvaffaqiyatli yuborildi!" });
-      if (active === "offline") {
-        window.location.href = "https://www.instagram.com/aipply.academy/";
-      } else {
-        navigate("/last-step");
-      }
+      active === "offline" ? navigate("/ks-insta") : navigate("/last-step");
     } else {
       message.error({ key: "cont", content: "Xatolik!" });
     }
@@ -161,9 +158,7 @@ export default function KSFORM() {
               >
                 <Input
                   type="tel"
-                  placeholder="99-999-99-99"
-                  maxLength={9}
-                  minLength={9}
+                  placeholder="935960246"
                   style={{ border: "1px solid #013a87" }}
                   prefix={
                     <span>

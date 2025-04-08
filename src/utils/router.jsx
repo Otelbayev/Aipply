@@ -9,6 +9,7 @@ const Privacy = React.lazy(() => import("../pages/privacy"));
 const KS = React.lazy(() => import("../pages/ks"));
 const KSFORM = React.lazy(() => import("../pages/ks-form"));
 const LastStep = React.lazy(() => import("../pages/last-step"));
+const KSInsta = React.lazy(() => import("../pages/ka-insta"));
 
 export const routes = [
   {
@@ -68,5 +69,11 @@ export const page = [
     id: 10,
     path: "/last-step",
     element: <LastStep />,
+  },
+
+  {
+    id: 11,
+    path: "/ks-insta",
+    element: <KSInsta />,
   },
 ];
