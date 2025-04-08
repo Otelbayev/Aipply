@@ -100,9 +100,6 @@ const Button = styled.a`
 const SubscribeCard = () => {
   const url = new URLSearchParams(window.location.search);
   const type = url.get("type");
-  const name = url.get("name");
-  const date = url.get("date");
-  const phone = url.get("phone");
 
   return (
     <Container>

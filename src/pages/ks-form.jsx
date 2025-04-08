@@ -108,9 +108,9 @@ export default function KSFORM() {
   async function sentToBot(name, phone, date, type) {
     const message = ` \n📫⏳ Aipply Academy Lid \n\nName: ${name} \nPhone: ${phone} \nDate: ${date} \nType: #${type}`;
 
-    const endpoint = `https://api.telegram.org/bot7256007186:AAEBOv_fzh82M_iA1tGyvSPWlCBrlPu4DhI/sendMessage`;
+    const endpoint = import.meta.env.VITE_TELEGRAM_API;
     const data = {
-      chat_id: 5942455501,
+      chat_id: import.meta.env.VITE_TELEGRAM_CHAT_ID,
       text: message,
     };
 
@@ -145,12 +145,8 @@ export default function KSFORM() {
       if (res.status === 200) {
         message.success({ key: "cont", content: "Muvaffaqiyatli yuborildi!" });
         active === "offline"
-          ? navigate(
-              `/last-step?type=offile&name=${values.name}&phone=${values.phone}&date=${formattedDate}`
-            )
-          : navigate(
-              `/last-step?type=online&name=${values.name}&phone=${values.phone}&date=${formattedDate}`
-            );
+          ? navigate(`/last-step?type=offile`)
+          : navigate(`/last-step?type=online`);
         sentToBot(values.name, values.phone, formattedDate, active);
       } else {
         message.error({ key: "cont", content: "Xatolik!" });
