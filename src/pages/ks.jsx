@@ -12,9 +12,11 @@ const bg = css`
   font-family: "Inter", sans-serif;
 `;
 
+console.log(window.innerHeight);
+
 const Container = styled.div`
   overflow: hidden;
-  min-height: 100vh;
+  height: ${() => (window.innerHeight < 800 ? "110vh" : "100vh")};
   display: flex;
   align-items: center;
   background-color: #f3faff;
@@ -73,7 +75,7 @@ const Container = styled.div`
       z-index: 7;
       bottom: 0;
       right: 8%;
-      max-width: 650px;
+      width: ${() => (window.innerHeight < 800 ? "500px" : "650px")};
     }
   }
   .ks-name {
