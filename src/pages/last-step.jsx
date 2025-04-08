@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import arrow from "../assets/images/arrow.png";
 import { FaTelegramPlane } from "react-icons/fa";
@@ -100,6 +100,9 @@ const Button = styled.a`
 const SubscribeCard = () => {
   const url = new URLSearchParams(window.location.search);
   const type = url.get("type");
+  const name = url.get("name");
+  const date = url.get("date");
+  const phone = url.get("phone");
 
   return (
     <Container>

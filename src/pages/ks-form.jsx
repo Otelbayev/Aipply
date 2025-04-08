@@ -105,29 +105,57 @@ export default function KSFORM() {
   const [error, setError] = useState(false);
   const navigate = useNavigate();
 
-  const onFinish = async (values) => {
-    if (!active) {
-      setError(true);
-      return;
-    }
+  async function sentToBot(name, phone, date, type) {
+    const message = ` \n📫⏳ Aipply Academy Lid \n\nName: ${name} \nPhone: ${phone} \nDate: ${date} \nType: #${type}`;
 
-    const formattedDate = moment().format("DD.MM.YYYY");
+    const endpoint = `https://api.telegram.org/bot7256007186:AAEBOv_fzh82M_iA1tGyvSPWlCBrlPu4DhI/sendMessage`;
+    const data = {
+      chat_id: 5942455501,
+      text: message,
+    };
 
-    message.loading({ key: "cont", content: "Yuborilmoqda..." });
-    const res = await axios.post(import.meta.env.VITE_GOOGLESHEETS_API, [
-      {
-        Ism: values.name,
-        Telefon: values.phone,
-        Type: active,
-        Sana: formattedDate,
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-    ]);
-    if (res.status === 200) {
-      message.success({ key: "cont", content: "Muvaffaqiyatli yuborildi!" });
-      active === "offline"
-        ? navigate("/last-step?type=offile")
-        : navigate("/last-step?type=online");
-    } else {
+      body: JSON.stringify(data),
+    });
+    return response;
+  }
+
+  const onFinish = async (values) => {
+    try {
+      if (!active) {
+        setError(true);
+        return;
+      }
+
+      const formattedDate = moment().format("DD.MM.YYYY");
+
+      message.loading({ key: "cont", content: "Yuborilmoqda..." });
+      const res = await axios.post(import.meta.env.VITE_GOOGLESHEETS_API, [
+        {
+          Ism: values.name,
+          Telefon: values.phone,
+          Type: active,
+          Sana: formattedDate,
+        },
+      ]);
+      if (res.status === 200) {
+        message.success({ key: "cont", content: "Muvaffaqiyatli yuborildi!" });
+        active === "offline"
+          ? navigate(
+              `/last-step?type=offile&name=${values.name}&phone=${values.phone}&date=${formattedDate}`
+            )
+          : navigate(
+              `/last-step?type=online&name=${values.name}&phone=${values.phone}&date=${formattedDate}`
+            );
+        sentToBot(values.name, values.phone, formattedDate, active);
+      } else {
+        message.error({ key: "cont", content: "Xatolik!" });
+      }
+    } catch (e) {
       message.error({ key: "cont", content: "Xatolik!" });
     }
   };
