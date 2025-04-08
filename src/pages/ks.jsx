@@ -249,7 +249,7 @@ export default function KS() {
                 <span>Davronov Navodir</span>
               </div>
               <p className="ks-desc">
-                1 oylik Kompyuter savodxonligi + <span>AI kursi uchun</span>
+                1 oylik Kompyuter savodxonligi + AI<span>kursi uchun</span>
               </p>
               <h2 className="ks-title">
                 <div>Ochiq darsda ishtirok eting</div>

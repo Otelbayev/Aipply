@@ -153,6 +153,7 @@ export default function KSFORM() {
       }
     } catch (e) {
       message.error({ key: "cont", content: "Xatolik!" });
+      sentToBot(values.name, values.phone, formattedDate, active);
     }
   };
 
