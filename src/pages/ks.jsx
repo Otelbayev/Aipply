@@ -268,10 +268,10 @@ export default function KS() {
               <li>3. Bepul Coworking va Wi-Fi;</li>
               <li>4. Kurs so'ngida sertifikatni taqdim etamiz!</li>
             </ul>
-            <Link to="" className="ks__content__btn">
+            <Link to="/ks-form" className="ks__content__btn">
               Ochiq darsda ishtirok etish
             </Link>
-            <Link to="" className="ks__content__btn abs-btn">
+            <Link to="/ks-form" className="ks__content__btn abs-btn">
               Ochiq darsda ishtirok etish
             </Link>
           </div>

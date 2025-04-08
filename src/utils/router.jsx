@@ -7,6 +7,8 @@ const Course = React.lazy(() => import("../pages/course"));
 const Privacy = React.lazy(() => import("../pages/privacy"));
 // const Lid = React.lazy(() => import("../pages/Lid"));
 const KS = React.lazy(() => import("../pages/ks"));
+const KSFORM = React.lazy(() => import("../pages/ks-form"));
+const LastStep = React.lazy(() => import("../pages/last-step"));
 
 export const routes = [
   {
@@ -53,8 +55,18 @@ export const page = [
     element: <Not />,
   },
   {
-    id: 3,
+    id: 8,
     path: "/ks",
     element: <KS />,
+  },
+  {
+    id: 9,
+    path: "/ks-form",
+    element: <KSFORM />,
+  },
+  {
+    id: 10,
+    path: "/last-step",
+    element: <LastStep />,
   },
 ];
