@@ -234,11 +234,6 @@ const Container = styled.div`
   }
 `;
 
-const Footer = styled.div`
-  background: linear-gradient(90deg, #005e89 0%, #002b87 100%);
-  height: 50vh;
-`;
-
 export default function KS() {
   return (
     <>
@@ -295,12 +290,6 @@ export default function KS() {
         <div className="shadow sh-f"></div>
         <div className="shadow sh-s"></div>
       </Container>
-      <Footer>
-        <div className="container">
-          <img src={logo} alt="" />
-          <div className="f-title">Aipply Academy</div>
-        </div>
-      </Footer>
     </>
   );
 }
