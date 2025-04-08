@@ -3,7 +3,6 @@ import logo from "../assets/icons/logo1.png";
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 import AOS from "aos";
-// import Footer from "../components/Footer/footer";
 
 const bg = css`
   background: linear-gradient(90deg, #005e89 0%, #002b87 100%);
@@ -15,7 +14,7 @@ const bg = css`
 
 const Container = styled.div`
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   background-color: #f3faff;
@@ -74,7 +73,7 @@ const Container = styled.div`
       z-index: 7;
       bottom: 0;
       right: 8%;
-      width: 700px;
+      max-width: 650px;
     }
   }
   .ks-name {
@@ -132,7 +131,6 @@ const Container = styled.div`
       width: 90%;
       padding-left: 0;
       &__img {
-        width: 650px;
         right: 0;
       }
     }
@@ -173,48 +171,51 @@ const Container = styled.div`
       width: 95%;
       &__content {
         &__words {
-          gap: 10px;
+          gap: 5px;
           align-items: center;
         }
         &__boxes {
           align-items: center;
-          margin-top: 630px;
+          margin-top: 480px;
           gap: 10px;
           &--box {
             width: 100%;
           }
         }
         &__btn {
-          margin-top: 20px;
-          width: 100%;
-          font-size: 20px;
+          margin: 20px;
+          width: 90%;
+          font-size: 18px;
         }
       }
       &__img {
-        width: 400px;
+        width: 300px;
         bottom: auto;
         right: 50% !important;
         transform: translateX(50%) !important;
-        top: 270px;
+        top: 200px;
       }
     }
     .ks-name {
       .logo {
-        width: 120px;
+        width: 100px;
       }
       .line {
-        height: 60px;
+        height: 40px;
       }
       span {
-        font-size: 24px;
+        font-size: 22px;
       }
     }
     .ks-desc {
-      font-size: 20px;
+      font-size: 18px;
       text-align: center;
+      span {
+        display: block;
+      }
     }
     .ks-title {
-      font-size: 26px;
+      font-size: 24px;
       text-align: center;
     }
     .sh-f {
@@ -228,7 +229,7 @@ const Container = styled.div`
     .abs-btn {
       display: block;
       position: absolute;
-      top: 700px;
+      top: 520px;
     }
   }
 `;
@@ -246,7 +247,7 @@ export default function KS() {
                 <span>Davronov Navodir</span>
               </div>
               <p className="ks-desc">
-                1 oylik Kompyuter savodxonligi + AI kursi uchun
+                1 oylik Kompyuter savodxonligi + <span>AI kursi uchun</span>
               </p>
               <h2 className="ks-title">
                 <div>Ochiq darsda ishtirok eting</div>
