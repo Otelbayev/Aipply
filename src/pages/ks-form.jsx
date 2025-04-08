@@ -13,7 +13,7 @@ import uz from "../assets/images/uz.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { TreeNode } from "antd/es/tree-select";
+import ReactInputMask from "react-input-mask";
 
 const Icon = styled.img`
   width: 20px;
@@ -105,6 +105,8 @@ export default function KSFORM() {
   const navigate = useNavigate();
   const form = Form.useForm();
 
+  const [value, setValue] = useState(null);
+
   const onFinish = async (values) => {
     if (!active) {
       setError(true);
@@ -118,7 +120,6 @@ export default function KSFORM() {
         Type: active,
       },
     ]);
-
     if (res.status === 200) {
       message.success({ key: "cont", content: "Muvaffaqiyatli yuborildi!" });
       active === "offline"
@@ -158,17 +159,27 @@ export default function KSFORM() {
                   { required: true, message: "Telefon raqamingizni kiriting!" },
                 ]}
               >
-                <Input
-                  type="tel"
-                  placeholder="935960246"
-                  style={{ border: "1px solid #013a87" }}
-                  prefix={
-                    <span>
-                      <Icon src={uz} /> +9989
-                    </span>
-                  }
-                  size="large"
-                />
+                <ReactInputMask
+                  mask="99-999-99-99"
+                  value={value}
+                  onChange={(e) => console.log(e.target.value)}
+                  maskChar={null}
+                >
+                  {(inputProps) => (
+                    <Input
+                      {...inputProps}
+                      type="tel"
+                      placeholder="99-999-99-99"
+                      style={{ border: "1px solid #013a87" }}
+                      size="large"
+                      prefix={
+                        <span>
+                          <Icon src={uz} /> +998
+                        </span>
+                      }
+                    />
+                  )}
+                </ReactInputMask>
               </Form.Item>
             </Col>
             <Col span={24}>
