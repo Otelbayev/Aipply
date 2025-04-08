@@ -14,6 +14,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import ReactInputMask from "react-input-mask";
+import moment from "moment";
 
 const Icon = styled.img`
   width: 20px;
@@ -103,21 +104,22 @@ export default function KSFORM() {
   const [active, setActive] = useState(null);
   const [error, setError] = useState(false);
   const navigate = useNavigate();
-  const form = Form.useForm();
-
-  const [value, setValue] = useState(null);
 
   const onFinish = async (values) => {
     if (!active) {
       setError(true);
       return;
     }
+
+    const formattedDate = moment().format("DD.MM.YYYY");
+
     message.loading({ key: "cont", content: "Yuborilmoqda..." });
     const res = await axios.post(import.meta.env.VITE_GOOGLESHEETS_API, [
       {
         Ism: values.name,
         Telefon: values.phone,
         Type: active,
+        Sana: formattedDate,
       },
     ]);
     if (res.status === 200) {
@@ -159,12 +161,7 @@ export default function KSFORM() {
                   { required: true, message: "Telefon raqamingizni kiriting!" },
                 ]}
               >
-                <ReactInputMask
-                  mask="99-999-99-99"
-                  value={value}
-                  onChange={(e) => console.log(e.target.value)}
-                  maskChar={null}
-                >
+                <ReactInputMask mask="99-999-99-99" maskChar={null}>
                   {(inputProps) => (
                     <Input
                       {...inputProps}
