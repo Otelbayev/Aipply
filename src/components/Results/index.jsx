@@ -53,6 +53,7 @@ const Results = ({ slides = [] }) => {
                     }}
                     src={slide}
                     key={index}
+                    loading="lazy"
                   />
                 </div>
               ))}
