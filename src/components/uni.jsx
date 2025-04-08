@@ -3,6 +3,7 @@ import Header from "./Header/header";
 import Footer from "./Footer/footer";
 import { Outlet } from "react-router-dom";
 import { useMenuContext } from "../context/menu-context";
+// import AmoCRMWidget from "./AmoCRMWidget";
 
 const Uni = () => {
   const { showMenu } = useMenuContext();
@@ -11,6 +12,7 @@ const Uni = () => {
       <Header />
       <Outlet />
       {!showMenu && <Footer />}
+      {/* <AmoCRMWidget /> */}
     </>
   );
 };

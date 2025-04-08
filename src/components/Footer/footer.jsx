@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Content, Top, Icons } from "./footer.style";
+import { Container, Content, Top } from "./footer.style";
 import { NavLink } from "react-router-dom";
 import { useScrollContext } from "../../context/scroll-context";
 import { useScroll } from "../../hooks/useScroll";
@@ -9,6 +9,7 @@ import {
   FaTelegram,
   FaYoutube,
 } from "react-icons/fa";
+import certificate from "../../assets/images/certificate.png";
 
 const Footer = () => {
   const { aboutRef, courseRef, contactRef, mentorsRef, firstRef } =
@@ -67,6 +68,12 @@ const Footer = () => {
               </div>
             </div>
           </Content.Right>
+          <div className="footer-cer">
+            <a href={certificate}>
+              <img src={certificate} alt="" />
+            </a>
+            <p>IT Park rezidenti</p>
+          </div>
         </Content>
         <div ref={contactRef} className="footer-bottom">
           <button onClick={() => window.scrollTo(0, 0)}>
