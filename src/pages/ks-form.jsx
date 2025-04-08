@@ -101,11 +101,11 @@ export default function KSFORM() {
   const navigate = useNavigate();
 
   const onFinish = async (values) => {
-    message.loading({ key: "cont", content: "Yuborilmoqda..." });
     if (!active) {
       setError(true);
       return;
     }
+    message.loading({ key: "cont", content: "Yuborilmoqda..." });
     const res = await axios.post(import.meta.env.VITE_GOOGLESHEETS_API, [
       {
         Ism: values.name,
@@ -115,7 +115,7 @@ export default function KSFORM() {
     ]);
 
     if (res.status === 200) {
-      message.success({ key: "cont", content: "Muvaffaqiyatli yubo'rildi!" });
+      message.success({ key: "cont", content: "Muvaffaqiyatli yuborildi!" });
       if (active === "offline") {
         window.location.href = "https://www.instagram.com/aipply.academy/";
       } else {
