@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import arrow from "../assets/images/arrow.png";
 import { FaTelegramPlane } from "react-icons/fa";
+import KsFooter from "../components/ks-footer";
 
 const Container = styled.div`
   min-height: 100dvh;
@@ -102,27 +103,30 @@ const SubscribeCard = () => {
   const type = url.get("type");
 
   return (
-    <Container>
-      <Card>
-        <Title>Oxirgi qadam qoldi!</Title>
-        <Subtitle>
-          Ochiq darsda qatanashish uchun quyidagi tugmani bosib yopiq kanalga
-          obuna bo‘ling!
-        </Subtitle>
-        <div className="arrow">
-          <img src={arrow} alt="" />
-        </div>
-        <Button
-          href={
-            type === "online"
-              ? "https://t.me/+6LMc4T36BZ81MTUy"
-              : "https://t.me/+H9RDHyooSOM5NGE6"
-          }
-        >
-          OBUNA BO‘LISH <FaTelegramPlane size={35} />
-        </Button>
-      </Card>
-    </Container>
+    <>
+      <Container>
+        <Card>
+          <Title>Oxirgi qadam qoldi!</Title>
+          <Subtitle>
+            Ochiq darsda qatanashish uchun quyidagi tugmani bosib yopiq kanalga
+            obuna bo‘ling!
+          </Subtitle>
+          <div className="arrow">
+            <img src={arrow} alt="" />
+          </div>
+          <Button
+            href={
+              type === "online"
+                ? "https://t.me/+6LMc4T36BZ81MTUy"
+                : "https://t.me/+H9RDHyooSOM5NGE6"
+            }
+          >
+            OBUNA BO‘LISH <FaTelegramPlane size={35} />
+          </Button>
+        </Card>
+      </Container>
+      <KsFooter />
+    </>
   );
 };
 

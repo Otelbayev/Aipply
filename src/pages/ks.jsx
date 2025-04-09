@@ -3,6 +3,7 @@ import logo from "../assets/icons/logo1.png";
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 import AOS from "aos";
+import KsFooter from "../components/ks-footer";
 
 const bg = css`
   background: linear-gradient(90deg, #005e89 0%, #002b87 100%);
@@ -297,6 +298,7 @@ export default function KS() {
         <div className="shadow sh-f"></div>
         <div className="shadow sh-s"></div>
       </Container>
+      <KsFooter />
     </>
   );
 }
