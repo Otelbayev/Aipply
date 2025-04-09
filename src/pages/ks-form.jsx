@@ -145,7 +145,7 @@ export default function KSFORM() {
       if (res.status === 200) {
         message.success({ key: "cont", content: "Muvaffaqiyatli yuborildi!" });
         active === "offline"
-          ? navigate(`/last-step?type=offile`)
+          ? navigate(`/last-step?type=offline`)
           : navigate(`/last-step?type=online`);
         sentToBot(values.name, values.phone, formattedDate, active);
       } else {

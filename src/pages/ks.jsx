@@ -1,4 +1,4 @@
-import img from "../assets/images/ks.png";
+import img1 from "../assets/images/ks.png";
 import logo from "../assets/icons/logo1.png";
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
@@ -11,8 +11,6 @@ const bg = css`
   -webkit-background-clip: text;
   font-family: "Inter", sans-serif;
 `;
-
-console.log(window.innerHeight);
 
 const Container = styled.div`
   overflow: hidden;
@@ -126,6 +124,13 @@ const Container = styled.div`
     left: -200px;
   }
   .abs-btn {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+  }
+
+  .mobile-img {
     display: none;
   }
   @media (max-width: 1350px) {
@@ -282,8 +287,8 @@ export default function KS() {
             </div>
           </div>
           <img
-            src={img}
-            className="ks__img"
+            src={img1}
+            className="ks__img desktop-img"
             data-aos="fade-left"
             alt="Davronov Navodir"
             onLoad={() => AOS.refresh()}
