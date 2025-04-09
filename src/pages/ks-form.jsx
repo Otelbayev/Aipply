@@ -13,9 +13,8 @@ import uz from "../assets/images/uz.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import InputMask from "react-input-mask";
+import ReactInputMask from "react-input-mask";
 import moment from "moment";
-import PhoneInput from "../components/input";
 
 const Icon = styled.img`
   width: 20px;
@@ -106,10 +105,6 @@ export default function KSFORM() {
   const [error, setError] = useState(false);
   const navigate = useNavigate();
 
-  const [phone, setPhone] = useState("");
-
-  console.log(phone);
-
   async function sentToBot(name, phone, date, type) {
     const message = ` \n📫⏳ Aipply Academy Lid \n\nName: ${name} \nPhone: ${phone} \nDate: ${date} \nType: #${type}`;
 
@@ -152,13 +147,13 @@ export default function KSFORM() {
         active === "offline"
           ? navigate(`/last-step?type=offile`)
           : navigate(`/last-step?type=online`);
-        // sentToBot(values.name, values.phone, formattedDate, active);
+        sentToBot(values.name, values.phone, formattedDate, active);
       } else {
         message.error({ key: "cont", content: "Xatolik!" });
       }
     } catch (e) {
       message.error({ key: "cont", content: "Xatolik!" });
-      // sentToBot(values.name, values.phone, formattedDate, active);
+      sentToBot(values.name, values.phone, formattedDate, active);
     }
   };
 
@@ -191,7 +186,27 @@ export default function KSFORM() {
                   { required: true, message: "Telefon raqamingizni kiriting!" },
                 ]}
               >
-                <PhoneInput onChange={(e) => setPhone(e)} />
+                <ReactInputMask maskChar={null}>
+                  {(inputProps) => (
+                    <Input
+                      {...inputProps}
+                      type="tel"
+                      placeholder="+998 99 999 99 99"
+                      style={{ border: "1px solid #013a87" }}
+                      size="large"
+                      prefix={
+                        <span
+                          style={{
+                            borderRight: "1px solid #013a87",
+                            paddingRight: "5px",
+                          }}
+                        >
+                          <Icon src={uz} />
+                        </span>
+                      }
+                    />
+                  )}
+                </ReactInputMask>
               </Form.Item>
             </Col>
             <Col span={24}>
@@ -218,7 +233,7 @@ export default function KSFORM() {
                 }}
                 type="button"
               >
-                Oflayn
+                Offlayn
               </Button>
             </Col>
             {error && (
