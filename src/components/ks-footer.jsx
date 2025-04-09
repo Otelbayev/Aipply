@@ -70,23 +70,31 @@ const Footer = () => {
 
       <SocialIcons>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/aipply.academy"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaInstagram />
         </a>
-        <a href="https://t.me" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://t.me/aipplyacademy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaTelegramPlane />
         </a>
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/aipply"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaFacebookF />
         </a>
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.youtube.com/channel/UCzueY2lK3VYGPgC6AWy2HNQ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaYoutube />
         </a>
       </SocialIcons>
