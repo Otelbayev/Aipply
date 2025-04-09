@@ -228,7 +228,7 @@ export default function KSFORM() {
                 }}
                 type="button"
               >
-                Offlayn
+                Toshkent-Offline
               </Button>
             </Col>
             {error && (
