@@ -216,7 +216,7 @@ export default function KSFORM() {
                 }}
                 type="button"
               >
-                Onlayn
+                Online
               </Button>
             </Col>
             <Col span={12}>
