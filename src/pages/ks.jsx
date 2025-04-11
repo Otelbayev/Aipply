@@ -15,7 +15,7 @@ const bg = css`
 
 const Container = styled.div`
   overflow: hidden;
-  height: ${() => (window.innerHeight < 800 ? "110vh" : "100vh")};
+  height: ${() => (window.innerHeight < 800 ? "130vh" : "100vh")};
   display: flex;
   align-items: center;
   background-color: #f3faff;
@@ -239,6 +239,8 @@ const Container = styled.div`
       position: absolute;
       top: 520px;
     }
+  }
+  @media (max-height: 792px) {
   }
 `;
 
