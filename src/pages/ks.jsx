@@ -1,4 +1,5 @@
 import img1 from "../assets/images/ks.png";
+import img2 from "../assets/images/hasan.png";
 import logo from "../assets/icons/logo1.png";
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
@@ -71,16 +72,26 @@ const Container = styled.div`
     }
     &__img {
       position: absolute;
-      z-index: 7;
+      z-index: 10;
       bottom: 0;
-      right: 8%;
-      width: ${() => (window.innerHeight < 800 ? "500px" : "650px")};
+      right: 15%;
+      width: 570px;
     }
+    &__img1 {
+      position: absolute;
+      z-index: 8;
+      bottom: 0;
+      right: 0;
+      width: 380px;
+    }
+  }
+  .logo1 {
+    display: none;
   }
   .ks-name {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     .logo {
       width: 200px;
     }
@@ -89,9 +100,14 @@ const Container = styled.div`
       width: 2px;
       background-color: #002b87;
     }
+    .line1 {
+      height: 50px;
+      width: 2px;
+      background-color: #002b87;
+    }
     span {
       font-family: "Inter", sans-serif;
-      font-size: 40px;
+      font-size: 30px;
       font-weight: 300;
       color: #013a87;
     }
@@ -127,19 +143,15 @@ const Container = styled.div`
   .abs-btn {
     display: none;
   }
-  .desktop-img {
-    display: block;
-  }
-
-  .mobile-img {
-    display: none;
-  }
   @media (max-width: 1350px) {
     .ks {
       width: 90%;
       padding-left: 0;
       &__img {
-        right: 0;
+        width: 480px;
+      }
+      &__img1 {
+        width: 300px;
       }
     }
   }
@@ -159,16 +171,21 @@ const Container = styled.div`
         }
       }
     }
-    .ks-name {
-      span {
-        font-size: 35px;
-      }
-    }
     .ks-desc {
       font-size: 35px;
     }
     .ks-title {
       font-size: 45px;
+    }
+  }
+  @media (max-width: 1180px) {
+    .ks {
+      &__img {
+        width: 420px;
+      }
+      &__img1 {
+        width: 270px;
+      }
     }
   }
   @media (max-width: 1080px) {
@@ -197,18 +214,28 @@ const Container = styled.div`
         }
       }
       &__img {
-        width: 300px;
+        width: 280px;
         bottom: auto;
-        right: 50% !important;
-        transform: translateX(50%) !important;
-        top: 200px;
+        right: auto;
+        left: 0;
+        top: 250px;
+      }
+      &__img1 {
+        width: 185px;
+        bottom: auto;
+        right: 0;
+        top: 260px;
       }
     }
     .ks-name {
+      gap: 10px;
       .logo {
         width: 100px;
       }
       .line {
+        height: 40px;
+      }
+      .line1 {
         height: 40px;
       }
       span {
@@ -237,10 +264,30 @@ const Container = styled.div`
     .abs-btn {
       display: block;
       position: absolute;
-      top: 520px;
+      top: 545px;
+      width: 100%;
     }
   }
-  @media (max-height: 792px) {
+  @media (max-width: 550px) {
+    .logo1 {
+      display: block;
+      width: 140px;
+    }
+    .ks-name {
+      .line {
+        display: none;
+      }
+      .line1 {
+        height: 30px;
+      }
+      .logo {
+        display: none;
+      }
+      span {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
   }
 `;
 
@@ -251,10 +298,13 @@ export default function KS() {
         <div className="ks">
           <div className="ks__content" data-aos="fade-right">
             <div className="ks__content__words">
+              <img className="logo1" src={logo} alt="Davronov Navodir" />
               <div className="ks-name">
                 <img className="logo" src={logo} alt="Davronov Navodir" />
                 <div className="line"></div>
                 <span>Davronov Navodir</span>
+                <div className="line1"></div>
+                <span>Abdullayev Hasan</span>
               </div>
               <p className="ks-desc">
                 1 oylik Kompyuter savodxonligi + AI <span>kursi uchun</span>
@@ -291,9 +341,16 @@ export default function KS() {
           </div>
           <img
             src={img1}
-            className="ks__img desktop-img"
+            className="ks__img"
             data-aos="fade-left"
             alt="Davronov Navodir"
+            onLoad={() => AOS.refresh()}
+          />
+          <img
+            src={img2}
+            className="ks__img1"
+            data-aos="fade-left"
+            alt="Abdullayev Hasan"
             onLoad={() => AOS.refresh()}
           />
         </div>
