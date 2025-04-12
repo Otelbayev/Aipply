@@ -224,7 +224,7 @@ const Container = styled.div`
         width: 185px;
         bottom: auto;
         right: 0;
-        top: 260px;
+        top: 266px;
       }
     }
     .ks-name {
