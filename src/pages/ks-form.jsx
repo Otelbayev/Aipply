@@ -144,9 +144,7 @@ export default function KSFORM() {
       ]);
       if (res.status === 200) {
         message.success({ key: "cont", content: "Muvaffaqiyatli yuborildi!" });
-        active === "offline"
-          ? navigate(`/last-step?type=offline`)
-          : navigate(`/last-step?type=online`);
+        active === "offline" ? navigate(`/finishoff`) : navigate(`/finishon`);
         sentToBot(values.name, values.phone, formattedDate, active);
       } else {
         message.error({ key: "cont", content: "Xatolik!" });

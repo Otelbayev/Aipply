@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Uni from "../components/uni";
 import { page, routes } from "../utils/router";
 import Loading from "../pages/Lid/loading";
@@ -8,6 +8,14 @@ import "aos/dist/aos.css";
 import ReactPixel from "react-facebook-pixel";
 
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (window.fbq) {
+      window.fbq("track", "PageView");
+    }
+  }, [location.pathname]);
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -24,20 +32,18 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Suspense fallback={<Loading />}>
-        <Routes>
-          <Route element={<Uni />}>
-            {routes.map((e) => (
-              <Route key={e.id} path={e.path} element={e.element} />
-            ))}
-          </Route>
-          {page.map((e) => (
+    <Suspense fallback={<Loading />}>
+      <Routes>
+        <Route element={<Uni />}>
+          {routes.map((e) => (
             <Route key={e.id} path={e.path} element={e.element} />
           ))}
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
+        </Route>
+        {page.map((e) => (
+          <Route key={e.id} path={e.path} element={e.element} />
+        ))}
+      </Routes>
+    </Suspense>
   );
 };
 
