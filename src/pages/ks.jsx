@@ -74,7 +74,7 @@ const Container = styled.div`
       position: absolute;
       z-index: 10;
       bottom: 0;
-      right: 15%;
+      right: 10%;
       width: 570px;
     }
     &__img1 {
@@ -148,7 +148,7 @@ const Container = styled.div`
       width: 90%;
       padding-left: 0;
       &__img {
-        width: 480px;
+        /* width: 480px; */
       }
       &__img1 {
         width: 300px;
@@ -214,11 +214,12 @@ const Container = styled.div`
         }
       }
       &__img {
-        width: 280px;
+        width: 300px;
         bottom: auto;
-        right: auto;
-        left: 0;
-        top: 250px;
+        right: 50%;
+        /* left: 50%; */
+        top: 225px;
+        transform: translateX(50%) !important;
       }
       &__img1 {
         width: 185px;
@@ -301,10 +302,10 @@ export default function KS() {
               <img className="logo1" src={logo} alt="Davronov Navodir" />
               <div className="ks-name">
                 <img className="logo" src={logo} alt="Davronov Navodir" />
-                <div className="line"></div>
+                {/* <div className="line"></div>
                 <span>Davronov Navodir</span>
                 <div className="line1"></div>
-                <span>Abdullayev Hasan</span>
+                <span>Abdullayev Hasan</span> */}
               </div>
               <p className="ks-desc">
                 1 oylik Kompyuter savodxonligi + AI <span>kursi uchun</span>
@@ -346,13 +347,13 @@ export default function KS() {
             alt="Davronov Navodir"
             onLoad={() => AOS.refresh()}
           />
-          <img
+          {/* <img
             src={img2}
             className="ks__img1"
             data-aos="fade-left"
             alt="Abdullayev Hasan"
             onLoad={() => AOS.refresh()}
-          />
+          /> */}
         </div>
         <div className="shadow sh-f"></div>
         <div className="shadow sh-s"></div>

@@ -131,13 +131,14 @@ export default function KSFORM() {
         return;
       }
 
+      const cleanedPhone = values.phone.replace(/[\+\-]/g, "");
       const formattedDate = moment().format("DD.MM.YYYY");
 
       message.loading({ key: "cont", content: "Yuborilmoqda..." });
       const res = await axios.post(import.meta.env.VITE_GOOGLESHEETS_API, [
         {
           Ism: values.name,
-          Telefon: values.phone,
+          Telefon: cleanedPhone,
           Type: active,
           Sana: formattedDate,
         },
