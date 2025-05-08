@@ -35,7 +35,7 @@ const Container = styled.div`
       &__boxes {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         margin-top: 20px;
         &--box {
           background: #ffffff;
@@ -331,6 +331,12 @@ export default function KS() {
                 <li>2. Kuchli intizom;</li>
                 <li>3. Bepul Coworking va Wi-Fi;</li>
                 <li>4. Kurs so'ngida sertifikatni taqdim etamiz!</li>
+              </ul>
+              <ul className="ks__content__boxes--box">
+                <li>
+                  BONUS: Ofis yordamchisi yopiq kanaliga bepul kirish
+                  imkoniyati!
+                </li>
               </ul>
               <Link to="/formaks" className="ks__content__btn">
                 Ochiq darsda ishtirok etish

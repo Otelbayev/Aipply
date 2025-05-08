@@ -190,16 +190,16 @@ export default function KSFORM() {
                   placeholder="+998 99 999 99 99"
                   style={{ border: "1px solid #013a87" }}
                   size="large"
-                  prefix={
-                    <span
-                      style={{
-                        borderRight: "1px solid #013a87",
-                        paddingRight: "5px",
-                      }}
-                    >
-                      <Icon src={uz} />
-                    </span>
-                  }
+                  // prefix={
+                  //   <span
+                  //     style={{
+                  //       borderRight: "1px solid #013a87",
+                  //       paddingRight: "5px",
+                  //     }}
+                  //   >
+                  //     <Icon src={uz} />
+                  //   </span>
+                  // }
                 />
               </Form.Item>
             </Col>
