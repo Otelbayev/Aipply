@@ -11,6 +11,7 @@ const KSFORM = React.lazy(() => import("../pages/ks-form"));
 const LastStep = React.lazy(() => import("../pages/last-step"));
 const FinishOn = React.lazy(() => import("../pages/finishon"));
 const FinishOff = React.lazy(() => import("../pages/finishoff"));
+const Test = React.lazy(() => import("../pages/test"));
 
 export const routes = [
   {
@@ -80,5 +81,11 @@ export const page = [
     id: 12,
     path: "/finishoff",
     element: <FinishOff />,
+  },
+
+  {
+    id: 13,
+    path: "/ks-test",
+    element: <Test />,
   },
 ];

@@ -9,12 +9,12 @@ import {
   Typography,
 } from "antd";
 import styled from "styled-components";
-import uz from "../assets/images/uz.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import ReactInputMask from "react-input-mask";
 import moment from "moment";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../../firebase.js";
 
 const Icon = styled.img`
   width: 20px;
@@ -125,32 +125,30 @@ export default function KSFORM() {
   }
 
   const onFinish = async (values) => {
+    const cleanedPhone = values.phone.replace(/[\+\-]/g, "");
+    const formattedDate = moment().format("DD.MM.YYYY");
+
     try {
       if (!active) {
         setError(true);
         return;
       }
 
-      const cleanedPhone = values.phone.replace(/[\+\-]/g, "");
-      const formattedDate = moment().format("DD.MM.YYYY");
-
       message.loading({ key: "cont", content: "Yuborilmoqda..." });
-      const res = await axios.post(import.meta.env.VITE_GOOGLESHEETS_API, [
-        {
-          Ism: values.name,
-          Telefon: cleanedPhone,
-          Type: active,
-          Sana: formattedDate,
-        },
-      ]);
-      if (res.status === 200) {
-        message.success({ key: "cont", content: "Muvaffaqiyatli yuborildi!" });
-        active === "offline" ? navigate(`/finishoff`) : navigate(`/finishon`);
-        sentToBot(values.name, values.phone, formattedDate, active);
-      } else {
-        message.error({ key: "cont", content: "Xatolik!" });
-      }
+
+      await addDoc(collection(db, "applications"), {
+        name: values.name,
+        phone: cleanedPhone,
+        type: active,
+        date: formattedDate,
+        createdAt: new Date(),
+      });
+
+      message.success({ key: "cont", content: "Muvaffaqiyatli yuborildi!" });
+      active === "offline" ? navigate(`/finishoff`) : navigate(`/finishon`);
+      sentToBot(values.name, values.phone, formattedDate, active);
     } catch (e) {
+      console.error(e);
       message.error({ key: "cont", content: "Xatolik!" });
       sentToBot(values.name, values.phone, formattedDate, active);
     }
