@@ -1,17 +1,13 @@
 import React from "react";
 import CrmForm from "../pages/crm-form";
+import Index from "../pages/KS";
+import Form from "../pages/KS/form";
+import Final from "../pages/KS/final";
 
 const Home = React.lazy(() => import("../pages/home"));
 const Not = React.lazy(() => import("../pages/not-found"));
 const Course = React.lazy(() => import("../pages/course"));
 const Privacy = React.lazy(() => import("../pages/privacy"));
-// const Lid = React.lazy(() => import("../pages/Lid"));
-const KS = React.lazy(() => import("../pages/ks"));
-const KSFORM = React.lazy(() => import("../pages/ks-form"));
-const LastStep = React.lazy(() => import("../pages/last-step"));
-const FinishOn = React.lazy(() => import("../pages/finishon"));
-const FinishOff = React.lazy(() => import("../pages/finishoff"));
-const Test = React.lazy(() => import("../pages/test"));
 
 export const routes = [
   {
@@ -60,32 +56,16 @@ export const page = [
   {
     id: 8,
     path: "/ks",
-    element: <KS />,
+    element: <Index />,
   },
   {
     id: 9,
-    path: "/formaks",
-    element: <KSFORM />,
+    path: "/form",
+    element: <Form />,
   },
   {
     id: 10,
-    path: "/last-step",
-    element: <LastStep />,
-  },
-  {
-    id: 11,
-    path: "/finishon",
-    element: <FinishOn />,
-  },
-  {
-    id: 12,
-    path: "/finishoff",
-    element: <FinishOff />,
-  },
-
-  {
-    id: 13,
-    path: "/ks-test",
-    element: <Test />,
+    path: "/final",
+    element: <Final />,
   },
 ];

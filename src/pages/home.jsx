@@ -22,7 +22,6 @@ import img9 from "../assets/images/results/inex/2.png";
 import img10 from "../assets/images/results/inex/3.png";
 import img11 from "../assets/images/results/inex/4.png";
 import img12 from "../assets/images/results/inex/5.png";
-// import img13 from "../assets/images/results/ks/1.jpg";
 import img14 from "../assets/images/results/ks/2.jpg";
 import img15 from "../assets/images/results/ks/3.jpg";
 
