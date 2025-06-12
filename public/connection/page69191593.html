@@ -242,16 +242,8 @@
       })();
     </script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const formElement = document.querySelector(
-          '[data-elem-id="1747653899328"]'
-        );
-
-        if (formElement) {
-          formElement.addEventListener("tn_form_success", function () {
-            window.location.href = "/final";
-          });
-        }
+      document.addEventListener("tildaForm:afterSuccess", function (e) {
+        window.location.href = "/final";
       });
     </script>
   </head>
@@ -2461,6 +2453,7 @@
               class="t396__elem tn-elem tn-elem__10391533161747653899328"
               data-elem-id="1747653899328"
               data-elem-type="form"
+              onsubmit="window.parent.location.href = '/final';"
               data-field-top-value="423"
               data-field-left-value="373"
               data-field-height-value="332"
@@ -2524,8 +2517,6 @@
               data-field-buttonfontsize-res-480-value="18"
             >
               <div class="tn-atom tn-atom__form"></div>
-              <!--googleoff: all-->
-              <!--noindex-->
               <div
                 data-nosnippet="true"
                 class="tn-atom__inputs-wrapp"
@@ -2535,8 +2526,6 @@
 [{"lid":"1747653899328","ls":"10","loff":"","li_parent_id":"","li_type":"nm","li_title":"Ismingiz","li_name":"name","li_req":"y","li_nm":"name"},{"lid":"1747653899329","ls":"20","loff":"","li_parent_id":"","li_type":"ph","li_title":"Telefon raqamingiz","li_name":"phone","li_masktype":"a","li_maskcountry":"UZ","li_mask":"+9-9-8 (99) 9999999","li_req":"y","li_nm":"phone"},{"lid":"1747654688145","ls":"30","loff":"","li_parent_id":"","li_type":"sb","li_title":"Ta\u2019lim shaklini tanlang","li_variants":"\nToshkent-Offline\nOnline","li_name":"type","li_req":"y","li_nm":"type"}]</textarea
                 >
               </div>
-              <!--/noindex-->
-              <!--googleon: all-->
             </div>
             <div
               class="t396__elem tn-elem tn-elem__10391533161748071600951"
@@ -2575,11 +2564,9 @@
             });
           });
         </script>
-        <!-- /T396 -->
       </div>
     </div>
-    <!--/allrecords-->
-    <!-- Tilda copyright. Don't remove this line -->
+
     <div
       class="t-tildalabel"
       id="tildacopy"
