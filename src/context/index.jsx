@@ -1,8 +1,7 @@
-import React from "react";
 import MenuContextProvider from "./menu-context";
 import ScrollContextProvider from "./scroll-context";
 
-const Context = ({ children }) => {
+const ContextProvider = ({ children }) => {
   return (
     <MenuContextProvider>
       <ScrollContextProvider>{children}</ScrollContextProvider>
@@ -10,4 +9,4 @@ const Context = ({ children }) => {
   );
 };
 
-export default Context;
+export default ContextProvider;

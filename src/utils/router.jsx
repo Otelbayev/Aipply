@@ -8,6 +8,7 @@ const Home = React.lazy(() => import("../pages/home"));
 const Not = React.lazy(() => import("../pages/not-found"));
 const Course = React.lazy(() => import("../pages/course"));
 const Privacy = React.lazy(() => import("../pages/privacy"));
+const Test = React.lazy(() => import("../pages/test"));
 
 export const routes = [
   {
@@ -67,5 +68,10 @@ export const page = [
     id: 10,
     path: "/final",
     element: <Final />,
+  },
+  {
+    id: 13,
+    path: "/ks-test",
+    element: <Test />,
   },
 ];
